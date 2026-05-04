@@ -8,7 +8,6 @@
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
 :root {
   --tawzeef:  #b6e4e8; --tawzeef-t: #1f4e55;
   --inaya:    #f5c5d1; --inaya-t:   #6d2b42;
@@ -19,7 +18,6 @@
   --fikr:     #f5dda3; --fikr-t:    #4a3516;
   --qurnas:   #f5ceaa; --qurnas-t:  #5a311a;
 }
-
 html, body {
   min-height: 100vh;
   font-family: 'IBM Plex Sans Arabic', 'Helvetica Neue', Arial, sans-serif;
@@ -28,8 +26,6 @@ html, body {
   overflow-x: hidden;
   transition: background 0.6s ease;
 }
-
-/* ── Background photo effect (default April theme — pastel lavender) ── */
 body::before {
   content: '';
   position: fixed;
@@ -42,8 +38,6 @@ body::before {
   z-index: -1;
   transition: opacity 0.6s ease;
 }
-
-/* bokeh blobs */
 body::after {
   content: '';
   position: fixed;
@@ -56,8 +50,6 @@ body::after {
   z-index: -1;
   pointer-events: none;
 }
-
-/* ── Theme: May (pastel mint/pistachio for Eid season) ── */
 body.theme-may::before {
   background:
     radial-gradient(ellipse 70% 50% at 20% 10%, rgba(225,240,222,0.85) 0%, transparent 60%),
@@ -66,8 +58,6 @@ body.theme-may::before {
     linear-gradient(145deg, #e6f2dc 0%, #deecd6 35%, #ebf1e0 65%, #e3ebdd 100%);
 }
 body.theme-may { background: #e5efdc; }
-
-/* ── Theme: January (pastel rose/pink) ── */
 body.theme-jan::before {
   background:
     radial-gradient(ellipse 70% 50% at 20% 10%, rgba(252,220,230,0.85) 0%, transparent 60%),
@@ -76,8 +66,6 @@ body.theme-jan::before {
     linear-gradient(145deg, #fbdce5 0%, #f6d0dc 35%, #fae0e8 65%, #f3d5e0 100%);
 }
 body.theme-jan { background: #f9dce4; }
-
-/* ── Theme: February (pastel cream/peach) ── */
 body.theme-feb::before {
   background:
     radial-gradient(ellipse 70% 50% at 20% 10%, rgba(252,230,205,0.85) 0%, transparent 60%),
@@ -86,8 +74,6 @@ body.theme-feb::before {
     linear-gradient(145deg, #fce5cb 0%, #f8dcc0 35%, #faeacf 65%, #f5dcc8 100%);
 }
 body.theme-feb { background: #fbe1cf; }
-
-/* ── Theme: March (pastel soft yellow) ── */
 body.theme-mar::before {
   background:
     radial-gradient(ellipse 70% 50% at 20% 10%, rgba(252,240,200,0.85) 0%, transparent 60%),
@@ -96,8 +82,6 @@ body.theme-mar::before {
     linear-gradient(145deg, #fbefc3 0%, #f7e9b8 35%, #faf0c5 65%, #f4e7bc 100%);
 }
 body.theme-mar { background: #f8ecbe; }
-
-/* ── Theme: June (pastel sky blue) ── */
 body.theme-jun::before {
   background:
     radial-gradient(ellipse 70% 50% at 20% 10%, rgba(210,232,248,0.85) 0%, transparent 60%),
@@ -106,8 +90,6 @@ body.theme-jun::before {
     linear-gradient(145deg, #d6ebf7 0%, #cae2f0 35%, #dcecf5 65%, #cfe2ee 100%);
 }
 body.theme-jun { background: #d2e4f1; }
-
-/* ── Theme: July (pastel peach) ── */
 body.theme-jul::before {
   background:
     radial-gradient(ellipse 70% 50% at 20% 10%, rgba(252,220,195,0.85) 0%, transparent 60%),
@@ -116,8 +98,6 @@ body.theme-jul::before {
     linear-gradient(145deg, #fcd8bf 0%, #f7cdb4 35%, #fadcc3 65%, #f4d0b8 100%);
 }
 body.theme-jul { background: #f8d4b8; }
-
-/* ── Theme: August (pastel coral) ── */
 body.theme-aug::before {
   background:
     radial-gradient(ellipse 70% 50% at 20% 10%, rgba(250,208,200,0.85) 0%, transparent 60%),
@@ -126,8 +106,6 @@ body.theme-aug::before {
     linear-gradient(145deg, #facdbe 0%, #f4bfb2 35%, #f9d0c2 65%, #f3c5b5 100%);
 }
 body.theme-aug { background: #f5c4b3; }
-
-/* ── Theme: September (pastel lilac) ── */
 body.theme-sep::before {
   background:
     radial-gradient(ellipse 70% 50% at 20% 10%, rgba(226,215,248,0.85) 0%, transparent 60%),
@@ -136,8 +114,6 @@ body.theme-sep::before {
     linear-gradient(145deg, #e4d6f3 0%, #dccbee 35%, #e8dcf3 65%, #dcd0ed 100%);
 }
 body.theme-sep { background: #e0d2ee; }
-
-/* ── Theme: October (pastel amber) ── */
 body.theme-oct::before {
   background:
     radial-gradient(ellipse 70% 50% at 20% 10%, rgba(252,232,190,0.85) 0%, transparent 60%),
@@ -146,8 +122,6 @@ body.theme-oct::before {
     linear-gradient(145deg, #fbe5b2 0%, #f6dba3 35%, #fce5b5 65%, #f4d8a3 100%);
 }
 body.theme-oct { background: #f8dea6; }
-
-/* ── Theme: November (pastel teal/mint) ── */
 body.theme-nov::before {
   background:
     radial-gradient(ellipse 70% 50% at 20% 10%, rgba(210,236,228,0.85) 0%, transparent 60%),
@@ -156,8 +130,6 @@ body.theme-nov::before {
     linear-gradient(145deg, #d4ebdf 0%, #c9e3d5 35%, #daecdf 65%, #cbe2d6 100%);
 }
 body.theme-nov { background: #d0e4d6; }
-
-/* ── Theme: December (pastel soft rose) ── */
 body.theme-dec::before {
   background:
     radial-gradient(ellipse 70% 50% at 20% 10%, rgba(250,215,225,0.85) 0%, transparent 60%),
@@ -166,390 +138,66 @@ body.theme-dec::before {
     linear-gradient(145deg, #fad3de 0%, #f5c6d2 35%, #f9d5e0 65%, #f3c8d4 100%);
 }
 body.theme-dec { background: #f6ccd6; }
-
-.page {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 28px 16px 40px;
-}
-
-/* ── Top header ── */
-.top-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 8px;
-  padding: 0 4px;
-  gap: 6px;
-}
-.logo-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.logo-center img {
-  height: clamp(70px, 11vw, 100px);
-  width: auto;
-  filter: drop-shadow(0 2px 14px rgba(60,40,100,0.25));
-}
-.year-info {
-  font-size: 12px;
-  color: rgba(95,75,135,0.65);
-  text-align: center;
-  direction: rtl;
-  letter-spacing: 0.02em;
-}
-
-/* ── Month name ── */
-.month-wrap {
-  padding: 0 4px;
-  margin-bottom: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  gap: 12px;
-}
-.month-name {
-  font-size: clamp(72px, 14vw, 110px);
-  font-weight: 800;
-  color: #574580;
-  line-height: 0.9;
-  letter-spacing: -0.02em;
-  text-shadow: 0 2px 20px rgba(255,255,255,0.55);
-}
-
-.back-to-current {
-  background: rgba(255,255,255,0.55);
-  border: 1px solid rgba(95,75,135,0.22);
-  border-radius: 20px;
-  padding: 8px 14px;
-  font-family: inherit;
-  font-size: 12px;
-  font-weight: 600;
-  color: #574580;
-  cursor: pointer;
-  backdrop-filter: blur(12px);
-  transition: background 0.2s, transform 0.15s;
-  display: none;
-  white-space: nowrap;
-  margin-bottom: 12px;
-}
+.page { max-width: 900px; margin: 0 auto; padding: 28px 16px 40px; }
+.top-header { display: flex; flex-direction: column; align-items: center; margin-bottom: 8px; padding: 0 4px; gap: 6px; }
+.logo-center { display: flex; justify-content: center; align-items: center; }
+.logo-center img { height: clamp(70px, 11vw, 100px); width: auto; filter: drop-shadow(0 2px 14px rgba(60,40,100,0.25)); }
+.year-info { font-size: 12px; color: rgba(95,75,135,0.65); text-align: center; direction: rtl; letter-spacing: 0.02em; }
+.month-wrap { padding: 0 4px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; }
+.month-name { font-size: clamp(72px, 14vw, 110px); font-weight: 800; color: #574580; line-height: 0.9; letter-spacing: -0.02em; text-shadow: 0 2px 20px rgba(255,255,255,0.55); }
+.back-to-current { background: rgba(255,255,255,0.55); border: 1px solid rgba(95,75,135,0.22); border-radius: 20px; padding: 8px 14px; font-family: inherit; font-size: 12px; font-weight: 600; color: #574580; cursor: pointer; backdrop-filter: blur(12px); transition: background 0.2s, transform 0.15s; display: none; white-space: nowrap; margin-bottom: 12px; }
 .back-to-current.show { display: inline-flex; align-items: center; gap: 6px; }
 .back-to-current:hover { background: rgba(255,255,255,0.80); transform: translateY(-1px); }
-
-/* ── Calendar card ── */
-.cal-card {
-  background: rgba(255,255,255,0.45);
-  backdrop-filter: blur(28px);
-  -webkit-backdrop-filter: blur(28px);
-  border: 1px solid rgba(255,255,255,0.70);
-  border-radius: 22px;
-  padding: 14px 12px 16px;
-  overflow: hidden;
-  box-shadow: 0 8px 30px rgba(95,75,135,0.08);
-}
-
-/* ── Day-of-week row ── */
-.dow-row {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 4px;
-  margin-bottom: 6px;
-}
-.dow-cell {
-  text-align: center;
-  font-size: clamp(10px, 1.5vw, 14px);
-  font-weight: 600;
-  color: rgba(95,75,135,0.75);
-  padding: 7px 0;
-  background: rgba(255,255,255,0.55);
-  border: 1px solid rgba(255,255,255,0.75);
-  border-radius: 8px;
-}
-
-/* ── Calendar grid ── */
-.cal-grid {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 4px;
-}
-
-.day {
-  border-radius: 11px;
-  padding: 6px 5px 5px;
-  min-height: clamp(80px, 12vw, 130px);
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-  overflow: hidden;
-  background: rgba(255,255,255,0.40);
-  border: 1px solid rgba(255,255,255,0.55);
-  transition: background 0.18s, transform 0.15s;
-  cursor: default;
-}
+.cal-card { background: rgba(255,255,255,0.45); backdrop-filter: blur(28px); -webkit-backdrop-filter: blur(28px); border: 1px solid rgba(255,255,255,0.70); border-radius: 22px; padding: 14px 12px 16px; overflow: hidden; box-shadow: 0 8px 30px rgba(95,75,135,0.08); }
+.dow-row { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; margin-bottom: 6px; }
+.dow-cell { text-align: center; font-size: clamp(10px, 1.5vw, 14px); font-weight: 600; color: rgba(95,75,135,0.75); padding: 7px 0; background: rgba(255,255,255,0.55); border: 1px solid rgba(255,255,255,0.75); border-radius: 8px; }
+.cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
+.day { border-radius: 11px; padding: 6px 5px 5px; min-height: clamp(80px, 12vw, 130px); display: flex; flex-direction: column; gap: 3px; overflow: hidden; background: rgba(255,255,255,0.40); border: 1px solid rgba(255,255,255,0.55); transition: background 0.18s, transform 0.15s; cursor: default; }
 .day:hover { background: rgba(255,255,255,0.70); transform: translateY(-1px); }
-.day.has-event {
-  background: rgba(255,255,255,0.60);
-  border-color: rgba(255,255,255,0.80);
-}
+.day.has-event { background: rgba(255,255,255,0.60); border-color: rgba(255,255,255,0.80); }
 .day.empty { background: rgba(255,255,255,0.22); border-color: rgba(255,255,255,0.30); cursor: default; }
 .day.empty:hover { background: rgba(255,255,255,0.22); transform: none; }
-
-.day.eid {
-  background: rgba(255,220,130,0.55);
-  border-color: rgba(230,180,60,0.60);
-}
+.day.eid { background: rgba(255,220,130,0.55); border-color: rgba(230,180,60,0.60); }
 .day.eid:hover { background: rgba(255,220,130,0.70); }
-
-.day.today {
-  background: rgba(255,255,255,0.85);
-  border-color: rgba(120,90,180,0.45);
-  box-shadow: 0 0 0 2px rgba(120,90,180,0.35);
-}
-
-.day-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 2px;
-}
-.day-num {
-  font-size: clamp(16px, 2.8vw, 26px);
-  font-weight: 700;
-  color: #574580;
-  line-height: 1;
-}
-.day-hij {
-  font-size: clamp(9px, 1.3vw, 12px);
-  color: rgba(95,75,135,0.55);
-  text-align: left;
-  line-height: 1.3;
-}
-.day-hij small {
-  display: block;
-  font-size: 10px;
-  color: rgba(95,75,135,0.45);
-}
-
+.day.today { background: rgba(255,255,255,0.85); border-color: rgba(120,90,180,0.45); box-shadow: 0 0 0 2px rgba(120,90,180,0.35); }
+.day-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 2px; }
+.day-num { font-size: clamp(16px, 2.8vw, 26px); font-weight: 700; color: #574580; line-height: 1; }
+.day-hij { font-size: clamp(9px, 1.3vw, 12px); color: rgba(95,75,135,0.55); text-align: left; line-height: 1.3; }
+.day-hij small { display: block; font-size: 10px; color: rgba(95,75,135,0.45); }
 .badges { display: flex; flex-direction: column; gap: 3px; flex: 1; }
-
-.badge {
-  border-radius: 6px;
-  padding: 3px 6px;
-  font-size: clamp(9px, 1.3vw, 12px);
-  font-weight: 700;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  cursor: pointer;
-  transition: opacity 0.15s, transform 0.12s;
-  display: block;
-  line-height: 1.5;
-}
+.badge { border-radius: 6px; padding: 3px 6px; font-size: clamp(9px, 1.3vw, 12px); font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor: pointer; transition: opacity 0.15s, transform 0.12s; display: block; line-height: 1.5; }
 .badge:hover { opacity: 0.85; transform: scale(0.97); }
-
-.eid-badge {
-  border-radius: 6px;
-  padding: 3px 6px;
-  font-size: clamp(8px, 1.2vw, 11px);
-  font-weight: 700;
-  background: rgba(255,200,0,0.85);
-  color: #5A3000;
-  display: block;
-  line-height: 1.5;
-  text-align: center;
-}
-
-/* ── Empty state (for months without data yet) ── */
-.empty-month-note {
-  text-align: center;
-  padding: 20px;
-  color: rgba(95,75,135,0.65);
-  font-size: 13px;
-  background: rgba(255,255,255,0.35);
-  border-radius: 12px;
-  margin-top: 8px;
-}
-
-/* ── Modal ── */
-.modal-bg {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(20,10,40,0.55);
-  backdrop-filter: blur(6px);
-  z-index: 100;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
+.eid-badge { border-radius: 6px; padding: 3px 6px; font-size: clamp(8px, 1.2vw, 11px); font-weight: 700; background: rgba(255,200,0,0.85); color: #5A3000; display: block; line-height: 1.5; text-align: center; }
+.empty-month-note { text-align: center; padding: 20px; color: rgba(95,75,135,0.65); font-size: 13px; background: rgba(255,255,255,0.35); border-radius: 12px; margin-top: 8px; }
+.modal-bg { display: none; position: fixed; inset: 0; background: rgba(20,10,40,0.55); backdrop-filter: blur(6px); z-index: 100; align-items: center; justify-content: center; padding: 20px; }
 .modal-bg.open { display: flex; }
-.modal {
-  background: rgba(255,255,255,0.96);
-  border-radius: 20px;
-  padding: 24px 22px 20px;
-  max-width: 380px;
-  width: 100%;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
-  direction: rtl;
-  position: relative;
-  animation: pop .2s ease;
-}
+.modal { background: rgba(255,255,255,0.96); border-radius: 20px; padding: 24px 22px 20px; max-width: 380px; width: 100%; box-shadow: 0 20px 60px rgba(0,0,0,0.25); direction: rtl; position: relative; animation: pop .2s ease; }
 @keyframes pop { from { transform: scale(0.92); opacity: 0; } to { transform: scale(1); opacity: 1; } }
-.modal-close {
-  position: absolute;
-  top: 14px; left: 16px;
-  font-size: 22px;
-  cursor: pointer;
-  color: #888;
-  background: none;
-  border: none;
-  line-height: 1;
-}
-.modal-date {
-  font-size: 13px;
-  font-weight: 600;
-  color: #888;
-  margin-bottom: 12px;
-}
-.modal-session {
-  display: flex;
-  gap: 10px;
-  align-items: flex-start;
-  padding: 10px 0;
-  border-bottom: 1px solid rgba(0,0,0,0.07);
-}
+.modal-close { position: absolute; top: 14px; left: 16px; font-size: 22px; cursor: pointer; color: #888; background: none; border: none; line-height: 1; }
+.modal-date { font-size: 13px; font-weight: 600; color: #888; margin-bottom: 12px; }
+.modal-session { display: flex; gap: 10px; align-items: flex-start; padding: 10px 0; border-bottom: 1px solid rgba(0,0,0,0.07); }
 .modal-session:last-child { border-bottom: none; }
-.modal-dot {
-  width: 10px; height: 10px;
-  border-radius: 3px;
-  margin-top: 4px;
-  flex-shrink: 0;
-}
+.modal-dot { width: 10px; height: 10px; border-radius: 3px; margin-top: 4px; flex-shrink: 0; }
 .modal-info .prog { font-size: 15px; font-weight: 700; color: #1a1820; }
 .modal-info .topic { font-size: 13px; color: #555; margin-top: 2px; }
 .modal-info .trainer { font-size: 12px; color: #888; margin-top: 1px; }
-.modal-info .mode {
-  display: inline-block;
-  font-size: 11px;
-  padding: 2px 8px;
-  border-radius: 20px;
-  margin-top: 4px;
-  background: rgba(0,0,0,0.06);
-  color: #555;
-}
-
-/* ── Legend ── */
-.legend {
-  margin-top: 12px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 6px 8px;
-  padding: 10px 12px;
-  background: rgba(255,255,255,0.45);
-  border: 1px solid rgba(255,255,255,0.70);
-  border-radius: 14px;
-}
-.leg-item {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: clamp(9px, 1.3vw, 12px);
-  color: rgba(95,75,135,0.80);
-  font-weight: 500;
-}
+.modal-info .mode { display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 20px; margin-top: 4px; background: rgba(0,0,0,0.06); color: #555; }
+.legend { margin-top: 12px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px 8px; padding: 10px 12px; background: rgba(255,255,255,0.45); border: 1px solid rgba(255,255,255,0.70); border-radius: 14px; }
+.leg-item { display: flex; align-items: center; gap: 6px; font-size: clamp(9px, 1.3vw, 12px); color: rgba(95,75,135,0.80); font-weight: 500; }
 .leg-dot { width: 10px; height: 10px; border-radius: 3px; flex-shrink: 0; }
-
-/* ── Archive Section (bottom) ── */
-.archive-section {
-  margin-top: 22px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
-}
-
-.archive-col {
-  background: rgba(255,255,255,0.40);
-  border: 1px solid rgba(255,255,255,0.65);
-  border-radius: 14px;
-  padding: 9px 12px 11px;
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-}
-
-.archive-col h3 {
-  font-size: 11.5px;
-  font-weight: 700;
-  color: #574580;
-  margin-bottom: 7px;
-  opacity: 0.85;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
+.archive-section { margin-top: 22px; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.archive-col { background: rgba(255,255,255,0.40); border: 1px solid rgba(255,255,255,0.65); border-radius: 14px; padding: 9px 12px 11px; backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); }
+.archive-col h3 { font-size: 11.5px; font-weight: 700; color: #574580; margin-bottom: 7px; opacity: 0.85; display: flex; align-items: center; gap: 5px; }
 .archive-col.past h3::before  { content: '📦'; font-size: 12px; }
 .archive-col.future h3::before { content: '📅'; font-size: 12px; }
-
-.months-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 5px;
-}
-
-.month-chip {
-  background: rgba(255,255,255,0.55);
-  border: 1px solid rgba(120,95,170,0.22);
-  border-radius: 999px;
-  padding: 4px 10px;
-  cursor: pointer;
-  transition: all 0.18s;
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  font-family: inherit;
-  color: #574580;
-  text-align: center;
-  width: auto;
-  line-height: 1.2;
-}
-.month-chip:hover {
-  background: rgba(255,255,255,0.85);
-  transform: translateY(-1px);
-  border-color: rgba(120,95,170,0.40);
-  box-shadow: 0 2px 6px rgba(95,75,135,0.10);
-}
-.month-chip-name {
-  font-size: 11.5px;
-  font-weight: 700;
-}
-.month-chip-year {
-  font-size: 9px;
-  color: rgba(95,75,135,0.55);
-  font-weight: 500;
-}
-.month-chip.empty-data {
-  opacity: 0.50;
-}
-
-.archive-empty {
-  font-size: 12px;
-  color: rgba(95,75,135,0.55);
-  text-align: center;
-  padding: 10px 4px;
-  font-style: italic;
-}
-
-/* ── Footer ── */
-.footer {
-  text-align: center;
-  margin-top: 14px;
-  font-size: 12px;
-  color: rgba(95,75,135,0.55);
-  letter-spacing: 0.05em;
-}
-
+.months-list { display: flex; flex-direction: row; flex-wrap: wrap; gap: 5px; }
+.month-chip { background: rgba(255,255,255,0.55); border: 1px solid rgba(120,95,170,0.22); border-radius: 999px; padding: 4px 10px; cursor: pointer; transition: all 0.18s; display: inline-flex; align-items: center; gap: 4px; font-family: inherit; color: #574580; text-align: center; width: auto; line-height: 1.2; }
+.month-chip:hover { background: rgba(255,255,255,0.85); transform: translateY(-1px); border-color: rgba(120,95,170,0.40); box-shadow: 0 2px 6px rgba(95,75,135,0.10); }
+.month-chip-name { font-size: 11.5px; font-weight: 700; }
+.month-chip-year { font-size: 9px; color: rgba(95,75,135,0.55); font-weight: 500; }
+.month-chip.empty-data { opacity: 0.50; }
+.archive-empty { font-size: 12px; color: rgba(95,75,135,0.55); text-align: center; padding: 10px 4px; font-style: italic; }
+.footer { text-align: center; margin-top: 14px; font-size: 12px; color: rgba(95,75,135,0.55); letter-spacing: 0.05em; }
 @media (max-width: 600px) {
   .archive-section { grid-template-columns: 1fr; gap: 10px; }
   .legend { grid-template-columns: repeat(2, 1fr); }
@@ -559,24 +207,18 @@ body.theme-dec { background: #f6ccd6; }
 </style>
 </head>
 <body>
-
 <div class="page">
-
-  <!-- Header -->
   <div class="top-header">
     <div class="logo-center">
       <img src="شعار جمعية تمكين الأيتام - أبيض-15.png" alt="جمعية تمكين الأيتام">
     </div>
     <div class="year-info" id="year-info">2026م &nbsp;·&nbsp; ١٤٤٧–١٤٤٨هـ</div>
   </div>
-
   <div class="month-wrap">
-    <div class="month-name" id="month-name">أبريـل</div>
+    <div class="month-name" id="month-name">مايـو</div>
     <button class="back-to-current" id="back-btn" onclick="goToCurrentMonth()">↻ العودة للشهر الحالي</button>
   </div>
-
   <div class="cal-card">
-    <!-- Days of week — RTL: Sun=right, Sat=left -->
     <div class="dow-row">
       <div class="dow-cell">الأحد</div>
       <div class="dow-cell">الاثنين</div>
@@ -586,44 +228,33 @@ body.theme-dec { background: #f6ccd6; }
       <div class="dow-cell">الجمعة</div>
       <div class="dow-cell">السبت</div>
     </div>
-
     <div class="cal-grid" id="grid"></div>
-
     <div class="empty-month-note" id="empty-note" style="display:none;">
-      البيانات التفصيلية لهذا الشهر لم تُضف بعد.
+      البيانات التفصيليو لهذا الشهر لم تُضف بعد.
     </div>
-
-    <!-- Legend -->
     <div class="legend">
       <div class="leg-item"><div class="leg-dot" style="background:#b6e4e8"></div>حاضنة التوظيف 4</div>
       <div class="leg-item"><div class="leg-dot" style="background:#f5c5d1"></div>عناية 2</div>
-      <div class="leg-item"><div class="leg-dot" style="background:#e4b1d1"></div>قناديل 2</div>
-      <div class="leg-item"><div class="leg-dot" style="background:#c0e2c7"></div>التحصيلي</div>
+      <div class="leg-item"><div class="leg-dot" style="background:#e4b1d1"></div>قماديل 2</div>
+      <div class="leg-item"><div class="leg-dot" style="background:#c0e2c7"></div>التصعيلي</div>
       <div class="leg-item"><div class="leg-dot" style="background:#d4c9ee"></div>مهارات AI</div>
       <div class="leg-item"><div class="leg-dot" style="background:#dadde3"></div>قيادة وتمكين 30 أم</div>
       <div class="leg-item"><div class="leg-dot" style="background:#f5dda3"></div>هندسة التفكير</div>
       <div class="leg-item"><div class="leg-dot" style="background:#f5ceaa"></div>أكاديمية قرناس</div>
     </div>
   </div>
-
-  <!-- Archive Section: past months on right, future on left (RTL) -->
   <div class="archive-section">
-    <!-- Future (visually on the left in RTL) -->
     <div class="archive-col future">
       <h3>الشهور القادمة</h3>
       <div class="months-list" id="future-months"></div>
     </div>
-    <!-- Past (visually on the right in RTL) -->
     <div class="archive-col past">
       <h3>الشهور السابقة</h3>
       <div class="months-list" id="past-months"></div>
     </div>
   </div>
-
   <div class="footer">X &nbsp;·&nbsp; Instagram &nbsp;·&nbsp; TikTok &nbsp;·&nbsp; Snapchat &nbsp;&nbsp; aytaam_mak</div>
 </div>
-
-<!-- Modal -->
 <div class="modal-bg" id="modal-bg" onclick="closeModal(event)">
   <div class="modal" id="modal">
     <button class="modal-close" onclick="closeModal()">✕</button>
@@ -631,9 +262,7 @@ body.theme-dec { background: #f6ccd6; }
     <div id="modal-body"></div>
   </div>
 </div>
-
 <script>
-// ── PROGRAMS (shared across all months) ──────────────────
 const PROGRAMS = {
   tawzeef:  { name:'حاضنة التوظيف 4', bg:'#b6e4e8', fg:'#1f4e55' },
   inaya:    { name:'عناية 2',          bg:'#f5c5d1', fg:'#6d2b42' },
@@ -644,16 +273,13 @@ const PROGRAMS = {
   fikr:     { name:'هندسة التفكير',    bg:'#f5dda3', fg:'#4a3516' },
   qurnas:   { name:'أكاديمية قرناس',  bg:'#f5ceaa', fg:'#5a311a' },
 };
-
 const ARABIC_DAYS = ['الأحد','الاثنين','الثلاثاء','الأربعاء','الخميس','الجمعة','السبت'];
 
-// ── MONTH DATA — index 0 = January, 11 = December ─────────
-// Each month entry: { name, nameShort, year, hijriYearInfo, theme, startDay (0=Sun..6=Sat), numDays, hijri, data, eid }
 const MONTHS = [
   { // 0 — January 2026
     name: 'يناير', nameShort: 'ينايـر', year: 2026, jsMonth: 0,
     hijriInfo: 'رجب–شعبان ١٤٤٧هـ',
-    startDay: 4, // Jan 1 2026 = Thursday
+    startDay: 4,
     numDays: 31,
     theme: 'jan',
     hijri: {1:'١١|رجب',2:'١٢',3:'١٣',4:'١٤',5:'١٥',6:'١٦',7:'١٧',8:'١٨',9:'١٩',10:'٢٠',11:'٢١',12:'٢٢',13:'٢٣',14:'٢٤',15:'٢٥',16:'٢٦',17:'٢٧',18:'٢٨',19:'٢٩',20:'١|شعبان',21:'٢',22:'٣',23:'٤',24:'٥',25:'٦',26:'٧',27:'٨',28:'٩',29:'١٠',30:'١١',31:'١٢'},
@@ -686,7 +312,7 @@ const MONTHS = [
   { // 1 — February 2026
     name: 'فبراير', nameShort: 'فبرايـر', year: 2026, jsMonth: 1,
     hijriInfo: 'شعبان–رمضان ١٤٤٧هـ',
-    startDay: 0, // Feb 1 2026 = Sunday
+    startDay: 0,
     numDays: 28,
     theme: 'feb',
     hijri: {1:'١٣|شعبان',2:'١٤',3:'١٥',4:'١٦',5:'١٧',6:'١٨',7:'١٩',8:'٢٠',9:'٢١',10:'٢٢',11:'٢٣',12:'٢٤',13:'٢٥',14:'٢٦',15:'٢٧',16:'٢٨',17:'٢٩',18:'١|رمضان',19:'٢',20:'٣',21:'٤',22:'٥',23:'٦',24:'٧',25:'٨',26:'٩',27:'١٠',28:'١١'},
@@ -720,74 +346,70 @@ const MONTHS = [
   { // 2 — March 2026
     name: 'مارس', nameShort: 'مـارس', year: 2026, jsMonth: 2,
     hijriInfo: 'رمضان–شوال ١٤٤٧هـ',
-    startDay: 0, // Mar 1 2026 = Sunday
+    startDay: 0,
     numDays: 31,
     theme: 'mar',
     hijri: {1:'١٢|رمضان',2:'١٣',3:'١٤',4:'١٥',5:'١٦',6:'١٧',7:'١٨',8:'١٩',9:'٢٠',10:'٢١',11:'٢٢',12:'٢٣',13:'٢٤',14:'٢٥',15:'٢٦',16:'٢٧',17:'٢٨',18:'٢٩',19:'٣٠',20:'١|شوال',21:'٢',22:'٣',23:'٤',24:'٥',25:'٦',26:'٧',27:'٨',28:'٩',29:'١٠',30:'١١',31:'١٢'},
     data: {},
-    eid: {}
+    eid: { 19:'عيد الفطر 🌙', 20:'عيد الفطر 🌙', 21:'عيد الفطر 🌙' }
   },
-  { // 3 — April 2026 (FULL DATA)
+  { // 3 — April 2026
     name: 'أبريل', nameShort: 'أبريـل', year: 2026, jsMonth: 3,
     hijriInfo: '١٤٤٧–١٤٤٨هـ',
-    startDay: 3, // Apr 1 2026 = Wednesday
+    startDay: 3,
     numDays: 30,
     theme: null,
-    hijri: {
-      1:'١٣',2:'١٤',3:'١٥',4:'١٦',5:'١٧',6:'١٨',7:'١٩',8:'٢٠',9:'٢١',10:'٢٢',
-      11:'٢٣',12:'٢٤',13:'٢٥',14:'٢٦',15:'٢٧',16:'٢٨',17:'٢٩',
-      18:'١|ذو القعدة',19:'٢',20:'٣',21:'٤',22:'٥',23:'٦',24:'٧',
-      25:'٨',26:'٩',27:'١٠',28:'١١',29:'١٢',30:'١٣'
-    },
+    hijri: {1:'١٣',2:'١٤',3:'١٥',4:'١٦',5:'١٧',6:'١٨',7:'١٩',8:'٢٠',9:'٢١',10:'٢٢',11:'٢٣',12:'٢٤',13:'٢٥',14:'٢٦',15:'٢٧',16:'٢٨',17:'٢٩',18:'١|ذو القعدة',19:'٢',20:'٣',21:'٤',22:'٥',23:'٦',24:'٧',25:'٨',26:'٩',27:'١٠',28:'١١',29:'١٢',30:'١٣'},
     data: {
-      1:  [{ p:'tawzeef',  topic:'العادات السبع',                        trainer:'م. صالح الشلوي',    mode:'حضوري مساء', supervisor:'شهد',           venue:'الجمعية' },
-           { p:'tahseeli', topic:'رياضيات - أحياء',                      trainer:'',                   mode:'حضوري مساء', supervisor:'أحمد الزهراني', venue:'خارجي' }],
+      1:  [{ p:'tawzeef',  topic:'العادات السبع',                        trainer:'م. صالح الشلوي',    mode:'حضوري مساء', supervisor:'شهد',            venue:'الجمعية' },
+           { p:'tahseeli', topic:'رياضياآ - أحياء',                      trainer:'',                   mode:'حضوري مساء', supervisor:'أحمد الزهراني', venue:'خارجي' }],
       2:  [{ p:'tahseeli', topic:'فيزياء - كيمياء',                      trainer:'',                   mode:'حضوري مساء', supervisor:'حلا',            venue:'خارجي' }],
       5:  [{ p:'ai',       topic:'اللقاء التعريفي',                      trainer:'م. صالح الشلوي',    mode:'حضوري مساء', supervisor:'لين',            venue:'الجمعية' }],
       6:  [{ p:'fikr',     topic:'الاستعداد والتجهيز',                   trainer:'',                   mode:'-',          supervisor:'لين',            venue:'-' },
            { p:'ai',       topic:'اللقاء التعريفي',                      trainer:'م. صالح الشلوي',    mode:'حضوري مساء', supervisor:'حلا',            venue:'الجمعية' }],
-      7:  [{ p:'ai',       topic:'',                                       trainer:'أ.وجدان العنزي',    mode:'عن بعد',     supervisor:'وجدان',          venue:'-' },
-           { p:'inaya',    topic:'المجال النفسي+معايدة',                  trainer:'سماح السلمي',        mode:'حضوري مساء', supervisor:'لين',            venue:'مدرسة البشرى' },
-           { p:'qanadeel', topic:'قنديل الايمان+معايدة',                  trainer:'فردوس بالعمش',       mode:'حضوري مساء', supervisor:'منار',           venue:'مدرسة البشرى' },
-           { p:'tahseeli', topic:'',                                       trainer:'',                   mode:'حضوري مساء', supervisor:'حلا',            venue:'خارجي' },
-           { p:'tawzeef',  topic:'مهارة الإلقاء',                        trainer:'أ. أرين الشمراني',   mode:'حضوري مساء', supervisor:'شهد',            venue:'الجمعية' }],
-      8:  [{ p:'qanadeel', topic:'قنديل الايمان',                         trainer:'فردوس بالعمش',       mode:'حضوري مساء', supervisor:'حلا',            venue:'مدرسة البشرى' },
-           { p:'inaya',    topic:'المجال النفسي',                         trainer:'سماح السلمي',        mode:'حضوري مساء', supervisor:'منار',           venue:'مدرسة البشرى' },
-           { p:'tawzeef',  topic:'مهارة الإلقاء',                        trainer:'أ. أرين الشمراني',   mode:'حضوري مساء', supervisor:'فادية',          venue:'الجمعية' },
-           { p:'tahseeli', topic:'',                                       trainer:'',                   mode:'حضوري مساء', supervisor:'أحمد الزهراني', venue:'خارجي' }],
-      9:  [{ p:'tawzeef',  topic:'مهارة الإلقاء',                        trainer:'أ. أرين الشمراني',   mode:'حضوري مساء', supervisor:'شهد',            venue:'الجمعية' }],
-      12: [{ p:'qurnas',   topic:'',                                       trainer:'',                   mode:'-',          supervisor:'-',              venue:'-' },
-           { p:'ai',       topic:'',                                       trainer:'',                   mode:'عن بعد',     supervisor:'لين',            venue:'-' }],
-      13: [{ p:'ai',       topic:'',                                       trainer:'',                   mode:'عن بعد',     supervisor:'لين',            venue:'-' },
-           { p:'tamkeen',  topic:'أم ملهمة',                              trainer:'',                   mode:'حضوري مساء', supervisor:'منار-حلا',       venue:'الجمعية' }],
-      14: [{ p:'inaya',    topic:'المجال الصحي',                          trainer:'مريم الهوساوي',     mode:'حضوري مساء', supervisor:'لين',            venue:'مدرسة البشرى' },
-           { p:'qanadeel', topic:'قنديل الايجابية',                       trainer:'مها الجهني',         mode:'حضوري مساء', supervisor:'منار',           venue:'مدرسة البشرى' },
-           { p:'tawzeef',  topic:'الذكاء العاطفي وإدارة الذات',          trainer:'م. صالح الشلوي',    mode:'حضوري مساء', supervisor:'شهد',            venue:'الجمعية' },
-           { p:'tahseeli', topic:'',                                       trainer:'',                   mode:'حضوري مساء', supervisor:'أحمد الزهراني', venue:'خارجي' }],
-      15: [{ p:'qanadeel', topic:'قنديل الايجابية',                       trainer:'مها الجهني',         mode:'حضوري مساء', supervisor:'لين',            venue:'مدرسة البشرى' },
-           { p:'inaya',    topic:'المجال الصحي',                          trainer:'مريم الهوساوي',     mode:'حضوري مساء', supervisor:'حلا',            venue:'مدرسة البشرى' },
-           { p:'tahseeli', topic:'',                                       trainer:'',                   mode:'حضوري مساء', supervisor:'أحمد الزهراني', venue:'الجمعية' },
-           { p:'tawzeef',  topic:'نماذج قوقل',                            trainer:'',                   mode:'عن بعد',     supervisor:'شهد',            venue:'-' }],
-      19: [{ p:'tawzeef',  topic:'اللغة الإنجليزية',  trainer:'م. عمر الخالدي', mode:'عن بعد',     supervisor:'شهد-نور',  venue:'-' },
-           { p:'ai',       topic:'',                   trainer:'ابو بكر',         mode:'عن بعد',     supervisor:'اروى',     venue:'-' }],
-      20: [{ p:'tawzeef',  topic:'اللغة الإنجليزية',  trainer:'م. عمر الخالدي', mode:'عن بعد',     supervisor:'شهد-اروى', venue:'-' },
-           { p:'ai',       topic:'',                   trainer:'ابو بكر',         mode:'عن بعد',     supervisor:'نور',       venue:'-' }],
-      21: [{ p:'inaya',    topic:'اللغة والتواصل',                        trainer:'أرين الشمراني',      mode:'حضوري مساء', supervisor:'لين',            venue:'مدرسة البشرى' },
-           { p:'qanadeel', topic:'قنديل المسؤولية',                       trainer:'نجلاء أبو زيد',     mode:'حضوري مساء', supervisor:'حلا',            venue:'مدرسة البشرى' },
-           { p:'tawzeef',  topic:'الذكاء الاصطناعي في سوق العمل',        trainer:'أ. وجدان العنزي',   mode:'حضوري مساء', supervisor:'شهد',            venue:'الجمعية' },
-           { p:'tahseeli', topic:'',                                       trainer:'',                   mode:'حضوري مساء', supervisor:'أحمد الزهراني', venue:'خارجي' }],
-      22: [{ p:'qanadeel', topic:'قنديل المسؤولية',                       trainer:'نجلاء أبو زيد',     mode:'حضوري مساء', supervisor:'لين',            venue:'مدرسة البشرى' },
-           { p:'inaya',    topic:'اللغة والتواصل',                        trainer:'أرين الشمراني',      mode:'حضوري مساء', supervisor:'عفاف',           venue:'مدرسة البشرى' },
-           { p:'tawzeef',  topic:'اللغة الإنجليزية',                      trainer:'م. عمر الخالدي',    mode:'حضوري مساء', supervisor:'حلا',            venue:'الجمعية' },
-           { p:'tahseeli', topic:'',                                       trainer:'',                   mode:'حضوري مساء', supervisor:'أحمد الزهراني', venue:'خارجي' }],
-      26: [{ p:'tawzeef',  topic:'اللغة الإنجليزية',  trainer:'م. عمر الخالدي', mode:'عن بعد',     supervisor:'شهد',  venue:'-' },
+      7:  [{ p:'ai',       topic:'',                                      trainer:'أ.وجدان العنزي',    mode:'عن بعد',     supervisor:'وجدان',          venue:'-' },
+           { p:'inaya',    topic:'المجال النفست+معايدة',                 trainer:'سماح السلمي',        mode:'حضوري مساء', supervisor:'لين',            venue:'مدرسة البشرى' },
+           { p:'qanadeel', topic:'قنديل الايمان+معايدة',                 trainer:'فردوس بالعمش',       mode:'حضوري مساء', supervisor:'منار',           venue:'مدرسة البشرى' },
+           { p:'tahseeli', topic:'',                                      trainer:'',                   mode:'حضوري مساء', supervisor:'حلا',            venue:'خارجي' },
+           { p:'tawzeef',  topic:'مهارة الإلقاء',                       trainer:'أ. أرين الشمراني',   mode:'حضوري مساء', supervisor:'شهد',            venue:'الجمعية' }],
+      8:  [{ p:'qanadeel', topic:'قنديل الايمان',                        trainer:'فردوس بالعمش',       mode:'حضوري مساء', supervisor:'حلا',            venue:'مدرسة البشرى' },
+           { p:'inaya',    topic:'المجال النفسي',                        trainer:'سماح السلمي',        mode:'حضوري مساء', supervisor:'منار',           venue:'مدرسة البشرى' },
+           { p:'tawzeef',  topic:'مهارة الإلقاء',                       trainer:'أ. أرين الشمراني',   mode:'حضوري مساء', supervisor:'فادية',          venue:'الجمعية' },
+           { p:'tahseeli', topic:'',                                      trainer:'',                   mode:'حضوري مساء', supervisor:'أحمد الزهراني', venue:'خارجي' },
+           { p:'ai',       topic:'هندسة التلقين',                        trainer:'أ. وجدان العنزي',   mode:'عن بعد',     supervisor:'لين',            venue:'-' }],
+      9:  [{ p:'tawzeef',  topic:'مهارة الإلقاء',                       trainer:'أ. أرين الشمراني',   mode:'حضوري مساء', supervisor:'شهد',            venue:'الجمعية' }],
+      12: [{ p:'qurnas',   topic:'',                                      trainer:'',                   mode:'-',          supervisor:'-',              venue:'-' },
+           { p:'ai',       topic:'',                                      trainer:'',                   mode:'عن بعد',     supervisor:'لين',            venue:'-' }],
+      13: [{ p:'ai',       topic:'',                                      trainer:'',                   mode:'عن بعد',     supervisor:'لين',            venue:'-' },
+           { p:'tamkeen',  topic:'أم ملهمة',                             trainer:'',                   mode:'حضوري مساء', supervisor:'منار-حلا',       venue:'الجمعية' }],
+      14: [{ p:'inaya',    topic:'المجال الصحي',                         trainer:'مريم الهوساوي',     mode:'حضوري مساء', supervisor:'لين',            venue:'مدرسة البشرى' },
+           { p:'qanadeel', topic:'قنديل الايجابية',                      trainer:'مها الجهني',         mode:'حضوري مساء', supervisor:'منار',           venue:'مدرسة البشرى' },
+           { p:'tawzeef',  topic:'الذكاء العاطفي وإدارة الذات',         trainer:'م. صالح الشلوي',    mode:'حضوري مساء', supervisor:'شهد',            venue:'الجمعية' },
+           { p:'tahseeli', topic:'',                                      trainer:'',                   mode:'حضوري مساء', supervisor:'أحمد الزهراني', venue:'خارجي' }],
+      15: [{ p:'qanadeel', topic:'قنديل الايجابية',                      trainer:'مها الجهني',         mode:'حضوري مساء', supervisor:'لين',            venue:'مدرسة البشرى' },
+           { p:'inaya',    topic:'المجال الصحي',                         trainer:'مريم الهوساوي',     mode:'حضوري مساء', supervisor:'حلا',            venue:'مدرسة البشرى' },
+           { p:'tahseeli', topic:'',                                      trainer:'',                   mode:'حضوري مساء', supervisor:'أحمد الزهراني', venue:'الجمعية' },
+           { p:'tawzeef',  topic:'نماذج قوقل',                           trainer:'',                   mode:'عن بعد',     supervisor:'شهد',            venue:'-' }],
+      19: [{ p:'tawzeef',  topic:'اللغة الإنجليزية',  trainer:'م. عمر الخالدي', mode:'عن بعد', supervisor:'شهد-نور',  venue:'-' },
+           { p:'ai',       topic:'',                   trainer:'ابو بكر',         mode:'عن بعد', supervisor:'اروى',     venue:'-' }],
+      20: [{ p:'tawzeef',  topic:'اللغة الإنجليزية',  trainer:'م. عمر الخالدي', mode:'عن بعد', supervisor:'شهد-اروى', venue:'-' },
+           { p:'ai',       topic:'',                   trainer:'ابو بكر',         mode:'عن بعد', supervisor:'نور',       venue:'-' }],
+      21: [{ p:'inaya',    topic:'اللغة والتواصل',                       trainer:'أرين الشمراني',      mode:'حضوري مساء', supervisor:'لين',            venue:'مدرسة البشرى' },
+           { p:'qanadeel', topic:'قنديل المسؤولية',                      trainer:'نجلاء أبو زيد',     mode:'حضوري مساء', supervisor:'حلا',            venue:'مدرسة البشرى' },
+           { p:'tawzeef',  topic:'الذكاء الاصطناعي في سوق العمل',       trainer:'أ. وجدان العنزي',   mode:'حضوري مساء', supervisor:'شهد',            venue:'الجمعية' },
+           { p:'tahseeli', topic:'',                                      trainer:'',                   mode:'حضوري مساء', supervisor:'أحمد الزهراني', venue:'خارجي' }],
+      22: [{ p:'qanadeel', topic:'قنديل المسؤولية',                      trainer:'نجلاء أبو زيد',     mode:'حضوري مساء', supervisor:'لين',            venue:'مدرسة البشرى' },
+           { p:'inaya',    topic:'اللغة والتواصل',                       trainer:'أرين الشمراني',      mode:'حضوري مساء', supervisor:'عفاف',           venue:'مدرسة البشرى' },
+           { p:'tawzeef',  topic:'اللغة الإنجليزية',                     trainer:'م. عمر الخالدي',    mode:'حضوري مساء', supervisor:'حلا',            venue:'الجمعية' },
+           { p:'tahseeli', topic:'',                                      trainer:'',                   mode:'حضوري مساء', supervisor:'أحمد الزهراني', venue:'خارجي' }],
+      26: [{ p:'tawzeef',  topic:'اللغة الإنجليزية',  trainer:'م. عمر الخالدي', mode:'عن بعد', supervisor:'شهد',  venue:'-' },
            { p:'tahseeli', topic:'',                   trainer:'',                mode:'حضوري مساء', supervisor:'أروى', venue:'الجمعية' },
-           { p:'ai',       topic:'',                   trainer:'ابو بكر',         mode:'عن بعد',     supervisor:'نور',  venue:'-' }],
-      27: [{ p:'tawzeef',  topic:'اللغة الإنجليزية',  trainer:'م. عمر الخالدي', mode:'عن بعد',     supervisor:'شهد',  venue:'-' },
-           { p:'ai',       topic:'',                   trainer:'ابو بكر',         mode:'عن بعد',     supervisor:'نور',  venue:'-' }],
-      28: [{ p:'inaya',    topic:'المجال الايماني',                        trainer:'مودة دخاخني',        mode:'حضوري مساء', supervisor:'لين',            venue:'مدرسة البشرى' },
-           { p:'qanadeel', topic:'قنديل التربية',                          trainer:'نجلاء أبو زيد',     mode:'حضوري مساء', supervisor:'حلا',            venue:'مدرسة البشرى' },
-           { p:'tawzeef',  topic:'الاستعداد للمقابلة الوظيفية',           trainer:'أ. زياد النجدي',     mode:'حضوري مساء', supervisor:'فادية-أروى',     venue:'الجمعية' },
+           { p:'ai',       topic:'',                   trainer:'ابو بكر',         mode:'عن بعد', supervisor:'نور',  venue:'-' }],
+      27: [{ p:'tawzeef',  topic:'اللغة الإنجليزية',  trainer:'م. عمر الخالدي', mode:'عن بعد', supervisor:'شهد',  venue:'-' },
+           { p:'ai',       topic:'',                   trainer:'ابو بكر',         mode:'عن بعد', supervisor:'نور',  venue:'-' }],
+      28: [{ p:'inaya',    topic:'المجال الايماني',                       trainer:'مودة دخاخني',        mode:'حضوري مساء', supervisor:'لين',            venue:'مدرسة البشرى' },
+           { p:'qanadeel', topic:'قنديل التربية',                         trainer:'نجلاء أبو زيد',     mode:'حضوري مساء', supervisor:'حلا',            venue:'مدرسة البشرى' },
+           { p:'tawzeef',  topic:'الاستعداد للمقابلة الوظيفية',          trainer:'أ. زياد النجدي',     mode:'حضوري مساء', supervisor:'فادية-أروى',     venue:'الجمعية' },
            { p:'tahseeli', topic:'',                                       trainer:'',                   mode:'حضوري مساء', supervisor:'أحمد الزهراني', venue:'خارجي' }],
       29: [{ p:'qanadeel', topic:'',                                       trainer:'',                   mode:'حضوري مساء', supervisor:'منار',           venue:'مدرسة البشرى' },
            { p:'inaya',    topic:'قنديل التربية',                          trainer:'نجلاء أبو زيد',     mode:'حضوري مساء', supervisor:'لين',            venue:'مدرسة البشرى' },
@@ -796,10 +418,10 @@ const MONTHS = [
     },
     eid: {}
   },
-  { // 4 — May 2026
+  { // 4 — May 2026 ← مُحدَّث من Google Sheet
     name: 'مايو', nameShort: 'مايـو', year: 2026, jsMonth: 4,
     hijriInfo: 'ذو القعدة–ذو الحجة ١٤٤٧هـ',
-    startDay: 5, // May 1 2026 = Friday
+    startDay: 5,
     numDays: 31,
     theme: 'may',
     hijri: {
@@ -808,54 +430,58 @@ const MONTHS = [
       21:'٥',22:'٦',23:'٧',24:'٨',25:'٩',26:'١٠',27:'١١',28:'١٢',29:'١٣',30:'١٤',31:'١٥'
     },
     data: {
-      2:  [{ p:'qurnas',   topic:'إعلان',                          trainer:'',                   mode:'-',          supervisor:'-',    venue:'-' },
-           { p:'tawzeef',  topic:'اللغة الإنجليزية',              trainer:'م. عمر الخالدي',    mode:'عن بعد',     supervisor:'-',    venue:'-' }],
-      3:  [{ p:'tawzeef',  topic:'اللغة الإنجليزية',              trainer:'م. عمر الخالدي',    mode:'عن بعد',     supervisor:'شهد',  venue:'-' },
-           { p:'ai',       topic:'',                               trainer:'',                   mode:'عن بعد',     supervisor:'-',    venue:'-' }],
-      4:  [{ p:'tawzeef',  topic:'اللغة الإنجليزية',              trainer:'م. عمر الخالدي',    mode:'عن بعد',     supervisor:'شهد',  venue:'-' },
-           { p:'ai',       topic:'',                               trainer:'',                   mode:'عن بعد',     supervisor:'-',    venue:'-' }],
-      5:  [{ p:'tawzeef',  topic:'الاستعداد للمقابلة الوظيفية',   trainer:'أ. زياد النجدي',    mode:'حضوري مساء', supervisor:'-',    venue:'الجمعية' }],
-      6:  [{ p:'tawzeef',  topic:'كتابة التقارير',                 trainer:'م. صالح الشلوي',    mode:'عن بعد',     supervisor:'شهد',  venue:'-' }],
-      9:  [{ p:'tawzeef',  topic:'اللغة الإنجليزية',              trainer:'م. عمر الخالدي',    mode:'عن بعد',     supervisor:'-',    venue:'-' }],
-      10: [{ p:'tawzeef',  topic:'اللغة الإنجليزية',              trainer:'م. عمر الخالدي',    mode:'عن بعد',     supervisor:'شهد',  venue:'-' },
-           { p:'qurnas',   topic:'وقفة الحق',                      trainer:'',                   mode:'حضوري مساء', supervisor:'-',    venue:'الجمعية' },
-           { p:'ai',       topic:'',                               trainer:'',                   mode:'عن بعد',     supervisor:'-',    venue:'-' }],
-      11: [{ p:'tawzeef',  topic:'اللغة الإنجليزية',              trainer:'م. عمر الخالدي',    mode:'عن بعد',     supervisor:'شهد',  venue:'-' },
-           { p:'qurnas',   topic:'وقفة الحق',                      trainer:'',                   mode:'حضوري مساء', supervisor:'-',    venue:'الجمعية' },
-           { p:'ai',       topic:'',                               trainer:'',                   mode:'عن بعد',     supervisor:'-',    venue:'-' }],
-      12: [{ p:'inaya',    topic:'',                               trainer:'',                   mode:'حضوري مساء', supervisor:'-',    venue:'مدرسة البشرى' },
-           { p:'qanadeel', topic:'',                               trainer:'',                   mode:'حضوري مساء', supervisor:'-',    venue:'مدرسة البشرى' }],
-      17: [{ p:'qurnas',   topic:'أنا مسؤول',                     trainer:'',                   mode:'حضوري مساء', supervisor:'-',    venue:'الجمعية' }],
-      18: [{ p:'qurnas',   topic:'أنا مسؤول',                     trainer:'',                   mode:'حضوري مساء', supervisor:'-',    venue:'الجمعية' }],
-      19: [{ p:'inaya',    topic:'',                               trainer:'',                   mode:'حضوري مساء', supervisor:'-',    venue:'مدرسة البشرى' },
-           { p:'qanadeel', topic:'',                               trainer:'',                   mode:'حضوري مساء', supervisor:'-',    venue:'مدرسة البشرى' }],
-      24: [{ p:'qurnas',   topic:'صوتي أنا',                      trainer:'',                   mode:'حضوري مساء', supervisor:'-',    venue:'الجمعية' }],
-      25: [{ p:'qurnas',   topic:'صوتي أنا',                      trainer:'',                   mode:'حضوري مساء', supervisor:'-',    venue:'الجمعية' }],
+      2:  [{ p:'qurnas',   topic:'إعلان',                                        trainer:'',                   mode:'-',          supervisor:'منار', venue:'-' },
+           { p:'tawzeef',  topic:'اللغة الإنجليزية',                            trainer:'م. عمر الخالدي',     mode:'عن بعد',     supervisor:'شهد',  venue:'-' }],
+      3:  [{ p:'ai',       topic:'مراجعة اللقاءات',                             trainer:'ابو الشام',           mode:'عن بعد',     supervisor:'لين',  venue:'-' }],
+      4:  [{ p:'tawzeef',  topic:'اللغة الإنجليزية',                            trainer:'م. عمر الخالدي',     mode:'عن بعد',     supervisor:'شهد',  venue:'-' },
+           { p:'ai',       topic:'مراجعة اللقاءات',                             trainer:'ابو الشام',           mode:'عن بعد',     supervisor:'لين',  venue:'-' },
+           { p:'tahseeli', topic:'رياضيات',                                      trainer:'أ. ياسر',             mode:'عن بعد',     supervisor:'حلا',  venue:'-' }],
+      5:  [{ p:'tahseeli', topic:'أحياء',                                        trainer:'أ. محمد',             mode:'عن بعد',     supervisor:'حلا',  venue:'-' }],
+      6:  [{ p:'tahseeli', topic:'كيمياء',                                       trainer:'أ. عادل',             mode:'عن بعد',     supervisor:'حلا',  venue:'-' }],
+      9:  [{ p:'tawzeef',  topic:'اللغة الإنجليزية',                            trainer:'م. عمر الخالدي',     mode:'عن بعد',     supervisor:'شهد',  venue:'-' }],
+      10: [{ p:'ai',       topic:'كتابة السكريبت وتوليد الصور',                trainer:'اسماء العتيبي',       mode:'عن بعد',     supervisor:'لين',  venue:'-' }],
+      11: [{ p:'tawzeef',  topic:'اللغة الإنجليزية',                            trainer:'م. عمر الخالدي',     mode:'عن بعد',     supervisor:'شهد',  venue:'-' },
+           { p:'ai',       topic:'تحريك الصور وصناعة الفيديو والمشاهد',        trainer:'اسماء العتيبي',       mode:'عن بعد',     supervisor:'لين',  venue:'-' }],
+      17: [{ p:'ai',       topic:'الأفتار والمونتاج والمؤثرات الصوتية',        trainer:'اسماء العتيبي',       mode:'عن بعد',     supervisor:'لين',  venue:'-' }],
+      18: [{ p:'ai',       topic:'مراجعة',                                       trainer:'اسماء العتيبي',       mode:'عن بعد',     supervisor:'لين',  venue:'-' }],
     },
-    eid: { 25:'يوم عرفة', 26:'عيد الأضحى 🕌', 27:'أيام التشريق', 28:'أيام التشريق', 29:'أيام التشريق' }
+    eid: { 26:'يوم عرفة ⛰️', 27:'عيد الأضحى 🕌' }
   },
   { // 5 — June 2026
     name: 'يونيو', nameShort: 'يونيـو', year: 2026, jsMonth: 5,
     hijriInfo: 'ذو الحجة ١٤٤٧ – محرم ١٤٤٨هـ',
-    startDay: 1, // Jun 1 2026 = Monday
+    startDay: 1,
     numDays: 30,
     theme: 'jun',
     hijri: {1:'١٦|ذو الحجة',2:'١٧',3:'١٨',4:'١٩',5:'٢٠',6:'٢١',7:'٢٢',8:'٢٣',9:'٢٤',10:'٢٥',11:'٢٦',12:'٢٧',13:'٢٨',14:'٢٩',15:'٣٠',16:'١|محرم',17:'٢',18:'٣',19:'٤',20:'٥',21:'٦',22:'٧',23:'٨',24:'٩',25:'١٠',26:'١١',27:'١٢',28:'١٣',29:'١٤',30:'١٥'},
     data: {
-      7:  [{ p:'tawzeef', topic:'اللغة الإنجليزية',                        trainer:'م. عمر الخالدي',  mode:'عن بعد',     supervisor:'شهد', venue:'-' }],
-      8:  [{ p:'tawzeef', topic:'اللغة الإنجليزية',                        trainer:'م. عمر الخالدي',  mode:'عن بعد',     supervisor:'شهد', venue:'-' }],
-      10: [{ p:'tawzeef', topic:'إدارة المشاريع',                           trainer:'م. صالح الشلوي',  mode:'حضوري مساء', supervisor:'-',   venue:'الجمعية' }],
-      14: [{ p:'tawzeef', topic:'اللغة الإنجليزية',                        trainer:'م. عمر الخالدي',  mode:'عن بعد',     supervisor:'-',   venue:'-' }],
-      15: [{ p:'tawzeef', topic:'اللغة الإنجليزية',                        trainer:'م. عمر الخالدي',  mode:'عن بعد',     supervisor:'-',   venue:'-' }],
-      21: [{ p:'tawzeef', topic:'اللغة الإنجليزية',                        trainer:'م. عمر الخالدي',  mode:'عن بعد',     supervisor:'شهد', venue:'-' }],
-      22: [{ p:'tawzeef', topic:'اللغة الإنجليزية',                        trainer:'م. عمر الخالدي',  mode:'عن بعد',     supervisor:'شهد', venue:'-' }],
-      30: [{ p:'tawzeef', topic:'كتابة المحتوى وإدارة مواقع التواصل',     trainer:'أ. سارة الجعيد',  mode:'حضوري مساء', supervisor:'-',   venue:'الجمعية' }],
+      7:  [{ p:'tawzeef',   topic:'اللغة الإنجليزية',                        trainer:'م. عمر الخالدي',    mode:'عن بعد',     supervisor:'شهد', venue:'-' }],
+      8:  [{ p:'tawzeef',   topic:'اللغة الإنجليزية',                        trainer:'م. عمر الخالدي',    mode:'عن بعد',     supervisor:'شهد', venue:'-' }],
+      9:  [{ p:'inaya',     topic:'المجال الاقتصادي',                        trainer:'أرين الشمراني',     mode:'حضوري مساء', supervisor:'-',   venue:'مدرسة البشرى' },
+           { p:'qanadeel',  topic:'قنديل التربية',                           trainer:'نجلاء أبو زيد',     mode:'حضوري مساء', supervisor:'-',   venue:'مدرسة البشرى' },
+           { p:'tawzeef',   topic:'إدارة المشاريع',                          trainer:'م. صالح الشلوي',    mode:'حضوري مساء', supervisor:'-',   venue:'الجمعية' }],
+      10: [{ p:'inaya',     topic:'المجال الاقتصادي',                        trainer:'أرين الشمراني',     mode:'حضوري مساء', supervisor:'-',   venue:'مدرسة البشرى' },
+           { p:'qanadeel',  topic:'قنديل التربية',                           trainer:'نجلاء أبو زيد',     mode:'حضوري مساء', supervisor:'-',   venue:'مدرسة البشرى' },
+           { p:'tawzeef',   topic:'إدارة المشاريع',                          trainer:'م. صالح الشلوي',    mode:'حضوري مساء', supervisor:'-',   venue:'الجمعية' }],
+      14: [{ p:'tawzeef',   topic:'اللغة الإنجليزية',                        trainer:'م. عمر الخالدي',    mode:'عن بعد',     supervisor:'شهد', venue:'-' }],
+      15: [{ p:'tawzeef',   topic:'اللغة الإنجليزية',                        trainer:'م. عمر الخالدي',    mode:'عن بعد',     supervisor:'شهد', venue:'-' }],
+      16: [{ p:'inaya',     topic:'المجال الايماني',                         trainer:'مودة دخاخني',        mode:'حضوري مساء', supervisor:'-',   venue:'مدرسة البشرى' },
+           { p:'qanadeel',  topic:'قنديل الاقتصاد الأسري',                  trainer:'ابتسام الشبيلي',    mode:'حضوري مساء', supervisor:'-',   venue:'مدرسة البشرى' },
+           { p:'tawzeef',   topic:'كتابة المحتوى وإدارة مواقع التواصل',    trainer:'أ. سارة الجعيد',    mode:'حضوري مساء', supervisor:'-',   venue:'الجمعية' }],
+      17: [{ p:'inaya',     topic:'المجال الايماني',                         trainer:'مودة دخاخني',        mode:'حضوري مساء', supervisor:'-',   venue:'مدرسة البشرى' },
+           { p:'qanadeel',  topic:'قنديل الاقتصاد الأسري',                  trainer:'ابتسام الشبيلي',    mode:'حضوري مساء', supervisor:'-',   venue:'مدرسة البشرى' },
+           { p:'tawzeef',   topic:'التسويق الشخصي',                          trainer:'د. أيمن السعيدي',   mode:'حضوري مساء', supervisor:'-',   venue:'الجمعية' }],
+      21: [{ p:'tawzeef',   topic:'اللغة الإنجليزية',                        trainer:'م. عمر الخالدي',    mode:'عن بعد',     supervisor:'شهد', venue:'-' }],
+      22: [{ p:'tawzeef',   topic:'اللغة الإنجليزية',                        trainer:'م. عمر الخالدي',    mode:'عن بعد',     supervisor:'شهد', venue:'-' }],
+      28: [{ p:'tawzeef',   topic:'',                                         trainer:'',                   mode:'عن بعد',     supervisor:'-',   venue:'-' }],
+      29: [{ p:'tawzeef',   topic:'',                                         trainer:'',                   mode:'عن بعد',     supervisor:'-',   venue:'-' }],
+      30: [{ p:'tawzeef',   topic:'',                                         trainer:'',                   mode:'عن بعد',     supervisor:'-',   venue:'-' }],
     }, eid: {}
   },
   { // 6 — July 2026
     name: 'يوليو', nameShort: 'يوليـو', year: 2026, jsMonth: 6,
     hijriInfo: 'محرم–صفر ١٤٤٨هـ',
-    startDay: 3, // Jul 1 2026 = Wednesday
+    startDay: 3,
     numDays: 31,
     theme: 'jul',
     hijri: {1:'١٦|محرم',2:'١٧',3:'١٨',4:'١٩',5:'٢٠',6:'٢١',7:'٢٢',8:'٢٣',9:'٢٤',10:'٢٥',11:'٢٦',12:'٢٧',13:'٢٨',14:'٢٩',15:'١|صفر',16:'٢',17:'٣',18:'٤',19:'٥',20:'٦',21:'٧',22:'٨',23:'٩',24:'١٠',25:'١١',26:'١٢',27:'١٣',28:'١٤',29:'١٥',30:'١٦',31:'١٧'},
@@ -864,7 +490,7 @@ const MONTHS = [
   { // 7 — August 2026
     name: 'أغسطس', nameShort: 'أغسطـس', year: 2026, jsMonth: 7,
     hijriInfo: 'صفر – ربيع الأول ١٤٤٨هـ',
-    startDay: 6, // Aug 1 2026 = Saturday
+    startDay: 6,
     numDays: 31,
     theme: 'aug',
     hijri: {1:'١٨|صفر',2:'١٩',3:'٢٠',4:'٢١',5:'٢٢',6:'٢٣',7:'٢٤',8:'٢٥',9:'٢٦',10:'٢٧',11:'٢٨',12:'٢٩',13:'٣٠',14:'١|ربيع الأول',15:'٢',16:'٣',17:'٤',18:'٥',19:'٦',20:'٧',21:'٨',22:'٩',23:'١٠',24:'١١',25:'١٢',26:'١٣',27:'١٤',28:'١٥',29:'١٦',30:'١٧',31:'١٨'},
@@ -873,16 +499,16 @@ const MONTHS = [
   { // 8 — September 2026
     name: 'سبتمبر', nameShort: 'سبتمبـر', year: 2026, jsMonth: 8,
     hijriInfo: 'ربيع الأول – ربيع الآخر ١٤٤٨هـ',
-    startDay: 2, // Sep 1 2026 = Tuesday
+    startDay: 2,
     numDays: 30,
     theme: 'sep',
-    hijri: {1:'١٩|ربيع الأول',2:'٢٠',3:'٢١',4:'٢٢',5:'٢٣',6:'٢٤',7:'٢٥',8:'٢٦',9:'٢٧',10:'٢٨',11:'٢٩',12:'١|ربيع الآخر',13:'٢',14:'٣',15:'٤',16:'٥',17:'٦',18:'٧',19:'٨',20:'٩',21:'١٠',22:'١١',23:'١٢',24:'١٣',25:'١٤',26:'١٥',27:'١٦',28:'١٧',29:'١٨',30:'١٩'},
+    hijri: {1:'١٩|ربيع الأول',2:'٢٠',3:'٢١',4:'٢٢',5:'٢٣',6:'٢٤',7:'٢٥',8:'٢٦',5:'٢٧',10:'٢٨',11:'٢٩',12:'١|ربيع الآخر',13:'٢',14:'٣',15:'٤',16:'٥',17:'٦',18:'٧',19:'٨',20:'٩',21:'١٠',22:'١١',23:'١٢',24:'١٣',25:'١٤',26:'١٥',27:'١٦',28:'١٧',29:'١٨',30:'١٩'},
     data: {}, eid: {}
   },
   { // 9 — October 2026
     name: 'أكتوبر', nameShort: 'أكتوبـر', year: 2026, jsMonth: 9,
     hijriInfo: 'ربيع الآخر – جمادى الأولى ١٤٤٨هـ',
-    startDay: 4, // Oct 1 2026 = Thursday
+    startDay: 4,
     numDays: 31,
     theme: 'oct',
     hijri: {1:'٢٠|ربيع الآخر',2:'٢١',3:'٢٢',4:'٢٣',5:'٢٤',6:'٢٥',7:'٢٦',8:'٢٧',9:'٢٨',10:'٢٩',11:'٣٠',12:'١|جمادى الأولى',13:'٢',14:'٣',15:'٤',16:'٥',17:'٦',18:'٧',19:'٨',20:'٩',21:'١٠',22:'١١',23:'١٢',24:'١٣',25:'١٤',26:'١٥',27:'١٦',28:'١٧',29:'١٨',30:'١٩',31:'٢٠'},
@@ -891,7 +517,7 @@ const MONTHS = [
   { // 10 — November 2026
     name: 'نوفمبر', nameShort: 'نوفمبـر', year: 2026, jsMonth: 10,
     hijriInfo: 'جمادى الأولى – جمادى الآخرة ١٤٤٨هـ',
-    startDay: 0, // Nov 1 2026 = Sunday
+    startDay: 0,
     numDays: 30,
     theme: 'nov',
     hijri: {1:'٢١|جمادى الأولى',2:'٢٢',3:'٢٣',4:'٢٤',5:'٢٥',6:'٢٦',7:'٢٧',8:'٢٨',9:'٢٩',10:'١|جمادى الآخرة',11:'٢',12:'٣',13:'٤',14:'٥',15:'٦',16:'٧',17:'٨',18:'٩',19:'١٠',20:'١١',21:'١٢',22:'١٣',23:'١٤',24:'١٥',25:'١٦',26:'١٧',27:'١٨',28:'١٩',29:'٢٠',30:'٢١'},
@@ -900,7 +526,7 @@ const MONTHS = [
   { // 11 — December 2026
     name: 'ديسمبر', nameShort: 'ديسمبـر', year: 2026, jsMonth: 11,
     hijriInfo: 'جمادى الآخرة – رجب ١٤٤٨هـ',
-    startDay: 2, // Dec 1 2026 = Tuesday
+    startDay: 2,
     numDays: 31,
     theme: 'dec',
     hijri: {1:'٢٢|جمادى الآخرة',2:'٢٣',3:'٢٤',4:'٢٥',5:'٢٦',6:'٢٧',7:'٢٨',8:'٢٩',9:'٣٠',10:'١|رجب',11:'٢',12:'٣',13:'٤',14:'٥',15:'٦',16:'٧',17:'٨',18:'٩',19:'١٠',20:'١١',21:'١٢',22:'١٣',23:'١٤',24:'١٥',25:'١٦',26:'١٧',27:'١٨',28:'١٩',29:'٢٠',30:'٢١',31:'٢٢'},
@@ -908,79 +534,54 @@ const MONTHS = [
   }
 ];
 
-// ── STATE ─────────────────────────────────────────────
 const TODAY = new Date();
 const CURRENT_MONTH_INDEX = (TODAY.getFullYear() === 2026) ? TODAY.getMonth()
                            : (TODAY.getFullYear() < 2026 ? 0 : 11);
 let displayedMonthIndex = CURRENT_MONTH_INDEX;
-let currentMonthEvents = [];
 
-// ── RENDER MONTH ──────────────────────────────────────
 function renderMonth(idx){
   const m = MONTHS[idx];
   displayedMonthIndex = idx;
-
-  // Update theme
   document.body.className = m.theme ? ('theme-' + m.theme) : '';
-
-  // Update header text
   document.getElementById('month-name').textContent = m.nameShort;
   document.getElementById('year-info').textContent = `${m.name} ${m.year}م  ·  ${m.hijriInfo}`;
-  document.title = `رزنامة تمكين · ${m.name} ${m.year}`;
-
-  // Show/hide back button
+  document.title = `رزمامة تمكين · ${m.name} ${m.year}`;
   document.getElementById('back-btn').classList.toggle('show', idx !== CURRENT_MONTH_INDEX);
-
-  // Build grid
   const grid = document.getElementById('grid');
   grid.innerHTML = '';
-
-  // DOW DOM order = [الأحد, الاثنين, الثلاثاء, الأربعاء, الخميس, الجمعة, السبت]
-  // With dir=rtl, DOM index N renders at column (N+1) from the right.
-  // Days match JS getDay(): Sun=0..Sat=6 → DOM index = JS day of week.
-  // So leading empty cells BEFORE day 1 = startDay.
   const leadEmpty = m.startDay;
   for(let i=0; i<leadEmpty; i++){
     const d = document.createElement('div');
     d.className='day empty'; grid.appendChild(d);
   }
-
   const hasEvents = Object.keys(m.data).length > 0;
   const hasEid = Object.keys(m.eid).length > 0;
-
   for(let day=1; day<=m.numDays; day++){
     const events = m.data[day] || [];
     const hij = m.hijri[day] || '';
     const hijParts = hij.split('|');
     const eidLabel = m.eid[day];
-
     const cell = document.createElement('div');
     cell.className = 'day' + (events.length ? ' has-event' : '') + (eidLabel ? ' eid' : '');
-
-    // Highlight today
     if(idx === CURRENT_MONTH_INDEX &&
        TODAY.getFullYear() === m.year &&
        TODAY.getMonth() === m.jsMonth &&
        TODAY.getDate() === day){
       cell.classList.add('today');
     }
-
     const top = document.createElement('div');
     top.className='day-top';
     top.innerHTML = `<span class="day-num">${day}</span>
       <span class="day-hij">${hijParts[0]||''}${hijParts[1]?`<small>${hijParts[1]}</small>`:''}</span>`;
     cell.appendChild(top);
-
     const badges = document.createElement('div');
     badges.className='badges';
-
     if(eidLabel){
       const eidB = document.createElement('span');
       eidB.className = 'eid-badge';
       eidB.textContent = eidLabel;
       badges.appendChild(eidB);
     }
-
     if(events.length){
       const shown = events.slice(0,3);
       shown.forEach(ev => {
@@ -995,53 +596,39 @@ function renderMonth(idx){
       });
       if(events.length > 3){
         const more = document.createElement('span');
-        more.style.cssText='font-size:10px;color:rgba(255,255,255,0.6);margin-top:1px;cursor:pointer;';
+        more.style.cssText='font-size:10px;color:rgba(80,60,120,0.7);margin-top:1px;cursor:pointer;font-weight:600;';
         more.textContent=`+${events.length-3} أخرى`;
         more.addEventListener('click', ()=> openModal(idx, day, events));
         badges.appendChild(more);
       }
     }
-
     cell.appendChild(badges);
     grid.appendChild(cell);
   }
-
-  // Trailing empty cells to complete last row
   const totalCells = leadEmpty + m.numDays;
   const trailing = (7 - (totalCells % 7)) % 7;
   for(let i=0; i<trailing; i++){
     const d = document.createElement('div');
     d.className='day empty'; grid.appendChild(d);
   }
-
-  // Show empty-month note if no events and no eid
   document.getElementById('empty-note').style.display = (!hasEvents && !hasEid) ? 'block' : 'none';
-
-  // Scroll to top smoothly
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// ── BUILD ARCHIVE (past & future chips) ───────────────
 function buildArchive(){
   const pastList = document.getElementById('past-months');
   const futureList = document.getElementById('future-months');
   pastList.innerHTML = '';
   futureList.innerHTML = '';
-
-  // Past: months before current (newest first, i.e., closest to current on top)
   const pastIndices = [];
   for(let i=CURRENT_MONTH_INDEX-1; i>=0; i--) pastIndices.push(i);
-
-  // Future: months after current (closest to current on top)
   const futureIndices = [];
   for(let i=CURRENT_MONTH_INDEX+1; i<MONTHS.length; i++) futureIndices.push(i);
-
   if(pastIndices.length === 0){
     pastList.innerHTML = '<div class="archive-empty">لا توجد شهور سابقة</div>';
   } else {
     pastIndices.forEach(i => pastList.appendChild(makeChip(i)));
   }
-
   if(futureIndices.length === 0){
     futureList.innerHTML = '<div class="archive-empty">لا توجد شهور قادمة</div>';
   } else {
@@ -1055,23 +642,17 @@ function makeChip(idx){
   btn.className = 'month-chip';
   const hasData = Object.keys(m.data).length > 0 || Object.keys(m.eid).length > 0;
   if(!hasData) btn.classList.add('empty-data');
-
-  btn.innerHTML = `
-    <span class="month-chip-name">${m.name}</span>
-    <span class="month-chip-year">${m.year}</span>
-  `;
+  btn.innerHTML = `<span class="month-chip-name">${m.name}</span><span class="month-chip-year">${m.year}</span>`;
   btn.addEventListener('click', ()=> renderMonth(idx));
   return btn;
 }
 
-// ── MODAL ─────────────────────────────────────────────
 function openModal(monthIdx, day, events){
   const m = MONTHS[monthIdx];
   const d = new Date(m.year, m.jsMonth, day);
   const hijStr = m.hijri[day] ? m.hijri[day].split('|')[0] : '';
   document.getElementById('modal-date').textContent =
     `${ARABIC_DAYS[d.getDay()]} · ${day} ${m.name} ${m.year}${hijStr ? ' · ' + hijStr + ' هـ' : ''}`;
-
   let html='';
   events.forEach(ev=>{
     const pr=PROGRAMS[ev.p];
@@ -1081,8 +662,8 @@ function openModal(monthIdx, day, events){
         <div class="prog">${pr.name}</div>
         ${ev.topic?`<div class="topic">${ev.topic}</div>`:''}
         ${ev.trainer?`<div class="trainer">👤 ${ev.trainer}</div>`:''}
-        ${ev.supervisor?`<div class="trainer">🔑 المسؤول: ${ev.supervisor}</div>`:''}
-        ${ev.mode?`<span class="mode">${ev.mode}${ev.venue && ev.venue!=='-'?' · '+ev.venue:''}</span>`:''}
+        ${ev.supervisor && ev.supervisor!=='-'?`<div class="trainer">🔑 المسؤول: ${ev.supervisor}</div>`:''}
+        ${ev.mode && ev.mode!=='-'?`<span class="mode">${ev.mode}${ev.venue && ev.venue!=='-'?' · '+ev.venue:''}</span>`:''}
       </div>
     </div>`;
   });
@@ -1099,7 +680,6 @@ function goToCurrentMonth(){
   renderMonth(CURRENT_MONTH_INDEX);
 }
 
-// ── INIT ──────────────────────────────────────────────
 buildArchive();
 renderMonth(CURRENT_MONTH_INDEX);
 </script>
