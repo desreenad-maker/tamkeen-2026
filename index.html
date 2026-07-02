@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title>رزنامة تمكين · 2026</title>
+<title>Ø±Ø²ÙØ§ÙØ© ØªÙÙÙÙ Â· 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
@@ -17,6 +17,11 @@
   --tamkeen:  #dadde3; --tamkeen-t: #2d3448;
   --fikr:     #f5dda3; --fikr-t:    #4a3516;
   --qurnas:   #f5ceaa; --qurnas-t:  #5a311a;
+  --masaha:   #fbd0e8; --masaha-t:  #6b2050;
+  --sayfi:    #b8e8d4; --sayfi-t:   #1a5c3a;
+  --umtaq:    #c7d4f5; --umtaq-t:   #2a3d78;
+  --anaqawi:  #fdd9b5; --anaqawi-t: #6b3510;
+  --shadn:    #d4c5b0; --shadn-t:   #4a3520;
 }
 html, body {
   min-height: 100vh;
@@ -188,8 +193,8 @@ body.theme-dec { background: #f6ccd6; }
 .archive-section { margin-top: 22px; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 .archive-col { background: rgba(255,255,255,0.40); border: 1px solid rgba(255,255,255,0.65); border-radius: 14px; padding: 9px 12px 11px; backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); }
 .archive-col h3 { font-size: 11.5px; font-weight: 700; color: #574580; margin-bottom: 7px; opacity: 0.85; display: flex; align-items: center; gap: 5px; }
-.archive-col.past h3::before  { content: '📦'; font-size: 12px; }
-.archive-col.future h3::before { content: '📅'; font-size: 12px; }
+.archive-col.past h3::before  { content: 'ð¦'; font-size: 12px; }
+.archive-col.future h3::before { content: 'ð'; font-size: 12px; }
 .months-list { display: flex; flex-direction: row; flex-wrap: wrap; gap: 5px; }
 .month-chip { background: rgba(255,255,255,0.55); border: 1px solid rgba(120,95,170,0.22); border-radius: 999px; padding: 4px 10px; cursor: pointer; transition: all 0.18s; display: inline-flex; align-items: center; gap: 4px; font-family: inherit; color: #574580; text-align: center; width: auto; line-height: 1.2; }
 .month-chip:hover { background: rgba(255,255,255,0.85); transform: translateY(-1px); border-color: rgba(120,95,170,0.40); box-shadow: 0 2px 6px rgba(95,75,135,0.10); }
@@ -210,320 +215,374 @@ body.theme-dec { background: #f6ccd6; }
 <div class="page">
   <div class="top-header">
     <div class="logo-center">
-      <img src="شعار جمعية تمكين الأيتام - أبيض-15.png" alt="جمعية تمكين الأيتام">
+      <img src="Ø´Ø¹Ø§Ø± Ø¬ÙØ¹ÙØ© ØªÙÙÙÙ Ø§ÙØ£ÙØ©Ø§Ù - Ø£Ø¨ÙØ¶-15.png" alt="Ø¬ÙØ¹ÙØ© ØªÙÙÙÙ Ø§ÙØ£ÙØªØ§Ù">
     </div>
-    <div class="year-info" id="year-info">2026م &nbsp;·&nbsp; ١٤٤٧–١٤٤٨هـ</div>
+    <div class="year-info" id="year-info">2026Ù &nbsp;Â·&nbsp; Ù¡Ù¤Ù¤Ù§âÙ¡Ù¤Ù¤Ù¨ÙÙ</div>
   </div>
   <div class="month-wrap">
-    <div class="month-name" id="month-name">مايـو</div>
-    <button class="back-to-current" id="back-btn" onclick="goToCurrentMonth()">↻ العودة للشهر الحالي</button>
+    <div class="month-name" id="month-name">ÙØ§ÙÙÙ</div>
+    <button class="back-to-current" id="back-btn" onclick="goToCurrentMonth()">â» Ø§ÙØ¹ÙØ¯Ø© ÙÙØ´ÙØ± Ø§ÙØ­Ø§ÙÙ</button>
   </div>
   <div class="cal-card">
     <div class="dow-row">
-      <div class="dow-cell">الأحد</div>
-      <div class="dow-cell">الاثنين</div>
-      <div class="dow-cell">الثلاثاء</div>
-      <div class="dow-cell">الأربعاء</div>
-      <div class="dow-cell">الخميس</div>
-      <div class="dow-cell">الجمعة</div>
-      <div class="dow-cell">السبت</div>
+      <div class="dow-cell">Ø§ÙØ£Ø­Ø¯</div>
+      <div class="dow-cell">Ø§ÙØ§Ø«ÙÙÙ</div>
+      <div class="dow-cell">Ø§ÙØ«ÙØ§Ø«Ø§Ø¡</div>
+      <div class="dow-cell">Ø§ÙØ£Ø±Ø¨Ø¹Ø§Ø¡</div>
+      <div class="dow-cell">Ø§ÙØ®ÙÙØ³</div>
+      <div class="dow-cell">Ø§ÙØ¬ÙØ¹Ø©</div>
+      <div class="dow-cell">Ø§ÙØ³Ø¨Øª</div>
     </div>
     <div class="cal-grid" id="grid"></div>
     <div class="empty-month-note" id="empty-note" style="display:none;">
-      البيانات التفصيلية لهذا الشهر لم تُضف بعد.
+      Ø§ÙØ¨ÙØ§ÙØ§Øª Ø§ÙØªÙØµÙÙÙØ© ÙÙØ°Ø§ Ø§ÙØ´ÙØ± ÙÙ ØªÙØ¶Ù Ø¨Ø¹Ø¯.
     </div>
-    <div class="legend" id="legend"></div>
+    <div class="legend">
+      <div class="leg-item"><div class="leg-dot" style="background:#b6e4e8"></div>Ø­Ø§Ø¶ÙØ© Ø§ÙØªÙØ¸ÙÙ 4</div>
+      <div class="leg-item"><div class="leg-dot" style="background:#f5c5d1"></div>Ø¹ÙØ§ÙØ© 2</div>
+      <div class="leg-item"><div class="leg-dot" style="background:#e4b1d1"></div>ÙÙØ§Ø¯ÙÙ 2</div>
+      <div class="leg-item"><div class="leg-dot" style="background:#c0e2c7"></div>Ø§ÙØªØµØ¹ÙÙÙ</div>
+      <div class="leg-item"><div class="leg-dot" style="background:#d4c9ee"></div>ÙÙØ§Ø±Ø§Øª AI</div>
+      <div class="leg-item"><div class="leg-dot" style="background:#dadde3"></div>ÙÙØ§Ø¯Ø© ÙØªÙÙÙÙ 30 Ø£Ù</div>
+      <div class="leg-item"><div class="leg-dot" style="background:#f5dda3"></div>ÙÙØ¯Ø³Ø© Ø§ÙØªÙÙÙØ±</div>
+      <div class="leg-item"><div class="leg-dot" style="background:#f5ceaa"></div>Ø£ÙØ§Ø¯ÙÙÙØ© ÙØ±ÙØ§Ø³</div>
+      <div class="leg-item"><div class="leg-dot" style="background:#fbd0e8"></div>ÙØ³Ø§Ø­Ø© Ø£Ù</div>
+      <div class="leg-item"><div class="leg-dot" style="background:#b8e8d4"></div>Ø§ÙØ¨Ø±ÙØ§ÙØ¬ Ø§ÙØµÙÙÙ</div>
+      <div class="leg-item"><div class="leg-dot" style="background:#c7d4f5"></div>Ø£Ù ØªÙÙÙØ©</div>
+      <div class="leg-item"><div class="leg-dot" style="background:#fdd9b5"></div>Ø£ÙØ§ ÙÙÙ</div>
+      <div class="leg-item"><div class="leg-dot" style="background:#d4c5b0"></div>Ø£ÙØ§Ø¯ÙÙÙØ© Ø´Ø¯Ù</div>
+    </div>
   </div>
   <div class="archive-section">
     <div class="archive-col future">
-      <h3>الشهور القادمة</h3>
+      <h3>Ø§ÙØ´ÙÙØ± Ø§ÙÙØ§Ø¯ÙØ©</h3>
       <div class="months-list" id="future-months"></div>
     </div>
     <div class="archive-col past">
-      <h3>الشهور السابقة</h3>
+      <h3>Ø§ÙØ´ÙÙØ± Ø§ÙØ³Ø§Ø¨ÙØ©</h3>
       <div class="months-list" id="past-months"></div>
     </div>
   </div>
-  <div class="footer">X &nbsp;·&nbsp; Instagram &nbsp;·&nbsp; TikTok &nbsp;·&nbsp; Snapchat &nbsp;&nbsp; aytaam_mak</div>
+  <div class="footer">X &nbsp;Â·&nbsp; Instagram &nbsp;Â·&nbsp; TikTok &nbsp;Â·&nbsp; Snapchat &nbsp;&nbsp; aytaam_mak</div>
 </div>
 <div class="modal-bg" id="modal-bg" onclick="closeModal(event)">
   <div class="modal" id="modal">
-    <button class="modal-close" onclick="closeModal()">✕</button>
+    <button class="modal-close" onclick="closeModal()">â</button>
     <div class="modal-date" id="modal-date"></div>
     <div id="modal-body"></div>
   </div>
 </div>
 <script>
 const PROGRAMS = {
-  tawzeef:  { name:'حاضنة التوظيف 4', bg:'#b6e4e8', fg:'#1f4e55' },
-  inaya:    { name:'عناية 2',          bg:'#f5c5d1', fg:'#6d2b42' },
-  qanadeel: { name:'قناديل 2',         bg:'#e4b1d1', fg:'#5a1f44' },
-  tahseeli: { name:'التحصيلي',         bg:'#c0e2c7', fg:'#254f33' },
-  ai:       { name:'مهارات AI',         bg:'#d4c9ee', fg:'#3e2d78' },
-  tamkeen:  { name:'قيادة وتمكين 30 أم', bg:'#dadde3', fg:'#2d3448' },
-  fikr:     { name:'هندسة التفكير',    bg:'#f5dda3', fg:'#4a3516' },
-  qurnas:   { name:'أكاديمية قرناس',  bg:'#f5ceaa', fg:'#5a311a' },
+  tawzeef:  { name:'Ø­Ø§Ø¶ÙØ© Ø§ÙØªÙØ¸ÙÙ 4', bg:'#b6e4e8', fg:'#1f4e55' },
+  inaya:    { name:'Ø¹ÙØ§ÙØ© 2',          bg:'#f5c5d1', fg:'#6d2b42' },
+  qanadeel: { name:'ÙÙØ§Ø¯ÙÙ 2',         bg:'#e4b1d1', fg:'#5a1f44' },
+  tahseeli: { name:'Ø§ÙØªØ­ØµÙÙÙ',         bg:'#c0e2c7', fg:'#254f33' },
+  ai:       { name:'ÙÙØ§Ø±Ø§Øª AI',         bg:'#d4c9ee', fg:'#3e2d78' },
+  tamkeen:  { name:'ÙÙØ§Ø¯Ø© ÙØªÙÙÙÙ 30 Ø£Ù', bg:'#dadde3', fg:'#2d3448' },
+  fikr:     { name:'ÙÙØ¯Ø³Ø© Ø§ÙØªÙÙÙØ±',    bg:'#f5dda3', fg:'#4a3516' },
+  qurnas:   { name:'Ø£ÙØ§Ø¯ÙÙÙØ© ÙØ±ÙØ§Ø³',  bg:'#f5ceaa', fg:'#5a311a' },
+  masaha:   { name:'ÙØ³Ø§Ø­Ø© Ø£Ù',         bg:'#fbd0e8', fg:'#6b2050' },
+  sayfi:    { name:'Ø§ÙØ¨Ø±ÙØ§ÙØ¬ Ø§ÙØµÙÙÙ', bg:'#b8e8d4', fg:'#1a5c3a' },
+  umtaq:    { name:'Ø£Ù ØªÙÙÙØ©',         bg:'#c7d4f5', fg:'#2a3d78' },
+  anaqawi:  { name:'Ø£ÙØ§ ÙÙÙ',          bg:'#fdd9b5', fg:'#6b3510' },
+  shadn:    { name:'Ø£ÙØ§Ø¯ÙÙÙØ© Ø´Ø¯Ù',    bg:'#d4c5b0', fg:'#4a3520' },
 };
-const ARABIC_DAYS = ['الأحد','الاثنين','الثلاثاء','الأربعاء','الخميس','الجمعة','السبت'];
+const ARABIC_DAYS = ['Ø§ÙØ£Ø­Ø¯','Ø§ÙØ§Ø«ÙÙÙ','Ø§ÙØ«ÙØ§Ø«Ø§Ø¡','Ø§ÙØ£Ø±Ø¨Ø¹Ø§Ø¡','Ø§ÙØ®ÙÙØ³','Ø§ÙØ¬ÙØ¹Ø©','Ø§ÙØ³Ø¨Øª'];
 
 const MONTHS = [
-  { // 0 — January 2026
-    name: 'يناير', nameShort: 'ينايـر', year: 2026, jsMonth: 0,
-    hijriInfo: 'رجب–شعبان ١٤٤٧هـ',
+  { // 0 â January 2026
+    name: 'ÙÙØ§ÙØ±', nameShort: 'ÙÙØ§ÙÙØ±', year: 2026, jsMonth: 0,
+    hijriInfo: 'Ø±Ø¬Ø¨âØ´Ø¹Ø¨Ø§Ù Ù¡Ù¤Ù¤Ù§ÙÙ',
     startDay: 4,
     numDays: 31,
     theme: 'jan',
-    hijri: {1:'١١|رجب',2:'١٢',3:'١٣',4:'١٤',5:'١٥',6:'١٦',7:'١٧',8:'١٨',9:'١٩',10:'٢٠',11:'٢١',12:'٢٢',13:'٢٣',14:'٢٤',15:'٢٥',16:'٢٦',17:'٢٧',18:'٢٨',19:'٢٩',20:'١|شعبان',21:'٢',22:'٣',23:'٤',24:'٥',25:'٦',26:'٧',27:'٨',28:'٩',29:'١٠',30:'١١',31:'١٢'},
+    hijri: {1:'Ù¡Ù¡|Ø±Ø¬Ø¨',2:'Ù¡Ù¢',3:'Ù¡Ù£',4:'Ù¡Ù¤',5:'Ù¡Ù¥',6:'Ù¡Ù¦',7:'Ù¡Ù§',8:'Ù¡Ù¨',9:'Ù¡Ù©',10:'Ù¢Ù ',11:'Ù¢Ù¡',12:'Ù¢Ù¢',13:'Ù¢Ù£',14:'Ù¢Ù¤',15:'Ù¢Ù¥',16:'Ù¢Ù¦',17:'Ù¢Ù§',18:'Ù¢Ù¨',19:'Ù¢Ù©',20:'Ù¡|Ø´Ø¹Ø¨Ø§Ù',21:'Ù¢',22:'Ù£',23:'Ù¤',24:'Ù¥',25:'Ù¦',26:'Ù§',27:'Ù¨',28:'Ù©',29:'Ù¡Ù ',30:'Ù¡Ù¡',31:'Ù¡Ù¢'},
     data: {
-      5:  [{ p:'tawzeef',  topic:'دورة الأخلاقيات المهنية',    trainer:'م. صالح الشلوي',  mode:'عن بعد',     supervisor:'شهد',       venue:'-' }],
-      6:  [{ p:'tawzeef',  topic:'كتابة التقارير',              trainer:'م. صالح الشلوي',  mode:'عن بعد',     supervisor:'شهد',       venue:'-' }],
-      7:  [{ p:'tawzeef',  topic:'التدريب الافتراضي',           trainer:'وجدان',            mode:'عن بعد',     supervisor:'شهد',       venue:'-' }],
-      11: [{ p:'qurnas',   topic:'ديوان الكرم',                 trainer:'نايف النفيعي',    mode:'حضوري مساء', supervisor:'منار-لين',  venue:'الجمعية' }],
-      12: [{ p:'qurnas',   topic:'ديوان الكرم',                 trainer:'نايف النفيعي',    mode:'حضوري مساء', supervisor:'لين',        venue:'الجمعية' },
-           { p:'tawzeef',  topic:'اللغة الإنجليزية',            trainer:'عمر الخالدي',     mode:'عن بعد',     supervisor:'شهد',       venue:'-' }],
-      13: [{ p:'tawzeef',  topic:'التدريب الافتراضي',           trainer:'',                 mode:'حضوري مساء', supervisor:'شهد',       venue:'خارجي' }],
-      15: [{ p:'tawzeef',  topic:'اللغة الإنجليزية',            trainer:'عمر الخالدي',     mode:'عن بعد',     supervisor:'شهد',       venue:'-' }],
-      18: [{ p:'qurnas',   topic:'وقفة الحق',                   trainer:'ماهر العتيبي',    mode:'حضوري مساء', supervisor:'منار',       venue:'الجمعية' }],
-      19: [{ p:'qurnas',   topic:'وقفة الحق',                   trainer:'ماهر العتيبي',    mode:'حضوري مساء', supervisor:'لين',        venue:'الجمعية' }],
-      20: [{ p:'ai',       topic:'مؤجل',                        trainer:'',                 mode:'عن بعد',     supervisor:'عفاف',       venue:'-' },
-           { p:'qanadeel', topic:'قنديل المهن',                  trainer:'فردوس بالعمش',   mode:'حضوري مساء', supervisor:'لين-وجدان', venue:'مدرسة البشرى' }],
-      21: [{ p:'qanadeel', topic:'قنديل المهن',                  trainer:'فردوس بالعمش',   mode:'حضوري مساء', supervisor:'شهد',        venue:'مدرسة البشرى' }],
-      22: [{ p:'tawzeef',  topic:'اللغة الإنجليزية',            trainer:'عمر الخالدي',     mode:'عن بعد',     supervisor:'شهد',        venue:'-' }],
-      25: [{ p:'qurnas',   topic:'النخوة والمسؤولية',           trainer:'نايف النفيعي',    mode:'حضوري مساء', supervisor:'منار',       venue:'الجمعية' }],
-      26: [{ p:'qurnas',   topic:'النخوة والمسؤولية',           trainer:'نايف النفيعي',    mode:'حضوري مساء', supervisor:'لين',        venue:'الجمعية' },
-           { p:'ai',       topic:'لقاء تعريفي',                 trainer:'',                 mode:'عن بعد',     supervisor:'لين',        venue:'-' }],
-      27: [{ p:'inaya',    topic:'مجال القيادة',                trainer:'ارين الشمراني',   mode:'حضوري مساء', supervisor:'لين-حلا',   venue:'مدرسة البشرى' },
-           { p:'qanadeel', topic:'قنديل الصبر',                  trainer:'طيبة عبدالكريم', mode:'حضوري مساء', supervisor:'شهد',        venue:'مدرسة البشرى' }],
-      28: [{ p:'inaya',    topic:'المجال الاجتماعي',            trainer:'ارين الشمراني',   mode:'حضوري مساء', supervisor:'عفاف',       venue:'مدرسة البشرى' },
-           { p:'qanadeel', topic:'قنديل الصبر',                  trainer:'طيبة عبدالكريم', mode:'حضوري مساء', supervisor:'منار',       venue:'مدرسة البشرى' }],
-      29: [{ p:'tawzeef',  topic:'اللغة الإنجليزية',            trainer:'عمر الخالدي',     mode:'عن بعد',     supervisor:'شهد',        venue:'-' }],
+      5:  [{ p:'tawzeef',  topic:'Ø¯ÙØ±Ø© Ø§ÙØ£Ø®ÙØ§ÙÙØ§Øª Ø§ÙÙÙÙÙØ©',    trainer:'Ù. ØµØ§ÙØ­ Ø§ÙØ´ÙÙÙ',  mode:'Ø¹Ù Ø¨Ø¹Ø¯',     supervisor:'Ø´ÙØ¯',       venue:'-' }],
+      6:  [{ p:'tawzeef',  topic:'ÙØªØ§Ø¨Ø© Ø§ÙØªÙØ§Ø±ÙØ±',              trainer:'Ù. ØµØ§ÙØ­ Ø§ÙØ´ÙÙÙ',  mode:'Ø¹Ù Ø¨Ø¹Ø¯',     supervisor:'Ø´ÙØ¯',       venue:'-' }],
+      7:  [{ p:'tawzeef',  topic:'Ø§ÙØªØ¯Ø±ÙØ¨ Ø§ÙØ§ÙØªØ±Ø§Ø¶Ù',           trainer:'ÙØ¬Ø¯Ø§Ù',            mode:'Ø¹Ù Ø¨Ø¹Ø¯',     supervisor:'Ø´ÙØ¯',       venue:'-' }],
+      11: [{ p:'qurnas',   topic:'Ø¯ÙÙØ§Ù Ø§ÙÙØ±Ù',                 trainer:'ÙØ§ÙÙ Ø§ÙÙÙÙØ¹Ù',    mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'ÙÙØ§Ø±-ÙÙÙ',  venue:'Ø§ÙØ¬ÙØ¹ÙØ©' }],
+      12: [{ p:'qurnas',   topic:'Ø¯ÙÙØ§Ù Ø§ÙÙØ±Ù',                 trainer:'ÙØ§ÙÙ Ø§ÙÙÙÙØ¹Ù',    mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'ÙÙÙ',        venue:'Ø§ÙØ¬ÙØ¹ÙØ©' },
+           { p:'tawzeef',  topic:'Ø§ÙÙØºØ© Ø§ÙØ¥ÙØ¬ÙÙØ²ÙØ©',            trainer:'Ø¹ÙØ± Ø§ÙØ®Ø§ÙØ¯Ù',     mode:'Ø¹Ù Ø¨Ø¹Ø¯',     supervisor:'Ø´ÙØ¯',       venue:'-' }],
+      13: [{ p:'tawzeef',  topic:'Ø§ÙØªØ¯Ø±ÙØ¨ Ø§ÙØ§ÙØªØ±Ø§Ø¶Ù',           trainer:'',                 mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'Ø´ÙØ¯',       venue:'Ø®Ø§Ø±Ø¬Ù' }],
+      15: [{ p:'wawzeef',  topic:'Ø§ÙÙØºØ© Ø§ÙØ¥ÙØ¬ÙÙØ²ÙØ©',            trainer:'Ø¹ÙØ± Ø§ÙØ®Ø§ÙØ¯Ù',     mode:'Ø¹Ù Ø¨Ø¹Ø¯',     supervisor:'Ø´ÙØ¯',       venue:'-' }],
+      18: [{ p:'qurnas',   topic:'ÙÙÙØ© Ø§ÙØ­Ù',                   trainer:'ÙØ§ÙØ± Ø§ÙØ¹ØªÙØ¨Ù',    mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'ÙÙØ§Ø±',       venue:'Ø§ÙØ¬ÙØ¹ÙØ©' }],
+      19: [{ p:'qurnas',   topic:'ÙÙÙØ© Ø§ÙØ­Ù',                   trainer:'ÙØ§ÙØ± Ø§ÙØ¹ØªÙØ¨Ù',    mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'ÙÙÙ',        venue:'Ø§ÙØ¬ÙØ¹ÙØ©' }],
+      20: [{ p:'ai',       topic:'ÙØ¤Ø¬Ù',                        trainer:'',                 mode:'Ø¹Ù Ø¨Ø¹Ø¯',     supervisor:'Ø¹ÙØ§Ù',       venue:'-' },
+           { p:'qanadeel', topic:'ÙÙØ¯ÙÙ Ø§ÙÙÙÙ',                  trainer:'ÙØ±Ø¯ÙØ³ Ø¨Ø§ÙØ¹ÙØ´',   mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'ÙÙÙ-ÙØ¬Ø¯Ø§Ù', venue:'ÙØ¯Ø±Ø³Ø© Ø§ÙØ¨Ø´Ø±Ù' }],
+      21: [{ p:'qanadeel', topic:'ÙÙØ¯ÙÙ Ø§ÙÙÙÙ',                  trainer:'ÙØ±Ø¯ÙØ³ Ø¨Ø§ÙØ¹ÙØ´',   mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'Ø´ÙØ¯',        venue:'ÙØ¯Ø±Ø³Ø© Ø§ÙØ¨Ø´Ø±Ù' }],
+      22: [{ p:'tawzeef',  topic:'Ø§ÙÙØºØ© Ø§ÙØ¥ÙØ¬ÙÙØ²ÙØ©',            trainer:'Ø¹ÙØ± Ø§ÙØ®Ø§ÙØ¯Ù',     mode:'Ø¹Ù Ø¨Ø¹Ø¯',     supervisor:'Ø´ÙØ¯',        venue:'-' }],
+      25: [{ p:'qurnas',   topic:'Ø§ÙÙØ®ÙØ© ÙØ§ÙÙØ³Ø¤ÙÙÙØ©',           trainer:'ÙØ§ÙÙ Ø§ÙÙÙÙØ¹Ù',    mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'ÙÙØ§Ø±',       venue:'Ø§ÙØ¬ÙØ¹ÙØ©' }],
+      26: [{ p:'qurnas',   topic:'Ø§ÙÙØ®ÙØ© ÙØ§ÙÙØ³Ø¤ÙÙÙØ©',           trainer:'ÙØ§ÙÙ Ø§ÙÙÙÙØ¹Ù',    mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'ÙÙÙ',        venue:'Ø§ÙØ¬ÙØ¹ÙØ©' },
+           { p:'ai',       topic:'ÙÙØ§Ø¡ ØªØ¹Ø±ÙÙÙ',                 trainer:'',                 mode:'Ø¹Ù Ø¨Ø¹Ø¯',     supervisor:'ÙÙÙ',        venue:'-' }],
+      27: [{ p:'inaya',    topic:'ÙØ¬Ø§Ù Ø§ÙÙÙØ§Ø¯Ø©',                trainer:'Ø§Ø±ÙÙ Ø§ÙØ´ÙØ±Ø§ÙÙ',   mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'ÙÙÙ-Ø­ÙØ§',   venue:'ÙØ¯Ø±Ø³Ø© Ø§ÙØ¨Ø´Ø±Ù' },
+           { p:'qanadeel', topic:'ÙÙØ¯ÙÙ Ø§ÙØµØ¨Ø±',                  trainer:'Ø·ÙØ¨Ø© Ø¹Ø¨Ø¯Ø§ÙÙØ±ÙÙ', mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'Ø´ÙØ¯',        venue:'ÙØ¯Ø±Ø³Ø© Ø§ÙØ¨Ø´Ø±Ù' }],
+      28: [{ p:'inaya',    topic:'Ø§ÙÙØ¬Ø§Ù Ø§ÙØ§Ø¬ØªÙØ§Ø¹Ù',            trainer:'Ø§Ø±ÙÙ Ø§ÙØ´ÙØ±Ø§ÙÙ',   mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'Ø¹ÙØ§Ù',       venue:'ÙØ¯Ø±Ø³Ø© Ø§ÙØ¨Ø´Ø±Ù' },
+           { p:'qanadeel', topic:'ÙÙØ¯ÙÙ Ø§ÙØµØ¨Ø±',                  trainer:'Ø·ÙØ¨Ø© Ø¹Ø¨Ø¯Ø§ÙÙØ±ÙÙ', mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'ÙÙØ§Ø±',       venue:'ÙØ¯Ø±Ø³Ø© Ø§ÙØ¨Ø´Ø±Ù' }],
+      29: [{ p:'tawzeef',  topic:'Ø§ÙÙØºØ© Ø§ÙØ¥ÙØ¬ÙÙØ²ÙØ©',            trainer:'Ø¹ÙØ± Ø§ÙØ®Ø§ÙØ¯Ù',     mode:'Ø¹Ù Ø¨Ø¹Ø¯',     supervisor:'Ø´ÙØ¯',        venue:'-' }],
     },
     eid: {}
   },
-  { // 1 — February 2026
-    name: 'فبراير', nameShort: 'فبرايـر', year: 2026, jsMonth: 1,
-    hijriInfo: 'شعبان–رمضان ١٤٤٧هـ',
+  { // 1 â February 2026
+    name: 'ÙØ¨Ø±Ø§ÙØ±', nameShort: 'ÙØ¨Ø±Ø§ÙÙØ±', year: 2026, jsMonth: 1,
+    hijriInfo: 'Ø´Ø¹Ø¨Ø§ÙâØ±ÙØ¶Ø§Ù Ù¡Ù¤Ù¤Ù§ÙÙ',
     startDay: 0,
     numDays: 28,
     theme: 'feb',
-    hijri: {1:'١٣|شعبان',2:'١٤',3:'١٥',4:'١٦',5:'١٧',6:'١٨',7:'١٩',8:'٢٠',9:'٢١',10:'٢٢',11:'٢٣',12:'٢٤',13:'٢٥',14:'٢٦',15:'٢٧',16:'٢٨',17:'٢٩',18:'١|رمضان',19:'٢',20:'٣',21:'٤',22:'٥',23:'٦',24:'٧',25:'٨',26:'٩',27:'١٠',28:'١١'},
+    hijri: {1:'Ù¡Ù£|Ø´Ø¹Ø¨Ø§Ù',2:'Ù¡Ù¤',3:'Ù¡Ù¥',4:'Ù¡Ù¦',5:'Ù¡Ù§',6:'Ù¡Ù¨',7:'Ù¡Ù©',8:'Ù¢Ù ',9:'Ù¢Ù¡',10:'Ù¢Ù¢',11:'Ù¢Ù£',12:'Ù¢Ù¤',13:'Ù¢Ù¥',14:'Ù¢Ù¦',15:'Ù¢Ù§',16:'Ù¢Ù¨',17:'Ù¢Ù©',18:'Ù¡|Ø±ÙØ¶Ø§Ù',19:'Ù¢',20:'Ù£',21:'Ù¤',22:'Ù¥',23:'Ù¦',24:'Ù§',25:'Ù¨',26:'Ù©',27:'Ù¡Ù ',28:'Ù¡Ù¡'},
     data: {
-      1:  [{ p:'qurnas',   topic:'روح الفريق',          trainer:'ماهر العتيبي',    mode:'حضوري مساء', supervisor:'منار',       venue:'الجمعية' }],
-      2:  [{ p:'tawzeef',  topic:'التدريب الافتراضي',    trainer:'',                mode:'حضوري مساء', supervisor:'شهد-فادية', venue:'خارجي' },
-           { p:'qurnas',   topic:'روح الفريق',           trainer:'ماهر العتيبي',    mode:'حضوري مساء', supervisor:'لين',        venue:'الجمعية' }],
-      3:  [{ p:'inaya',    topic:'',                     trainer:'سميه باسلامة',   mode:'حضوري مساء', supervisor:'لين',        venue:'مدرسة البشرى' },
-           { p:'qanadeel', topic:'',                     trainer:'ابتسام الشبيلي', mode:'حضوري مساء', supervisor:'عفاف',       venue:'مدرسة البشرى' },
-           { p:'ai',       topic:'',                     trainer:'',                mode:'عن بعد',     supervisor:'لين',        venue:'-' }],
-      4:  [{ p:'ai',       topic:'',                     trainer:'',                mode:'عن بعد',     supervisor:'لين',        venue:'-' },
-           { p:'inaya',    topic:'',                     trainer:'سمية باسلامة',   mode:'حضوري مساء', supervisor:'منار',       venue:'مدرسة البشرى' },
-           { p:'qanadeel', topic:'',                     trainer:'ابتسام الشبيلي', mode:'حضوري مساء', supervisor:'شهد',        venue:'مدرسة البشرى' }],
-      8:  [{ p:'qurnas',   topic:'ديوان الإلقاء',        trainer:'ماهر العتيبي',    mode:'حضوري مساء', supervisor:'منار',       venue:'الجمعية' },
-           { p:'ai',       topic:'',                     trainer:'',                mode:'عن بعد',     supervisor:'لين',        venue:'-' }],
-      9:  [{ p:'qurnas',   topic:'ديوان الإلقاء',        trainer:'ماهر العتيبي',    mode:'حضوري مساء', supervisor:'لين',        venue:'الجمعية' },
-           { p:'ai',       topic:'',                     trainer:'',                mode:'عن بعد',     supervisor:'لين',        venue:'-' }],
-      10: [{ p:'inaya',    topic:'',                     trainer:'سماح السلمي',    mode:'حضوري مساء', supervisor:'لين',        venue:'مدرسة البشرى' },
-           { p:'qanadeel', topic:'',                     trainer:'العرين الجعيد',  mode:'حضوري مساء', supervisor:'منار',       venue:'مدرسة البشرى' }],
-      12: [{ p:'inaya',    topic:'',                     trainer:'سماح السلمي',    mode:'حضوري مساء', supervisor:'حلا',        venue:'مدرسة البشرى' },
-           { p:'qanadeel', topic:'',                     trainer:'العرين الجعيد',  mode:'حضوري مساء', supervisor:'عفاف',       venue:'مدرسة البشرى' },
-           { p:'tawzeef',  topic:'التدريب الافتراضي',    trainer:'',                mode:'حضوري مساء', supervisor:'شهد-فادية', venue:'خارجي' }],
-      14: [{ p:'qurnas',   topic:'الحفل الختامي',        trainer:'',                mode:'حضوري مساء', supervisor:'منار-لين',  venue:'خارجي' }],
-      15: [{ p:'tawzeef',  topic:'التدريب الافتراضي',    trainer:'',                mode:'حضوري مساء', supervisor:'شهد-فادية', venue:'خارجي' }],
-      16: [{ p:'tawzeef',  topic:'اللغة الإنجليزية',     trainer:'عمر الخالدي',    mode:'عن بعد',     supervisor:'شهد',        venue:'-' }],
-      22: [{ p:'tawzeef',  topic:'التدريب الافتراضي',    trainer:'',                mode:'حضوري مساء', supervisor:'شهد-فادية', venue:'خارجي' }],
-      24: [{ p:'tawzeef',  topic:'التدريب الافتراضي',    trainer:'',                mode:'حضوري مساء', supervisor:'شهد-فادية', venue:'خارجي' }],
+      1:  [{ p:'qurnas',   topic:'Ø±ÙØ­ Ø§ÙÙØ±ÙÙ',          trainer:'ÙØ§ÙØ± Ø§ÙØ¹ØªÙØ¨Ù',    mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'ÙÙØ§Ø±',       venue:'Ø§ÙØ¬ÙØ¹ÙØ©' }],
+      2:  [{ p:'tawzeef',  topic:'Ø§ÙØªØ¯Ø±ÙØ¨ Ø§ÙØ§ÙØªØ±Ø§Ø¶Ù',    trainer:'',                mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'Ø´ÙØ¯-ÙØ§Ø¯ÙØ©', venue:'Ø®Ø§Ø±Ø¬Ù' },
+           { p:'qurnas',   topic:'Ø±ÙØ­ Ø§ÙÙØ±ÙÙ',           trainer:'ÙØ§ÙØ± Ø§ÙØ¹ØªÙØ¨Ù',    mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'ÙÙÙ',        venue:'Ø§ÙØ¬ÙØ¹ÙØ©' }],
+      3:  [{ p:'inaya',    topic:'',                     trainer:'Ø³ÙÙÙ Ø¨Ø§Ø³ÙØ§ÙØ©',   mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'ÙÙÙ',        venue:'ÙØ¯Ø±Ø³Ø© Ø§ÙØ¨Ø´Ø±Ù' },
+           { p:'qanadeel', topic:'',                     trainer:'Ø§Ø¨ØªØ³Ø§Ù Ø§ÙØ´Ø¨ÙÙÙ', mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'Ø¹ÙØ§Ù',       venue:'ÙØ¯Ø±Ø³Ø© Ø§ÙØ¨Ø´Ø±Ù' },
+           { p:'ai',       topic:'',                     trainer:'',                mode:'Ø¹Ù Ø¨Ø¹Ø¯',     supervisor:'ÙÙÙ',        venue:'-' }],
+      4:  [{ p:'ai',       topic:'',                     trainer:'',                mode:'Ø¹Ù Ø¨Ø¹Ø¯',     supervisor:'ÙÙÙ',        venue:'-' },
+           { p:'inaya',    topic:'',                     trainer:'Ø³ÙÙØ© Ø¨Ø§Ø³ÙØ§ÙØ©',   mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'ÙÙØ§Ø±',       venue:'ÙØ¯Ø±Ø³Ø© Ø§ÙØ¨Ø´Ø±Ù' },
+           { p:'qanadeel', topic:'',                     trainer:'Ø§Ø¨ØªØ³Ø§Ù Ø§ÙØ´Ø¨ÙÙÙ', mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'Ø´ÙØ¯',        venue:'ÙØ¯Ø±Ø³Ø© Ø§ÙØ¨Ø´Ø±Ù' }],
+      8:  [{ p:'qurnas',   topic:'Ø¯ÙÙØ§Ù Ø§ÙØ¥ÙÙØ§Ø¡',        trainer:'ÙØ§ÙØ± Ø§ÙØ¹ØªÙØ¨Ù',    mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'ÙÙØ§Ø±',       venue:'Ø§ÙØ¬ÙØ¹ÙØ©' },
+           { p:'ai',       topic:'',                     trainer:'',                mode:'Ø¹Ù Ø¨Ø¹Ø¯',     supervisor:'ÙÙÙ',        venue:'-' }],
+      9:  [{ p:'qurnas',   topic:'Ø¯ÙÙØ§Ù Ø§ÙØ¥ÙÙØ§Ø¡',        trainer:'ÙØ§ÙØ± Ø§ÙØ¹ØªÙØ¨Ù',    mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'ÙÙÙ',        venue:'Ø§ÙØ¬ÙØ¹ÙØ©' },
+           { p:'ai',       topic:'',                     trainer:'',                mode:'Ø¹Ù Ø¨Ø¹Ø¯',     supervisor:'ÙÙÙ',        venue:'-' }],
+      10: [{ p:'inaya',    topic:'',                     trainer:'Ø³ÙØ§Ø­ Ø§ÙØ³ÙÙÙ',    mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'ÙÙÙ',        venue:'ÙØ¯Ø±Ø³Ø© Ø§ÙØ¨Ø´Ø±Ù' },
+           { p:'qanadeel', topic:'',                     trainer:'Ø§ÙØ¹Ø±ÙÙ Ø§ÙØ¬Ø¹ÙØ¯',  mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'ÙÙØ§Ø±',       venue:'ÙØ¯Ø±Ø³Ø© Ø§ÙØ¨Ø´Ø±Ù' }],
+      12: [{ p:'inaya',    topic:'',                     trainer:'Ø³ÙØ§Ø­ Ø§ÙØ³ÙÙÙ',    mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'Ø­ÙØ§',        venue:'ÙØ¯Ø±Ø³Ø© Ø§ÙØ¨Ø´Ø±Ù' },
+           { p:'qanadeel', topic:'',                     trainer:'Ø§ÙØ¹Ø±ÙÙ Ø§ÙØ¬Ø¹ÙØ¯',  mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'Ø¹ÙØ§Ù',       venue:'ÙØ¯Ø±Ø³Ø© Ø§ÙØ¨Ø´Ø±Ù' },
+           { p:'wawzeef',  topic:'Ø§ÙØªØ¯Ø±ÙØ¨ Ø§ÙØ§ÙØªØ±Ø§Ø¶Ù',    trainer:'',                mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'Ø´ÙØ¯-ÙØ§Ø¯ÙØ©', venue:'Ø®Ø§Ø±Ø¬Ù' }],
+      14: [{ p:'qurnas',   topic:'Ø§ÙØ­ÙÙ Ø§ÙØ®ØªØ§ÙÙ',        trainer:'',                mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'ÙÙØ§Ø±-ÙÙÙ',  venue:'Ø®Ø§Ø±Ø¬Ù' }],
+      15: [{ p:'tawzeef',  topic:'Ø§ÙØªØ¯Ø±ÙØ¨ Ø§ÙØ§ÙØªØ±Ø§Ø¶Ù',    trainer:'',                mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'Ø´ÙØ¯-ÙØ§Ø¯ÙØ©', venue:'Ø®Ø§Ø±Ø¬Ù' }],
+      16: [{ p:'tawzeef',  topic:'Ø§ÙÙØºØ© Ø§ÙØ¥ÙØ¬ÙÙØ²ÙØ©',     trainer:'Ø¹ÙØ± Ø§ÙØ®Ø§ÙØ¯Ù',    mode:'Ø¹Ù Ø¨Ø¹Ø¯',     supervisor:'Ø´ÙØ¯',        venue:'-' }],
+      22: [{ p:'tawzeef',  topic:'Ø§ÙØªØ¯Ø±ÙØ¨ Ø§ÙØ§ÙØªØ±Ø§Ø¶Ù',    trainer:'',                mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'Ø´ÙØ¯-ÙØ§Ø¯ÙØ©', venue:'Ø®Ø§Ø±Ø¬Ù' }],
+      24: [{ p:'tawzeef',  topic:'Ø§ÙØªØ¯Ø±ÙØ¨ Ø§ÙØ§ÙØªØ±Ø§Ø¶Ù',    trainer:'',                mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'Ø´ÙØ¯-ÙØ§Ø¯ÙØ©', venue:'Ø®Ø§Ø±Ø¬Ù' }],
     },
     eid: {}
   },
-  { // 2 — March 2026
-    name: 'مارس', nameShort: 'مـارس', year: 2026, jsMonth: 2,
-    hijriInfo: 'رمضان–شوال ١٤٤٧هـ',
+  { // 2 â March 2026
+    name: 'ÙØ§Ø±Ø³', nameShort: 'ÙÙØ§Ø±Ø³', year: 2026, jsMonth: 2,
+    hijriInfo: 'Ø±ÙØ¶Ø§ÙâØ´ÙØ§Ù Ù¡Ù¤Ù¤Ù§ÙÙ',
     startDay: 0,
     numDays: 31,
     theme: 'mar',
-    hijri: {1:'١٢|رمضان',2:'١٣',3:'١٤',4:'١٥',5:'١٦',6:'١٧',7:'١٨',8:'١٩',9:'٢٠',10:'٢١',11:'٢٢',12:'٢٣',13:'٢٤',14:'٢٥',15:'٢٦',16:'٢٧',17:'٢٨',18:'٢٩',19:'٣٠',20:'١|شوال',21:'٢',22:'٣',23:'٤',24:'٥',25:'٦',26:'٧',27:'٨',28:'٩',29:'١٠',30:'١١',31:'١٢'},
+    hijri: {1:'Ù¡Ù¢|Ø±ÙØ¶Ø§Ù',2:'Ù¡Ù£',3:'Ù¡Ù¤',4:'Ù¡Ù¥',5:'Ù¡Ù¦',6:'Ù¡Ù§',7:'Ù¡Ù¨',8:'Ù¡Ù©',9:'Ù¢Ù ',10:'Ù¢Ù¡',11:'Ù¢Ù¢',12:'Ù¢Ù£',13:'Ù¢Ù¤',14:'Ù¢Ù¥',15:'Ù¢Ù¦',16:'Ù¢Ù§',17:'Ù¢Ù¨',18:'Ù¢Ù©',19:'Ù£Ù ',20:'Ù¡|Ø´ÙØ§Ù',21:'Ù¢',22:'Ù£',23:'Ù¤',24:'Ù¥',25:'Ù¦',26:'Ù§',27:'Ù¨',28:'Ù©',29:'Ù¡Ù ',30:'Ù¡Ù¡',31:'Ù¡Ù¢'},
     data: {},
-    eid: { 19:'عيد الفطر 🌙', 20:'عيد الفطر 🌙', 21:'عيد الفطر 🌙' }
+    eid: { 19:'Ø¹ÙØ¯ Ø§ÙÙØ·Ø± ð', 20:'Ø¹ÙØ¯ Ø§ÙÙØ·Ø± ð', 21:'Ø¹ÙØ¯ Ø§ÙÙØ·Ø± ð' }
   },
-  { // 3 — April 2026
-    name: 'أبريل', nameShort: 'أبريـل', year: 2026, jsMonth: 3,
-    hijriInfo: '١٤٤٧–١٤٤٨هـ',
+  { // 3 â April 2026
+    name: 'Ø£Ø¨Ø±ÙÙ', nameShort: 'Ø£Ø¨Ø±ÙÙÙ', year: 2026, jsMonth: 3,
+    hijriInfo: 'Ù¡Ù¤Ù¤Ù§âÙ¡Ù¤Ù¤Ù¨ÙÙ',
     startDay: 3,
     numDays: 30,
     theme: null,
-    hijri: {1:'١٣',2:'١٤',3:'١٥',4:'١٦',5:'١٧',6:'١٨',7:'١٩',8:'٢٠',9:'٢١',10:'٢٢',11:'٢٣',12:'٢٤',13:'٢٥',14:'٢٦',15:'٢٧',16:'٢٨',17:'٢٩',18:'١|ذو القعدة',19:'٢',20:'٣',21:'٤',22:'٥',23:'٦',24:'٧',25:'٨',26:'٩',27:'١٠',28:'١١',29:'١٢',30:'١٣'},
+    hijri: {1:'Ù¡Ù£',2:'Ù¡Ù¤',3:'Ù¡Ù¥',4:'Ù¡Ù¦',5:'Ù¡Ù§',6:'Ù¡Ù¨',7:'Ù¡Ù©',8:'Ù¢Ù ',9:'Ù¢Ù¡',10:'Ù¢Ù¢',11:'Ù¢Ù£',12:'Ù¢Ù¤',13:'Ù¢Ù¥',14:'Ù¢Ù¦',15:'Ù¢Ù§',16:'Ù¢Ù¨',17:'Ù¢Ù©',18:'Ù¡|Ø°Ù Ø§ÙÙØ¹Ø¯Ø©',19:'Ù¢',20:'Ù£',21:'Ù¤',22:'Ù¥',23:'Ù¦',24:'Ù§',25:'Ù¨',26:'Ù©',27:'Ù¡Ù ',28:'Ù¡Ù¡',29:'Ù¡Ù¢',30:'Ù¡Ù£'},
     data: {
-      1:  [{ p:'tawzeef',  topic:'العادات السبع',                        trainer:'م. صالح الشلوي',    mode:'حضوري مساء', supervisor:'شهد',            venue:'الجمعية' },
-           { p:'tahseeli', topic:'رياضيات - أحياء',                      trainer:'',                   mode:'حضوري مساء', supervisor:'أحمد الزهراني', venue:'خارجي' }],
-      2:  [{ p:'tahseeli', topic:'فيزياء - كيمياء',                      trainer:'',                   mode:'حضوري مساء', supervisor:'حلا',            venue:'خارجي' }],
-      5:  [{ p:'ai',       topic:'اللقاء التعريفي',                      trainer:'م. صالح الشلوي',    mode:'حضوري مساء', supervisor:'لين',            venue:'الجمعية' }],
-      6:  [{ p:'fikr',     topic:'الاستعداد والتجهيز',                   trainer:'',                   mode:'-',          supervisor:'لين',            venue:'-' },
-           { p:'ai',       topic:'اللقاء التعريفي',                      trainer:'م. صالح الشلوي',    mode:'حضوري مساء', supervisor:'حلا',            venue:'الجمعية' }],
-      7:  [{ p:'ai',       topic:'',                                      trainer:'أ.وجدان العنزي',    mode:'عن بعد',     supervisor:'وجدان',          venue:'-' },
-           { p:'inaya',    topic:'المجال النفسي+معايدة',                 trainer:'سماح السلمي',        mode:'حضوري مساء', supervisor:'لين',            venue:'مدرسة البشرى' },
-           { p:'qanadeel', topic:'قنديل الايمان+معايدة',                 trainer:'فردوس بالعمش',       mode:'حضوري مساء', supervisor:'منار',           venue:'مدرسة البشرى' },
-           { p:'tahseeli', topic:'',                                      trainer:'',                   mode:'حضوري مساء', supervisor:'حلا',            venue:'خارجي' },
-           { p:'tawzeef',  topic:'مهارة الإلقاء',                       trainer:'أ. أرين الشمراني',   mode:'حضوري مساء', supervisor:'شهد',            venue:'الجمعية' }],
-      8:  [{ p:'qanadeel', topic:'قنديل الايمان',                        trainer:'فردوس بالعمش',       mode:'حضوري مساء', supervisor:'حلا',            venue:'مدرسة البشرى' },
-           { p:'inaya',    topic:'المجال النفسي',                        trainer:'سماح السلمي',        mode:'حضوري مساء', supervisor:'منار',           venue:'مدرسة البشرى' },
-           { p:'tawzeef',  topic:'مهارة الإلقاء',                       trainer:'أ. أرين الشمراني',   mode:'حضوري مساء', supervisor:'فادية',          venue:'الجمعية' },
-           { p:'tahseeli', topic:'',                                      trainer:'',                   mode:'حضوري مساء', supervisor:'أحمد الزهراني', venue:'خارجي' },
-           { p:'ai',       topic:'هندسة التلقين',                        trainer:'أ. وجدان العنزي',   mode:'عن بعد',     supervisor:'لين',            venue:'-' }],
-      9:  [{ p:'tawzeef',  topic:'مهارة الإلقاء',                       trainer:'أ. أرين الشمراني',   mode:'حضوري مساء', supervisor:'شهد',            venue:'الجمعية' }],
+      1:  [{ p:'tawzeef',  topic:'Ø§ÙØ¹Ø§Ø¯Ø§Øª Ø§ÙØ³Ø¨Ø¹',                        trainer:'Ù. ØµØ§ÙØ­ Ø§ÙØ´ÙÙÙ',    mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'Ø´ÙØ¯',            venue:'Ø§ÙØ¬ÙØ¹ÙØ©' },
+           { p:'tahseeli', topic:'Ø±ÙØ§Ø¶ÙØ§Øª - Ø£Ø­ÙØ§Ø¡',                      trainer:'',                   mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'Ø£Ø­ÙØ¯ Ø§ÙØ²ÙØ±Ø§ÙÙ', venue:'Ø®Ø§Ø±Ø¬Ù' }],
+      2:  [{ p:'tahseeli', topic:'ÙÙØ²ÙØ§Ø¡ - ÙÙÙÙØ§Ø¡',                      trainer:'',                   mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'Ø­ÙØ§',            venue:'Ø®Ø§Ø±Ø¬Ù' }],
+      5:  [{ p:'ai',       topic:'Ø§ÙÙÙØ§Ø¡ Ø§ÙØªØ¹Ø±ÙÙÙ',                      trainer:'Ù. ØµØ§ÙØ­ Ø§ÙØ´ÙÙÙ',    mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'ÙÙÙ',            venue:'Ø§ÙØ¬ÙØ¹ÙØ©' }],
+      6:  [{ p:'fikr',     topic:'Ø§ÙØ§Ø³ØªØ¹Ø¯Ø§Ø¯ ÙØ§ÙØªØ¬ÙÙØ²',                   trainer:'',                   mode:'-',          supervisor:'ÙÙÙ',            venue:'-' },
+           { p:'ai',       topic:'Ø§ÙÙÙØ§Ø¡ Ø§ÙØªØ¹Ø±ÙÙÙ',                      trainer:'Ù. ØµØ§ÙØ­ Ø§ÙØ´ÙÙÙ',    mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'Ø­ÙØ§',            venue:'Ø§ÙØ¬ÙØ¹ÙØ©' }],
+      7:  [{ p:'ai',       topic:'',                                      trainer:'Ø£.ÙØ¬Ø¯Ø§Ù Ø§ÙØ¹ÙØ²Ù',    mode:'Ø¹Ù Ø¨Ø¹Ø¯',     supervisor:'ÙØ¬Ø¯Ø§Ù',          venue:'-' },
+           { p:'inaya',    topic:'Ø§ÙÙØ¬Ø§Ù Ø§ÙÙÙØ³Ù+ÙØ¹Ø§ÙØ¯Ø©',                 trainer:'Ø³ÙØ§Ø­ Ø§ÙØ³ÙÙÙ',        mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'ÙÙÙ',            venue:'ÙØ¯Ø±Ø³Ø© Ø§ÙØ¨Ø´Ø±Ù' },
+           { p:'qanadeel', topic:'ÙÙØ¯ÙÙ Ø§ÙØ§ÙÙØ§Ù+ÙØ¹Ø§ÙØ¯Ø©',                 trainer:'ÙØ±Ø¯ÙØ³ Ø¨Ø§ÙØ¹ÙØ´',       mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'ÙÙØ§Ø±',           venue:'ÙØ¯Ø±Ø³Ø© Ø§ÙØ¨Ø´Ø±Ù' },
+           { p:'wahseeli', topic:'',                                      trainer:'',                   mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'Ø­ÙØ§',            venue:'Ø®Ø§Ø±Ø¬Ù' },
+           { p:'wawzeef',  topic:'ÙÙØ§Ø±Ù Ø§ÙØ¥ÙÙØ§Ø¡',                       trainer:'Ø£. Ø£Ø±ÙÙ Ø§ÙØ´ÙØ±Ø§ÙÙ',   mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'Ø´ÙØ¯',            venue:'Ø§ÙØ¬ÙØ¹ÙØ©' }],
+      8:  [{ p:'qanadeel', topic:'ÙÙØ¯ÙÙ Ø§ÙØ§ÙÙØ§Ù',                        trainer:'ÙØ±Ø¯ÙØ³ Ø¨Ø§ÙØ¹ÙØ´',       mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'Ø­ÙØ§',            venue:'ÙØ¯Ø±Ø³Ø© Ø§ÙØ¨Ø´Ø±Ù' },
+           { p:'inaya',    topic:'Ø§ÙÙØ¬Ø§Ù Ø§ÙÙÙØ³Ù',                        trainer:'Ø³ÙØ§Ø­ Ø§ÙØ³ÙÙÙ',        mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'ÙÙØ§Ø±',           venue:'ÙØ¯Ø±Ø³Ø© Ø§ÙØ¨Ø´Ø±Ù' },
+           { p:'tawzeef',  topic:'ÙÙØ§Ø±Ø© Ø§ÙØ¥ÙÙØ§Ø¡',                       trainer:'Ø£. Ø£Ø±ÙÙ Ø§ÙØ´ÙØ±Ø§ÙÙ',   mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'ÙØ§Ø¯ÙØ©',          venue:'Ø§ÙØ¬ÙØ¹ÙØ©' },
+           { p:'tahseeli', topic:'',                                      trainer:'',                   mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'Ø£Ø­ÙØ¯ Ø§ÙØ²ÙØ±Ø§ÙÙ', venue:'Ø®Ø§Ø±Ø¬Ù' },
+           { p:'ai',       topic:'ÙÙØ¯Ø³Ø© Ø§ÙØªÙÙÙÙ',                        trainer:'Ø£. ÙØ¬Ø¯Ø§Ù Ø§ÙØ¹ÙØ²Ù',   mode:'Ø¹Ù Ø¨Ø¹Ø¯',     supervisor:'ÙÙÙ',            venue:'-' }],
+      9:  [{ p:'tawzeef',  topic:'ÙÙØ§Ø±Ø© Ø§ÙØ¥ÙÙØ§Ø¡',                       trainer:'Ø£. Ø£Ø±ÙÙ Ø§ÙØ´ÙØ±Ø§ÙÙ',   mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'Ø´ÙØ¯',            venue:'Ø§ÙØ¬ÙØ¹ÙØ©' }],
       12: [{ p:'qurnas',   topic:'',                                      trainer:'',                   mode:'-',          supervisor:'-',              venue:'-' },
-           { p:'ai',       topic:'',                                      trainer:'',                   mode:'عن بعد',     supervisor:'لين',            venue:'-' }],
-      13: [{ p:'ai',       topic:'',                                      trainer:'',                   mode:'عن بعد',     supervisor:'لين',            venue:'-' },
-           { p:'tamkeen',  topic:'أم ملهمة',                             trainer:'',                   mode:'حضوري مساء', supervisor:'منار-حلا',       venue:'الجمعية' }],
-      14: [{ p:'inaya',    topic:'المجال الصحي',                         trainer:'مريم الهوساوي',     mode:'حضوري مساء', supervisor:'لين',            venue:'مدرسة البشرى' },
-           { p:'qanadeel', topic:'قنديل الايجابية',                      trainer:'مها الجهني',         mode:'حضوري مساء', supervisor:'منار',           venue:'مدرسة البشرى' },
-           { p:'tawzeef',  topic:'الذكاء العاطفي وإدارة الذات',         trainer:'م. صالح الشلوي',    mode:'حضوري مساء', supervisor:'شهد',            venue:'الجمعية' },
-           { p:'tahseeli', topic:'',                                      trainer:'',                   mode:'حضوري مساء', supervisor:'أحمد الزهراني', venue:'خارجي' }],
-      15: [{ p:'qanadeel', topic:'قنديل الايجابية',                      trainer:'مها الجهني',         mode:'حضوري مساء', supervisor:'لين',            venue:'مدرسة البشرى' },
-           { p:'inaya',    topic:'المجال الصحي',                         trainer:'مريم الهوساوي',     mode:'حضوري مساء', supervisor:'حلا',            venue:'مدرسة البشرى' },
-           { p:'tahseeli', topic:'',                                      trainer:'',                   mode:'حضوري مساء', supervisor:'أحمد الزهراني', venue:'الجمعية' },
-           { p:'tawzeef',  topic:'نماذج قوقل',                           trainer:'',                   mode:'عن بعد',     supervisor:'شهد',            venue:'-' }],
-      19: [{ p:'tawzeef',  topic:'اللغة الإنجليزية',  trainer:'م. عمر الخالدي', mode:'عن بعد', supervisor:'شهد-نور',  venue:'-' },
-           { p:'ai',       topic:'',                   trainer:'ابو بكر',         mode:'عن بعد', supervisor:'اروى',     venue:'-' }],
-      20: [{ p:'tawzeef',  topic:'اللغة الإنجليزية',  trainer:'م. عمر الخالدي', mode:'عن بعد', supervisor:'شهد-اروى', venue:'-' },
-           { p:'ai',       topic:'',                   trainer:'ابو بكر',         mode:'عن بعد', supervisor:'نور',       venue:'-' }],
-      21: [{ p:'inaya',    topic:'اللغة والتواصل',                       trainer:'أرين الشمراني',      mode:'حضوري مساء', supervisor:'لين',            venue:'مدرسة البشرى' },
-           { p:'qanadeel', topic:'قنديل المسؤولية',                      trainer:'نجلاء أبو زيد',     mode:'حضوري مساء', supervisor:'حلا',            venue:'مدرسة البشرى' },
-           { p:'tawzeef',  topic:'الذكاء الاصطناعي في سوق العمل',       trainer:'أ. وجدان العنزي',   mode:'حضوري مساء', supervisor:'شهد',            venue:'الجمعية' },
-           { p:'tahseeli', topic:'',                                      trainer:'',                   mode:'حضوري مساء', supervisor:'أحمد الزهراني', venue:'خارجي' }],
-      22: [{ p:'qanadeel', topic:'قنديل المسؤولية',                      trainer:'نجلاء أبو زيد',     mode:'حضوري مساء', supervisor:'لين',            venue:'مدرسة البشرى' },
-           { p:'inaya',    topic:'اللغة والتواصل',                       trainer:'أرين الشمراني',      mode:'حضوري مساء', supervisor:'عفاف',           venue:'مدرسة البشرى' },
-           { p:'tawzeef',  topic:'اللغة الإنجليزية',                     trainer:'م. عمر الخالدي',    mode:'حضوري مساء', supervisor:'حلا',            venue:'الجمعية' },
-           { p:'tahseeli', topic:'',                                      trainer:'',                   mode:'حضوري مساء', supervisor:'أحمد الزهراني', venue:'خارجي' }],
-      26: [{ p:'tawzeef',  topic:'اللغة الإنجليزية',  trainer:'م. عمر الخالدي', mode:'عن بعد', supervisor:'شهد',  venue:'-' },
-           { p:'tahseeli', topic:'',                   trainer:'',                mode:'حضوري مساء', supervisor:'أروى', venue:'الجمعية' },
-           { p:'ai',       topic:'',                   trainer:'ابو بكر',         mode:'عن بعد', supervisor:'نور',  venue:'-' }],
-      27: [{ p:'tawzeef',  topic:'اللغة الإنجليزية',  trainer:'م. عمر الخالدي', mode:'عن بعد', supervisor:'شهد',  venue:'-' },
-           { p:'ai',       topic:'',                   trainer:'ابو بكر',         mode:'عن بعد', supervisor:'نور',  venue:'-' }],
-      28: [{ p:'inaya',    topic:'المجال الايماني',                       trainer:'مودة دخاخني',        mode:'حضوري مساء', supervisor:'لين',            venue:'مدرسة البشرى' },
-           { p:'qanadeel', topic:'قنديل التربية',                         trainer:'نجلاء أبو زيد',     mode:'حضوري مساء', supervisor:'حلا',            venue:'مدرسة البشرى' },
-           { p:'tawzeef',  topic:'الاستعداد للمقابلة الوظيفية',          trainer:'أ. زياد النجدي',     mode:'حضوري مساء', supervisor:'فادية-أروى',     venue:'الجمعية' },
-           { p:'tahseeli', topic:'',                                       trainer:'',                   mode:'حضوري مساء', supervisor:'أحمد الزهراني', venue:'خارجي' }],
-      29: [{ p:'qanadeel', topic:'',                                       trainer:'',                   mode:'حضوري مساء', supervisor:'منار',           venue:'مدرسة البشرى' },
-           { p:'inaya',    topic:'قنديل التربية',                          trainer:'نجلاء أبو زيد',     mode:'حضوري مساء', supervisor:'لين',            venue:'مدرسة البشرى' },
-           { p:'tahseeli', topic:'المجال الايماني',                        trainer:'مودة دخاخني',        mode:'حضوري مساء', supervisor:'أحمد الزهراني', venue:'خارجي' },
-           { p:'tawzeef',  topic:'الاستعداد للمقابلة الوظيفية',           trainer:'أ. زياد النجدي',     mode:'حضوري مساء', supervisor:'فادية-أروى',     venue:'الجمعية' }],
+           { p:'ai',       topic:'',                                      trainer:'',                   mode:'Ø¹Ù Ø¨Ø¹Ø¯',     supervisor:'ÙÙÙ',            venue:'-' }],
+      13: [{ p:'ai',       topic:'',                                      trainer:'',                   mode:'Ø¹Ù Ø¨Ø¹Ø¯',     supervisor:'ÙÙÙ',            venue:'-' },
+           { p:'tamkeen',  topic:'Ø£Ù ÙÙÙÙØ©',                             trainer:'',                   mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'ÙÙØ§Ø±-Ø­ÙØ§',       venue:'Ø§ÙØ¬ÙØ¹ÙØ©' }],
+      14: [{ p:'inaya',    topic:'Ø§ÙÙØ¬Ø§Ù Ø§ÙØµØ­Ù',                         trainer:'ÙØ±ÙÙ Ø§ÙÙÙØ³Ø§ÙÙ',     mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'ÙÙÙ',            venue:'ÙØ¯Ø±Ø³Ø© Ø§ÙØ¨Ø´Ø±Ù' },
+           { p:'qanadeel', topic:'ÙÙØ¯ÙÙ Ø§ÙØ§ÙØ¬Ø§Ø¨ÙØ©',                      trainer:'ÙÙØ§ Ø§ÙØ¬ÙÙÙ',         mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'ÙÙØ§Ø±',           venue:'ÙØ¯Ø±Ø³Ø© Ø§ÙØ¨Ø´Ø±Ù' },
+           { p:'tawzeef',  topic:'Ø§ÙØ°ÙØ§Ø¡ Ø§ÙØ¹Ø§Ø·ÙÙ ÙØ¥Ø¯Ø§Ø±Ø© Ø§ÙØ°Ø§Øª',         trainer:'Ù. ØµØ§ÙØ­ Ø§ÙØ´ÙÙÙ',    mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'Ø´ÙØ¯',            venue:'Ø§ÙØ¬ÙØ¹ÙØ©' },
+           { p:'tahseeli', topic:'',                                      trainer:'',                   mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'Ø£Ø­ÙØ¯ Ø§ÙØ²ÙØ±Ø§ÙÙ', venue:'Ø®Ø§Ø±Ø¬Ù' }],
+      15: [{ p:'qanadeel', topic:'ÙÙØ¯ÙÙ Ø§ÙØ§ÙØ¬Ø§Ø¨ÙØ©',                      trainer:'ÙÙØ§ Ø§ÙØ¬ÙÙÙ',         mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'ÙÙÙ',            venue:'ÙØ¯Ø±Ø³Ø© Ø§ÙØ¨Ø´Ø±Ù' },
+           { p:'inaya',    topic:'Ø§ÙÙØ¬Ø§Ù Ø§ÙØµØ­Ù',                         trainer:'ÙØ±ÙÙ Ø§ÙÙÙØ³Ø§ÙÙ',     mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'Ø­ÙØ§',            venue:'ÙØ¯Ø±Ø³Ø© Ø§ÙØ¨Ø´Ø±Ù' },
+           { p:'tahseeli', topic:'',                                      trainer:'',                   mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'Ø£Ø­ÙØ¯ Ø§ÙØ²ÙØ±Ø§ÙÙ', venue:'Ø§ÙØ¬ÙØ¹ÙØ©' },
+           { p:'tawzeef',  topic:'ÙÙØ§Ø°Ø¬ ÙÙÙÙ',                           trainer:'',                   mode:'Ø¹Ù Ø¨Ø¹Ø¯',     supervisor:'Ø´ÙØ¯',            venue:'-' }],
+      19: [{ p:'tawzeef',  topic:'Ø§ÙÙØºØ© Ø§ÙØ¥ÙØ¬ÙÙØ²ÙØ©',  trainer:'Ù. Ø¹ÙØ± Ø§ÙØ®Ø§ÙØ¯Ù', mode:'Ø¹Ù Ø¨Ø¹Ø¯', supervisor:'Ø´ÙØ¯-ÙÙØ±',  venue:'-' },
+           { p:'ai',       topic:'',                   trainer:'Ø§Ø¨Ù Ø¨ÙØ±',         mode:'Ø¹Ù Ø¨Ø¹Ø¯', supervisor:'Ø§Ø±ÙÙ',     venue:'-' }],
+      20: [{ p:'tawzeef',  topic:'Ø§ÙÙØºØ© Ø§ÙØ¥ÙØ¬ÙÙØ²ÙØ©',  trainer:'Ù. Ø¹ÙØ± Ø§ÙØ®Ø§ÙØ¯Ù', mode:'Ø¹Ù Ø¨Ø¹Ø¯', supervisor:'Ø´ÙØ¯-Ø§Ø±ÙÙ', venue:'-' },
+           { p:'ai',       topic:'',                   trainer:'Ø§Ø¨Ù Ø¨ÙØ±',         mode:'Ø¹Ù Ø¨Ø¹Ø¯', supervisor:'ÙÙØ±',       venue:'-' }],
+      21: [{ p:'inaya',    topic:'Ø§ÙÙØºØ© ÙØ§ÙØªÙØ§ØµÙ',                       trainer:'Ø£Ø±ÙÙ Ø§ÙØ´ÙØ±Ø§ÙÙ',      mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'ÙÙÙ',            venue:'ÙØ¯Ø±Ø³Ø© Ø§ÙØ¨Ø´Ø±Ù' },
+           { p:'qanadeel', topic:'ÙÙØ¯ÙÙ Ø§ÙÙØ³Ø¤ÙÙÙØ©',                      trainer:'ÙØ¬ÙØ§Ø¡ Ø£Ø¨Ù Ø²ÙØ¯',     mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'Ø­ÙØ§',            venue:'ÙØ¯Ø±Ø³Ø© Ø§ÙØ¨Ø´Ø±Ù' },
+           { p:'tawzeef',  topic:'Ø§ÙØ°ÙØ§Ø¡ Ø§ÙØ§ØµØ·ÙØ§Ø¹Ù ÙÙ Ø³ÙÙ Ø§ÙØ¹ÙÙ',       trainer:'Ø£. ÙØ¬Ø¯Ø§Ù Ø§ÙØ¹ÙØ²Ù',   mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'Ø´ÙØ¯',            venue:'Ø§ÙØ¬ÙØ¹ÙØ©' },
+           { p:'wahseeli', topic:'',                                      trainer:'',                   mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'Ø£Ø­ÙØ¯ Ø§ÙØ²ÙØ±Ø§ÙÙ', venue:'Ø®Ø§Ø±Ø¬Ù' }],
+      22: [{ p:'qanadeel', topic:'ÙÙØ¯ÙÙ Ø§ÙÙØ³Ø¤ÙÙÙØ©',                      trainer:'ÙØ¬ÙØ§Ø¡ Ø£Ø¨Ù Ø²ÙØ¯',     mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'ÙÙÙ',            venue:'ÙØ¯Ø±Ø³Ø© Ø§ÙØ¨Ø´Ø±Ù' },
+           { p:'inaya',    topic:'Ø§ÙÙØºØ© ÙØ§ÙØªÙØ§ØµÙ',                       trainer:'Ø£Ø±ÙÙ Ø§ÙØ´ÙØ±Ø§ÙÙ',      mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'Ø¹ÙØ§Ù',           venue:'ÙØ¯Ø±Ø³Ø© Ø§ÙØ¨Ø´Ø±Ù' },
+           { p:'tawzeef',  topic:'Ø§ÙÙØºØ© Ø§ÙØ¥ÙØ¬ÙÙØ²ÙØ©',                     trainer:'Ù. Ø¹ÙØ± Ø§ÙØ®Ø§ÙØ¯Ù',    mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'Ø­ÙØ§',            venue:'Ø§ÙØ¬ÙØ¹ÙØ©' },
+           { p:'wahseeli', topic:'',                                      trainer:'',                   mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'Ø£Ø­ÙØ¯ Ø§ÙØ²ÙØ±Ø§ÙÙ', venue:'Ø®Ø§Ø±Ø¬Ù' }],
+      26: [{ p:'tawzeef',  topic:'Ø§ÙÙØºØ© Ø§ÙØ¥ÙØ¬ÙÙØ²ÙØ©',  trainer:'Ù. Ø¹ÙØ± Ø§ÙØ®Ø§ÙØ¯Ù', mode:'Ø¹Ù Ø¨Ø¹Ø¯', supervisor:'Ø´ÙØ¯',  venue:'-' },
+           { p:'tahseeli', topic:'',                   trainer:'',                mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'Ø£Ø±ÙÙ', venue:'Ø§ÙØ¬ÙØ¹ÙØ©' },
+           { p:'ai',       topic:'',                   trainer:'Ø§Ø¨Ù Ø¨ÙØ±',         mode:'Ø¹Ù Ø¨Ø¹Ø¯', supervisor:'ÙÙØ±',  venue:'-' }],
+      27: [{ p:'tawzeef',  topic:'Ø§ÙÙØºØ© Ø§ÙØ¥ÙØ¬ÙÙØ²ÙØ©',  trainer:'Ù. Ø¹ÙØ± Ø§ÙØ®Ø§ÙØ¯Ù', mode:'Ø¹Ù Ø¨Ø¹Ø¯', supervisor:'Ø´ÙØ¯',  venue:'-' },
+           { p:'ai',       topic:'',                   trainer:'Ø§Ø¨Ù Ø¨ÙØ±',         mode:'Ø¹Ù Ø¨Ø¹Ø¯', supervisor:'ÙÙØ±',  venue:'-' }],
+      28: [{ p:'inaya',    topic:'Ø§ÙÙØ¬Ø§Ù Ø§ÙØ§ÙÙØ§ÙÙ',                       trainer:'ÙÙØ¯Ø© Ø¯Ø®Ø§Ø®ÙÙ',        mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'ÙÙÙ',            venue:'ÙØ¯Ø±Ø³Ø© Ø§ÙØ¨Ø´Ø±Ù' },
+           { p:'qanadeel', topic:'ÙÙØ¯ÙÙ Ø§ÙØªØ±Ø¨ÙØ©',                         trainer:'ÙØ¬ÙØ§Ø¡ Ø£Ø¨Ù Ø²ÙØ¯',     mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'Ø­ÙØ§',            venue:'ÙØ¯Ø±Ø³Ø© Ø§ÙØ¨Ø´Ø±Ù' },
+           { p:'tawzeef',  topic:'Ø§ÙØ§Ø³ØªØ¹Ø¯Ø§Ø¯ ÙÙÙØ§Ø¨ÙØ© Ø§ÙÙØ¸ÙÙÙØ©',           trainer:'Ø£. Ø²ÙØ§Ø¯ Ø§ÙÙØ¬Ø¯Ù',     mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'ÙØ§Ø¯ÙØ©-Ø£Ø±ÙÙ',     venue:'Ø§ÙØ¬ÙØ¹ÙØ©' },
+           { p:'wahseeli', topic:'',                                       trainer:'',                   mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'Ø£Ø­ÙØ¯ Ø§ÙØ²ÙØ±Ø§ÙÙ', venue:'Ø®Ø§Ø±Ø¬Ù' }],
+      29: [{ p:'qanadeel', topic:'',                                       trainer:'',                   mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'ÙÙØ§Ø±',           venue:'ÙØ¯Ø±Ø³Ø© Ø§ÙØ¨Ø´Ø±Ù' },
+           { p:'inaya',    topic:'ÙÙØ¯ÙÙ Ø§ÙØªrhÙØ©',                           trainer:'ÙØ¬ÙØ§Ø¡ Ø£Ø¨Ù Ø²ÙØ¯',     mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'ÙÙÙ',            venue:'ÙØ¯Ø±Ø³Ø© Ø§ÙØ¨Ø´Ø±Ù' },
+           { p:'wahseeli', topic:'Ø§ÙÙØ¬Ø§Ù Ø§ÙØ§ÙØ¬Ø§Ø¨ÙØ©',                        trainer:'ÙÙØ¯Ø© Ø¯Ø®Ø§Ø®ÙÙ',        mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'Ø£Ø­ÙØ¯ Ø§ÙØ²ÙØ±Ø§ÙÙ', venue:'Ø®Ø§Ø±Ø¬Ù' },
+           { p:'tawzeef',  topic:'Ø§ÙØ§Ø³ØªØ¹Ø¯Ø§Ø¯ ÙÙÙÙØ§Ø¨ÙØ© Ø§ÙÙØ¸ÙÙÙØ©',           trainer:'Ø£. Ø²ÙØ§Ø¯ Ø§ÙÙØ¬Ø¯Ù',     mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'ÙØ§Ø¯ÙØ©-Ø£Ø±ÙÙ',     venue:'Ø§ÙØ¬ÙØ¹ÙØ©' }],
     },
     eid: {}
   },
-  { // 4 — May 2026 ← مُحدَّث من Google Sheet
-    name: 'مايو', nameShort: 'مايـو', year: 2026, jsMonth: 4,
-    hijriInfo: 'ذو القعدة–ذو الحجة ١٤٤٧هـ',
+  { // 4 â May 2026 â ÙÙØ­Ø¯ÙÙØ« ÙÙ Google Sheet
+    name: 'ÙØ§ÙÙ', nameShort: 'ÙØ§ÙÙÙ', year: 2026, jsMonth: 4,
+    hijriInfo: 'Ø°Ù Ø§ÙÙØ¹Ø¯Ø©âØ°Ù Ø§ÙØ­Ø¬Ø© Ù¡Ù¤Ù¤Ù§ÙÙ',
     startDay: 5,
     numDays: 31,
     theme: 'may',
     hijri: {
-      1:'١٤',2:'١٥',3:'١٦',4:'١٧',5:'١٨',6:'١٩',7:'٢٠',8:'٢١',9:'٢٢',10:'٢٣',
-      11:'٢٤',12:'٢٥',13:'٢٦',14:'٢٧',15:'٢٨',16:'٢٩',17:'١|ذو الحجة',18:'٢',19:'٣',20:'٤',
-      21:'٥',22:'٦',23:'٧',24:'٨',25:'٩',26:'١٠',27:'١١',28:'١٢',29:'١٣',30:'١٤',31:'١٥'
+      1:'Ù¡Ù¤',2:'Ù¡Ù¥',3:'Ù¡Ù¦',4:'Ù¡Ù§',5:'Ù¡Ù¨',6:'Ù¡Ù©',7:'Ù¢Ù ',8:'Ù¢Ù¡',9:'Ù¢Ù¢',10:'Ù¢Ù£',
+      11:'Ù¢Ù¤',12:'Ù¢Ù¥',13:'Ù¢Ù¦',14:'Ù¢Ù§',15:'Ù¢Ù¨',16:'Ù¢Ù©',17:'Ù¡|Ø°Ù Ø§ÙØ­Ø¬Ø©',18:'Ù¢',19:'Ù£',20:'Ù¤',
+      21:'Ù¥',22:'Ù¦',23:'Ù§',24:'Ù¨',25:'Ù©',26:'Ù¡Ù ',27:'Ù¡Ù¡',28:'Ù¡Ù¢',29:'Ù¡Ù£',30:'Ù¡Ù¤',31:'Ù¡Ù¥'
     },
     data: {
-      2:  [{ p:'qurnas',   topic:'إعلان',                                        trainer:'',                   mode:'-',          supervisor:'منار', venue:'-' },
-           { p:'tawzeef',  topic:'اللغة الإنجليزية',                            trainer:'م. عمر الخالدي',     mode:'عن بعد',     supervisor:'شهد',  venue:'-' }],
-      3:  [{ p:'ai',       topic:'مراجعة اللقاءات',                             trainer:'ابو الشام',           mode:'عن بعد',     supervisor:'لين',  venue:'-' }],
-      4:  [{ p:'tawzeef',  topic:'اللغة الإنجليزية',                            trainer:'م. عمر الخالدي',     mode:'عن بعد',     supervisor:'شهد',  venue:'-' },
-           { p:'ai',       topic:'مراجعة اللقاءات',                             trainer:'ابو الشام',           mode:'عن بعد',     supervisor:'لين',  venue:'-' },
-           { p:'tahseeli', topic:'رياضيات',                                      trainer:'أ. ياسر',             mode:'عن بعد',     supervisor:'حلا',  venue:'-' }],
-      5:  [{ p:'tahseeli', topic:'أحياء',                                        trainer:'أ. محمد',             mode:'عن بعد',     supervisor:'حلا',  venue:'-' }],
-      6:  [{ p:'tahseeli', topic:'كيمياء',                                       trainer:'أ. عادل',             mode:'عن بعد',     supervisor:'حلا',  venue:'-' }],
-      9:  [{ p:'tawzeef',  topic:'اللغة الإنجليزية',                            trainer:'م. عمر الخالدي',     mode:'عن بعد',     supervisor:'شهد',  venue:'-' }],
-      10: [{ p:'ai',       topic:'كتابة السكريبت وتوليد الصور',                trainer:'اسماء العتيبي',       mode:'عن بعد',     supervisor:'لين',  venue:'-' }],
-      11: [{ p:'tawzeef',  topic:'اللغة الإنجليزية',                            trainer:'م. عمر الخالدي',     mode:'عن بعد',     supervisor:'شهد',  venue:'-' },
-           { p:'ai',       topic:'تحريك الصور وصناعة الفيديو والمشاهد',        trainer:'اسماء العتيبي',       mode:'عن بعد',     supervisor:'لين',  venue:'-' }],
-      17: [{ p:'ai',       topic:'الأفتار والمونتاج والمؤثرات الصوتية',        trainer:'اسماء العتيبي',       mode:'عن بعد',     supervisor:'لين',  venue:'-' }],
-      18: [{ p:'ai',       topic:'مراجعة',                                       trainer:'اسماء العتيبي',       mode:'عن بعد',     supervisor:'لين',  venue:'-' }],
+      2:  [{ p:'qurnas',   topic:'Ø¥Ø¹ÙØ§Ù',                                        trainer:'',                   mode:'-',          supervisor:'ÙÙØ§Ø±', venue:'-' },
+           { p:'tawzeef',  topic:'Ø§ÙÙØºØ© Ø§ÙØ¥ÙØ¬ÙÙØ²ÙØ©',                            trainer:'Ù. Ø¹ÙØ± Ø§ÙØ®Ø§ÙØ¯Ù',     mode:'Ø¹Ù Ø¨Ø¹Ø¯',     supervisor:'Ø´ÙØ¯',  venue:'-' }],
+      3:  [{ p:'ai',       topic:'ÙØ±Ø§Ø¬Ø¹Ø© Ø§ÙÙÙØ§Ø¡Ø§Øª',                             trainer:'Ø§Ø¨Ù Ø§ÙØ´Ø§Ù',           mode:'Ø¹Ù Ø¨Ø¹Ø¯',     supervisor:'ÙÙÙ',  venue:'-' }],
+      4:  [{ p:'tawzeef',  topic:'Ø§ÙÙØºØ© Ø§ÙØ¥ÙØ¬ÙÙØ²ÙØ©',                            trainer:'Ù. Ø¹ÙØ± Ø§ÙØ®Ø§ÙØ¯Ù',     mode:'Ø¹Ù Ø¨Ø¹Ø¯',     supervisor:'Ø´ÙØ¯',  venue:'-' },
+           { p:'ai',       topic:'ÙØ±Ø§Ø¬Ø¹Ø© Ø§ÙÙÙØ§Ø¡Ø§Øª',                             trainer:'Ø§Ø¨Ù Ø§ÙØ´Ø§Ù',           mode:'Ø¹Ù Ø¨Ø¹Ø¯',     supervisor:'ÙÙÙ',  venue:'-' },
+           { p:'wahseeli', topic:'Ø±ÙØ§Ø¶ÙØ§Øª',                                      trainer:'Ø£. ÙØ§Ø³Ø±',             mode:'Ø¹Ù Ø¨Ø¹Ø¯',     supervisor:'Ø­ÙØ§',  venue:'-' }],
+      5:  [{ p:'tahseeli', topic:'Ø£Ø­ÙØ§Ø¡',                                        trainer:'Ø£. ÙØ­ÙØ¯',             mode:'Ø¹Ù Ø¨Ø¹Ø¯',     supervisor:'Ø­ÙØ§',  venue:'-' }],
+      6:  [{ p:'wahseeli', topic:'ÙÙÙÙØ§Ø¡',                                       trainer:'Ø£. Ø¹Ø§Ø¯Ù',             mode:'Ø¹Ù Ø¨Ø¹Ø¯',     supervisor:'Ø­ÙØ§',  venue:'-' }],
+      9:  [{ p:'tawzeef',  topic:'Ø§ÙÙØºØ© Ø§ÙØ¥ÙØ¬ÙÙØ²ÙØ©',                            trainer:'Ù. Ø¹ÙØ± Ø§ÙØ®Ø§ÙØ¯Ù',     mode:'Ø¹Ù Ø¨Ø¹Ø¯',     supervisor:'Ø´ÙØ¯',  venue:'-' }],
+      10: [{ p:'ai',       topic:'ÙØªØ§Ø¨Ø© Ø§ÙØ³ÙØ±ÙØ¨Øª ÙØªÙÙÙØ¯ Ø§ÙØµÙØ±',                trainer:'Ø§Ø³ÙØ§Ø¡ Ø§ÙØ¹ØªÙØ¨Ù',       mode:'Ø¹Ù Ø¨Ø¹Ø¯',     supervisor:'ÙÙÙ',  venue:'-' }],
+      11: [{ p:'tawzeef',  topic:'Ø§ÙÙØºØ© Ø§ÙØ¥ÙØ¬ÙÙØ²ÙØ©',                            trainer:'Ù. Ø¹ÙØ± Ø§ÙØ®Ø§ÙØ¯Ù',     mode:'Ø¹Ù Ø¨Ø¹Ø¯',     supervisor:'Ø´ÙØ¯',  venue:'-' },
+           { p:'ai',       topic:'ØªØ­Ø±ÙÙ Ø§ÙØµÙØ± ÙØµÙØ§Ø¹Ø© Ø§ÙÙÙØ¯ÙÙ ÙØ§ÙÙØ´Ø§ÙØ¯',        trainer:'Ø§Ø³ÙØ§Ø¡ Ø§ÙØ¹ØªÙØ¨Ù',       mode:'Ø¹Ù Ø¨Ø¹Ø¯',     supervisor:'ÙÙÙ',  venue:'-' }],
+      17: [{ p:'ai',       topic:'Ø§ÙØ£ÙØªØ§Ø± ÙØ§ÙÙÙÙØªØ§Ø¬ ÙØ§ÙÙØ¤Ø«Ø±Ø§Øª Ø§ÙØµÙØªÙØ©',        trainer:'Ø§Ø³ÙØ§Ø¡ Ø§ÙØ¹ØªÙØ¨Ù',       mode:'Ø¹Ù Ø¨Ø¹Ø¯',     supervisor:'ÙÙÙ',  venue:'-' }],
+      18: [{ p:'ai',       topic:'ÙØ±Ø§Ø¬Ø¹Ø©',                                       trainer:'Ø§Ø³ÙØ§Ø¡ Ø§ÙØ¹ØªÙØ¨Ù',       mode:'Ø¹Ù Ø¨Ø¹Ø¯',     supervisor:'ÙÙÙ',  venue:'-' }],
     },
-    eid: { 26:'يوم عرفة ⛰️', 27:'عيد الأضحى 🕌' }
+    eid: { 26:'ÙÙÙ Ø¹Ø±ÙØ© â°ï¸', 27:'Ø¹ÙØ¯ Ø§ÙØ£Ø¶Ø­Ù ð' }
   },
-  { // 5 — June 2026
-    name: 'يونيو', nameShort: 'يونيـو', year: 2026, jsMonth: 5,
-    hijriInfo: 'ذو الحجة ١٤٤٧ – محرم ١٤٤٨هـ',
+  { // 5 â June 2026
+    name: 'ÙÙÙÙÙ', nameShort: 'ÙÙÙÙÙÙ', year: 2026, jsMonth: 5,
+    hijriInfo: 'Ø°Ù Ø§ÙØ­Ø¬Ø© Ù¡Ù¤Ù¤Ù§ â ÙØ­Ø±Ù Ù¡Ù¤Ù¤Ù¨ÙÙ',
     startDay: 1,
     numDays: 30,
     theme: 'jun',
-    hijri: {1:'١٦|ذو الحجة',2:'١٧',3:'١٨',4:'١٩',5:'٢٠',6:'٢١',7:'٢٢',8:'٢٣',9:'٢٤',10:'٢٥',11:'٢٦',12:'٢٧',13:'٢٨',14:'٢٩',15:'٣٠',16:'١|محرم',17:'٢',18:'٣',19:'٤',20:'٥',21:'٦',22:'٧',23:'٨',24:'٩',25:'١٠',26:'١١',27:'١٢',28:'١٣',29:'١٤',30:'١٥'},
+    hijri: {1:'Ù¡Ù¦|Ø°Ù Ø§ÙØ­Ø¬Ø©',2:'Ù¡Ù§',3:'Ù¡Ù¨',4:'Ù¡Ù©',5:'Ù¢Ù ',6:'Ù¢Ù¡',7:'Ù¢Ù¢',8:'Ù¢Ù£',9:'Ù¢Ù¤',10:'Ù¢Ù¥',11:'Ù¢Ù¦',12:'Ù¢Ù§',13:'Ù¢Ù¨',14:'Ù¢Ù©',15:'Ù£Ù ',16:'Ù¡|ÙØ­Ø±Ù',17:'Ù¢',18:'Ù£',19:'Ù¤',20:'Ù¥',21:'Ù¦',22:'Ù§',23:'Ù¨',24:'Ù©',25:'Ù¡Ù ',26:'Ù¡Ù¡',27:'Ù¡Ù¢',28:'Ù¡Ù£',29:'Ù¡Ù¤',30:'Ù¡Ù¥'},
     data: {
-      3:  [{ p:'tawzeef',  topic:'مهارات مايكروسوفت أوفيس',              trainer:'م. عمر الخالدي',  mode:'حضوري مساء', supervisor:'شهد',  venue:'الجمعية' }],
-      4:  [{ p:'tawzeef',  topic:'اللغة الإنجليزية',                     trainer:'م. عمر الخالدي',  mode:'عن بعد',     supervisor:'شهد',  venue:'-' }],
-      7:  [{ p:'tawzeef',  topic:'اللغة الإنجليزية',                     trainer:'م. عمر الخالدي',  mode:'عن بعد',     supervisor:'شهد',  venue:'-' },
-           { p:'ai',       topic:'مسار البرمجة',                          trainer:'د.انتصار',         mode:'عن بعد',     supervisor:'لين',  venue:'-' }],
-      8:  [{ p:'tawzeef',  topic:'مهارات مايكروسوفت أوفيس',              trainer:'م. عمر الخالدي',  mode:'حضوري مساء', supervisor:'شهد',  venue:'الجمعية' },
-           { p:'ai',       topic:'مسار البرمجة',                          trainer:'د.انتصار',         mode:'عن بعد',     supervisor:'لين',  venue:'-' }],
-      9:  [{ p:'inaya',    topic:'المجال الاقتصادي',                     trainer:'أرين الشمراني',   mode:'حضوري مساء', supervisor:'لين',  venue:'مدرسة البشرى' },
-           { p:'qanadeel', topic:'قنديل التربية',                        trainer:'نجلاء أبو زيد',   mode:'حضوري مساء', supervisor:'-',    venue:'مدرسة البشرى' }],
-      10: [{ p:'inaya',    topic:'المجال الاقتصادي',                     trainer:'أرين الشمراني',   mode:'حضوري مساء', supervisor:'حلا',  venue:'مدرسة البشرى' },
-           { p:'qanadeel', topic:'قنديل التربية',                        trainer:'نجلاء أبو زيد',   mode:'حضوري مساء', supervisor:'-',    venue:'مدرسة البشرى' },
-           { p:'tawzeef',  topic:'مهارات مايكروسوفت أوفيس',              trainer:'م. عمر الخالدي',  mode:'حضوري مساء', supervisor:'عفاف', venue:'الجمعية' }],
-      11: [{ p:'tawzeef',  topic:'اللغة الإنجليزية',                     trainer:'م. عمر الخالدي',  mode:'عن بعد',     supervisor:'شهد',  venue:'-' }],
-      14: [{ p:'tawzeef',  topic:'اللغة الإنجليزية',                     trainer:'م. عمر الخالدي',  mode:'عن بعد',     supervisor:'شهد',  venue:'-' }],
-      15: [{ p:'tawzeef',  topic:'مهارات مايكروسوفت أوفيس',              trainer:'م. عمر الخالدي',  mode:'حضوري مساء', supervisor:'شهد',  venue:'الجمعية' }],
-      16: [{ p:'inaya',    topic:'المجال الايماني',                      trainer:'مودة دخاخني',      mode:'حضوري مساء', supervisor:'منار', venue:'مدرسة البشرى' },
-           { p:'qanadeel', topic:'قنديل الاقتصاد الأسري',               trainer:'ابتسام الشبيلي',  mode:'حضوري مساء', supervisor:'-',    venue:'مدرسة البشرى' }],
-      17: [{ p:'inaya',    topic:'المجال الايماني',                      trainer:'مودة دخاخني',      mode:'حضوري مساء', supervisor:'لين',  venue:'مدرسة البشرى' },
-           { p:'qanadeel', topic:'قنديل الاقتصاد الأسري',               trainer:'ابتسام الشبيلي',  mode:'حضوري مساء', supervisor:'-',    venue:'مدرسة البشرى' },
-           { p:'tawzeef',  topic:'مهارات مايكروسوفت أوفيس',              trainer:'م. عمر الخالدي',  mode:'حضوري مساء', supervisor:'حلا',  venue:'الجمعية' }],
-      18: [{ p:'tawzeef',  topic:'اللغة الإنجليزية',                     trainer:'م. عمر الخالدي',  mode:'عن بعد',     supervisor:'شهد',  venue:'-' }],
-      21: [{ p:'tawzeef',  topic:'اللغة الإنجليزية',                     trainer:'م. عمر الخالدي',  mode:'عن بعد',     supervisor:'شهد',  venue:'-' }],
-      23: [{ p:'tawzeef',  topic:'كتابة المحتوى وإدارة مواقع التواصل', trainer:'أ. سارة الجعيد',  mode:'عن بعد',     supervisor:'شهد',  venue:'-' }],
-      25: [{ p:'tawzeef',  topic:'اللغة الإنجليزية',                     trainer:'م. عمر الخالدي',  mode:'عن بعد',     supervisor:'شهد',  venue:'-' }],
-      28: [{ p:'tawzeef',  topic:'اللغة الإنجليزية',                     trainer:'م. عمر الخالدي',  mode:'عن بعد',     supervisor:'شهد',  venue:'-' }],
+      7:  [{ p:'tawzeef',   topic:'Ø§ÙÙØºØ© Ø§ÙØ¥ÙØ¬ÙÙØ²ÙØ©',                        trainer:'Ù. Ø¹ÙØ± Ø§ÙØ®Ø§ÙØ¯Ù',    mode:'Ø¹Ù Ø¨Ø¹Ø¯',     supervisor:'Ø´ÙØ¯', venue:'-' }],
+      8:  [{ p:'tawzeef',   topic:'Ø§ÙÙØºØ© Ø§ÙØ¥ÙØ¬ÙÙØ²ÙØ©',                        trainer:'Ù. Ø¹ÙØ± Ø§ÙØ®Ø§ÙØ¯Ù',    mode:'Ø¹Ù Ø¨Ø¹Ø¯',     supervisor:'Ø´ÙØ¯', venue:'-' }],
+      9:  [{ p:'inaya',     topic:'Ø§ÙÙØ¬Ø§Ù Ø§ÙØ§ÙØªØµØ§Ø¯Ù',                        trainer:'Ø£Ø±ÙÙ Ø§ÙØ´ÙØ±Ø§ÙÙ',     mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'-',   venue:'ÙØ¯Ø±Ø³Ø© Ø§ÙØ¨Ø´Ø±Ù' },
+           { p:'qanadeel',  topic:'ÙÙØ¯ÙÙ Ø§ÙØªØ±Ø¨ÙØ©',                           trainer:'ÙØ¬ÙØ§Ø¡ Ø£Ø¨Ù Ø²ÙØ¯',     mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'-',   venue:'ÙØ¯Ø±Ø³Ø© Ø§ÙØ¨Ø´Ø±Ù' },
+           { p:'tawzeef',   topic:'Ø¥Ø¯Ø§Ø±Ø© Ø§ÙÙØ´Ø§Ø±ÙØ¹',                          trainer:'Ù. ØµØ§ÙØ­ Ø§ÙØ´ÙÙÙ',    mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'-',   venue:'Ø§ÙØ¬ÙØ¹ÙØ©' }],
+      10: [{ p:'inaya',     topic:'Ø§ÙÙØ¬Ø§Ù Ø§ÙØ§ÙØªØµØ§Ø¯Ù',                        trainer:'Ø£Ø±ÙÙ Ø§ÙØ´ÙØ±Ø§ÙÙ',     mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'-',   venue:'ÙØ¯Ø±Ø³Ø© Ø§ÙØ¨Ø´Ø±Ù' },
+           { p:'qanadeel',  topic:'ÙÙØ¯ÙÙ Ø§ÙØªØ±Ø¨ÙØ©',                           trainer:'ÙØ¬ÙØ§Ø¡ Ø£Ø¨Ù Ø²ÙØ¯',     mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'-',   venue:'ÙØ¯Ø±Ø³Ø© Ø§ÙØ¨Ø´Ø±Ù' },
+           { p:'tawzeef',   topic:'Ø¥Ø¯Ø§Ø±Ø© Ø§ÙÙØ´Ø§Ø±ÙØ¹',                          trainer:'Ù. ØµØ§ÙØ­ Ø§ÙØ´ÙÙÙ',    mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'-',   venue:'Ø§ÙØ¬ÙØ¹ÙØ©' }],
+      14: [{ p:'tawzeef',   topic:'Ø§ÙÙØºØ© Ø§ÙØ¥ÙØ¬ÙÙØ²ÙØ©',                        trainer:'Ù. Ø¹ÙØ± Ø§ÙØ®Ø§ÙØ¯Ù',    mode:'Ø¹Ù Ø¨Ø¹Ø¯',     supervisor:'Ø´ÙØ¯', venue:'-' }],
+      15: [{ p:'tawzeef',   topic:'Ø§ÙÙØºØ© Ø§ÙØ¥ÙØ¬ÙÙØ²ÙØ©',                        trainer:'Ù. Ø¹ÙØ± Ø§ÙØ®Ø§ÙØ¯Ù',    mode:'Ø¹Ù Ø¨Ø¹Ø¯',     supervisor:'Ø´ÙØ¯', venue:'-' }],
+      16: [{ p:'inaya',     topic:'Ø§ÙÙØ¬Ø§Ù Ø§ÙØ§ÙÙØ§ÙÙ',                         trainer:'ÙÙØ¯Ø© Ø¯Ø®Ø§Ø®ÙÙ',        mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'-',   venue:'ÙØ¯Ø±Ø³Ø© Ø§ÙØ¨Ø´Ø±Ù' },
+           { p:+qanadeel',  topic:'ÙÙØ¯ÙÙ Ø§ÙØ§ÙØªØµØ§Ø¯ Ø§ÙØ£Ø³Ø±Ù',                  trainer:'Ø§Ø¨ØªØ³Ø§Ù Ø§ÙØ´Ø¨ÙÙÙ',    mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'-',   venue:'ÙØ¯Ø±Ø³Ø© Ø§ÙØ¨Ø´Ø±Ù' },
+           { p:'tawzeef',   topic:'ÙØªØ§Ø¨Ø© Ø§ÙÙØ­ØªÙÙ ÙØ¥Ø¯Ø§Ø±Ø© ÙÙØ§ÙÙ Ø§ÙØªÙØ§ØµÙ',    trainer:'Ø£. Ø³Ø§Ø±Ø© Ø§ÙØ¬Ø¹ÙØ¯',    mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'-',   venue:'Ø§ÙØ¬ÙØ¹ÙØ©' }],
+      17: [{ p:'inaya',     topic:'Ø§ÙÙØ¬Ø§Ù Ø§ÙØ§ÙÙØ§ÙÙ',                         trainer:'ÙÙØ¯Ø© Ø¯Ø®Ø§Ø®ÙÙ',        mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'-',   venue:'ÙØ¯Ø±Ø³Ø© Ø§ÙØ¨Ø´Ø±Ù' },
+           { p:+qanadeel',  topic:'ÙÙØ¯ÙÙ Ø§ÙØ§ÙØªØµØ§Ø¯ Ø§ÙØ£Ø³Ø±Ù',                  trainer:'Ø§Ø¨ØªØ³Ø§Ù Ø§ÙØ´Ø¨ÙÙÙ',    mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'-',   venue:'ÙØ¯Ø±Ø³Ø© Ø§ÙØ¨Ø´Ø±Ù' },
+           { p:'tawzeef',   topic:'Ø§ÙØªØ³ÙÙÙ Ø§ÙØ´Ø®ØµÙ',                          trainer:'Ø¯. Ø£ÙÙÙ Ø§ÙØ³Ø¹ÙØ¯Ù',   mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', supervisor:'-',   venue:'Ø§ÙØ¬ÙØ¹ÙØ©' }],
+      21: [{ p:'tawzeef',   topic:'Ø§ÙÙØºØ© Ø§ÙØ¥ÙØ¬ÙÙØ²ÙØ©',                        trainer:'Ù. Ø¹ÙØ± Ø§ÙØ®Ø§ÙØ¯Ù',    mode:'Ø¹Ù Ø¨Ø¹Ø¯',     supervisor:'Ø´ÙØ¯', venue:'-' }],
+      22: [{ p:'tawzeef',   topic:'Ø§ÙÙØºØ© Ø§ÙØ¥ÙØ¬ÙÙØ²ÙØ©',                        trainer:'Ù. Ø¹ÙØ± Ø§ÙØ®Ø§ÙØ¯Ù',    mode:'Ø¹Ù Ø¨Ø¹Ø¯',     supervisor:'Ø´ÙØ¯', venue:'-' }],
+      28: [{ p:'tawzeef',   topic:'',                                         trainer:'',                   mode:'Ø¹Ù Ø¨Ø¹Ø¯',     supervisor:'-',   venue:'-' }],
+      29: [{ p:'tawzeef',   topic:'',                                         trainer:'',                   mode:'Ø¹Ù Ø¨Ø¹Ø¯',     supervisor:'-',   venue:'-' }],
+      30: [{ p:'tawzeef',   topic:'',                                         trainer:'',                   mode:'Ø¹Ù Ø¨Ø¹Ø¯',     supervisor:'-',   venue:'-' }],
     }, eid: {}
   },
-  { // 6 — July 2026
-    name: 'يوليو', nameShort: 'يوليـو', year: 2026, jsMonth: 6,
-    hijriInfo: 'محرم–صفر ١٤٤٨هـ',
+  { // 6 â July 2026
+    name: 'ÙÙÙÙÙ', nameShort: 'ÙÙÙÙÙÙ', year: 2026, jsMonth: 6,
+    hijriInfo: 'ÙØ­Ø±ÙâØµÙØ± Ù¡Ù¤Ù¤Ù¨ÙÙ',
     startDay: 3,
     numDays: 31,
     theme: 'jul',
-    hijri: {1:'١٦|محرم',2:'١٧',3:'١٨',4:'١٩',5:'٢٠',6:'٢١',7:'٢٢',8:'٢٣',9:'٢٤',10:'٢٥',11:'٢٦',12:'٢٧',13:'٢٨',14:'٢٩',15:'١|صفر',16:'٢',17:'٣',18:'٤',19:'٥',20:'٦',21:'٧',22:'٨',23:'٩',24:'١٠',25:'١١',26:'١٢',27:'١٣',28:'١٤',29:'١٥',30:'١٦',31:'١٧'},
-    data: {}, eid: {}
+    hijri: {1:'Ù¡Ù¦|ÙØ­Ø±Ù',2:'Ù¡Ù§',3:'Ù¡Ù¨',4:'Ù¡Ù©',5:'Ù¢Ù ',6:'Ù¢Ù¡',7:'Ù¢Ù¢',8:'Ù¢Ù£',9:'Ù¢Ù¤',10:'Ù¢Ù¥',11:'Ù¢Ù¦',12:'Ù¢Ù§',13:'Ù¢Ù¨',14:'Ù¢Ù©',15:'Ù¡|ØµÙØ±',16:'Ù¢',17:'Ù£',18:'Ù¤',19:'Ù¥',20:'Ù¦',21:'Ù§',22:'Ù¨',23:'Ù©',24:'Ù¡Ù ',25:'Ù¡Ù¡',26:'Ù¡Ù¢',27:'Ù¡Ù£',28:'Ù¡Ù¤',29:'Ù¡Ù¥',30:'Ù¡Ù¦',31:'Ù¡Ù§'},
+    data: {
+      1:  [{ p:'masaha',  topic:'ÙØ³Ø§Ø­Ø© Ø£Ù',                              trainer:'Ø¯.Ø§ÙØ§Ø¡ ÙØµÙÙ',       supervisor:'ÙÙØ§Ø±-Ø­ÙØ§-Ø³Ø§Ø±Ø©', mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', venue:'ÙØ¯Ø±Ø³Ø© Ø§ÙØ¨Ø´Ø±Ù' }],
+      4:  [{ p:'qurnas',  topic:'Ø­ÙÙ Ø§ÙØªØ¯Ø´ÙÙ',                           trainer:'-',                 supervisor:'ÙÙÙ',            mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', venue:'Ø§ÙØ¬ÙØ¹ÙØ©' }],
+      5:  [{ p:'qurnas',  topic:'Ø¯ÙØ±Ø© Ø§ÙÙØ±ÙØ§Ø³',                          trainer:'ÙØ§ÙØ± Ø§ÙØ¹ØªÙØ¨Ù',      supervisor:'Ø­ÙØ§-Ø¬ÙØ±Ù',       mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', venue:'Ø§ÙØ¬ÙØ¹ÙØ©' }],
+      6:  [{ p:'qurnas',  topic:'',                                       trainer:'',                  supervisor:'Ø¹ÙØ§Ù-Ø¬ÙØ±Ù',      mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', venue:'Ø§ÙØ¬ÙØ¹ÙØ©' },
+           { p:'tawzeef', topic:'ÙØªØ§Ø¨Ø© Ø§ÙÙØ­ØªÙÙ ÙØ¥Ø¯Ø§Ø±Ø© ÙÙØ§ÙØ¹ Ø§ÙØªÙØ§ØµÙ',   trainer:'Ø£. Ø³Ø§Ø±Ø© Ø§ÙØ¬Ø¹ÙØ¯',    supervisor:'Ø´ÙØ¯',            mode:'Ø¹Ù Ø¨Ø¹Ø¯',     venue:'-' }],
+      7:  [{ p:'tawzeef', topic:'Ø§ÙØªØ³ÙÙÙ Ø§ÙØ´Ø®ØµÙ',                        trainer:'Ø¯. Ø§ÙÙÙ Ø§ÙØ³Ø¹ÙØ¯Ù',   supervisor:'Ø³Ø§Ø±Ø©-Ø¬ÙØ±Ù',      mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', venue:'Ø§ÙØ¬ÙØ¹ÙØ©' }],
+      8:  [{ p:'inaya',   topic:'Ø§ÙØ­ÙÙ Ø§ÙØ®ØªØ§ÙÙ',                         trainer:'-',                 supervisor:'ÙÙÙ-Ø³Ø§Ø±Ø©',       mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', venue:'Ø®Ø§Ø±Ø¬Ù' }],
+      11: [{ p:'sayfi',   topic:'',                                       trainer:'',                  supervisor:'',               mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', venue:'ÙØ¯Ø§Ø±Ø³ Ø§ÙØ²ÙØ±Ø§Ø¡' }],
+      12: [{ p:'sayfi',   topic:'',                                       trainer:'',                  supervisor:'',               mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', venue:'ÙØ¯Ø§Ø±Ø³ Ø§ÙØ²ÙØ±Ø§Ø¡' },
+           { p:'qurnas',  topic:'Ø¯ÙØ±Ø© ÙÙÙØ© Ø§ÙØ­Ù',                        trainer:'Ø¹Ø¨Ø¯Ø§ÙØ¹Ø²ÙØ² Ø§ÙÙÙØ­ÙÙ', supervisor:'',               mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', venue:'Ø§ÙØ¬ÙØ¹ÙØ©' }],
+      13: [{ p:'qurnas',  topic:'',                                       trainer:'',                  supervisor:'ÙÙÙ',            mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', venue:'Ø§ÙØ¬ÙØ¹ÙØ©' },
+           { p:'umtaq',   topic:'',                                       trainer:'',                  supervisor:'',               mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', venue:'ÙØ¯Ø§Ø±Ø³ Ø§ÙØ²ÙØ±Ø§Ø¡' },
+           { p:'anaqawi', topic:'Ø­Ø¹Ù Ø§ÙØªØ¯Ø´ÙÙ',                           trainer:'',                  supervisor:'',               mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', venue:'ÙØ¯Ø§Ø±Ø³ Ø§ÙØ²ÙØ±Ø§Ø¡' }],
+      14: [{ p:'umtaq',   topic:'',                                       trainer:'',                  supervisor:'Ø­ÙØ§',            mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', venue:'ÙØ¯Ø§Ø±Ø³ Ø§ÙØ²ÙØ±Ø§Ø¡' },
+           { p:'anaqawi', topic:'',                                       trainer:'',                   supervisor:'',               mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', venue:'ÙØ¯Ø§Ø±Ø³ Ø§ÙØ²ÙØ±Ø§Ø¡' },
+           { p:'tawzeef', topic:'Ø¥Ø¯Ø§Ø±Ø© Ø§ÙÙØ´Ø§Ø±ÙØ¹',                        trainer:'Ù. ØµØ§ÙØ­ Ø§ÙØ´ÙÙÙ',   supervisor:'ÙØ§Ø¯ÙØ©',          mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', venue:'Ø§ÙØ¬ÙØ¹ÙØ©' }],
+      15: [{ p:'tawzeef', topic:'Ø¥Ø¯Ø§Ø±Ø© Ø§ÙÙØ´Ø§Ø±ÙØ¹',                        trainer:'Ù. ØµØ§ÙØ­ Ø§ÙØ´ÙÙÙ',   supervisor:'Ø­ÙØ§',            mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', venue:'Ø§ÙØ¬ÙØ¹ÙØ©' }],
+      18: [{ p:'sayfi',   topic:'',                                       trainer:'',                  supervisor:'',               mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', venue:'ÙØ¯Ø§Ø±Ø³ Ø§ÙØ²ÙØ±Ø§Ø¡' },
+           { p:'qurnas',  topic:'Ø¯ÙØ±Ø© Ø§ÙØ§ ÙØ³Ø¤ÙÙ',                        trainer:'Ø¹ÙÙ Ø§ÙØ®Ø±ÙÙ',        supervisor:'ÙÙØ§Ø±',           mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', venue:'Ø§ÙØ¬ÙØ¹ÙØ©' },
+           { p:'umtaq',   topic:'',                                       trainer:'',                  supervisor:'',               mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', venue:'ÙØ¯Ø§Ø±Ø³ Ø§ÙØ²ÙØ±Ø§Ø¡' },
+           { p:'anaqawi', topic:'',                                       trainer:'',                  supervisor:'',               mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', venue:'ÙØ¯Ø§Ø±Ø³ Ø§ÙØ²ÙØ±Ø§Ø¡' },
+           { p:'tawzeef', topic:'Ø®Ø¯ÙØ© Ø§ÙØ¹ÙÙØ§Ø¡',                          trainer:'Ø£. ÙØ­ÙØ¯ Ø§ÙØ¹Ø·ÙØ©',   supervisor:'Ø´ÙØ¯',            mode:'Ø¹Ù Ø¨Ø¹Ø¯',     venue:'-' }],
+      21: [{ p:'shadn',   topic:'Ø¯ÙØ±Ø© Ø±ÙÙØ²Ø©',                            trainer:'',                  supervisor:'ÙÙÙ',            mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', venue:'Ø§ÙØ¬ÙØ¹ÙØ©' },
+           { p:'umtaq',   topic:'',                                       trainer:'',                  supervisor:'',               mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', venue:'ÙØ¯Ø§Ø±Ø³ Ø§ÙØ²ÙØ±Ø§Ø¡' },
+           { p:'anaqawi', topic:'',                                       trainer:'',                  supervisor:'',               mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', venue:'ÙØ¯Ø§Ø±Ø³ Ø§ÙØ²ÙØ±Ø§Ø¡' },
+           { p:'wawzeef', topic:'Ø¥Ø¹Ø¯Ø§Ø¯ Ø§ÙØªÙØ§Ø±ÙØ±',                        trainer:'Ù. ØµØ§ÙØ­ Ø§ÙØ´ÙÙÙ',   supervisor:'',               mode:'Ø¹Ù Ø¨Ø¹Ø¯',     venue:'-' }],
+      22: [{ p:'shadn',   topic:'Ø¯ÙØ±Ø© Ø±ÙÙØ²Ø©',                            trainer:'',                  supervisor:'ÙÙÙ',            mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', venue:'Ø§ÙØ¬ÙØ¹ÙØ©' },
+           { p:'tawzeef', topic:'Ø§ÙØªØ¯Ø±ÙØ¨ Ø§ÙÙÙØ¯Ø§ÙÙ (ÙÙØ¯ÙØ©-Ø­Ø¬ ÙØ¹ÙØ±Ø©)',    trainer:'',                  supervisor:'ÙØ§Ø¯ÙØ©',          mode:'-',          venue:'-' }],
+      25: [{ p:'sayfi',   topic:'',                                       trainer:'',                  supervisor:'',               mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', venue:'ÙØ¯Ø§Ø±Ø³ Ø§ÙØ²ÙØ±Ø§Ø¡' },
+           { p:'qurnas',  topic:'Ø¯ÙØ±Ø© ØµÙØªÙ Ø§ÙØ§',                         trainer:'ÙØ§ÙØ± Ø§ÙÙØµØ·ÙÙ',     supervisor:'Ø­ÙØ§',            mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', venue:'Ø§ÙØ¬ÙØ¹ÙØ©' },
+           { p:'umtaq',   topic:'',                                       trainer:'',                  supervisor:'',               mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', venue:'ÙØ¯Ø§Ø±Ø³ Ø§ÙØ²ÙØ±Ø§Ø¡' },
+           { p:'anaqawi', topic:'',                                       trainer:'',                  supervisor:'',               mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', venue:'ÙØ¯Ø§Ø±Ø³ Ø§ÙØ²ÙØ±Ø§Ø¡' }],
+      28: [{ p:'shadn',   topic:'Ø¯ÙØ±Ø© Ø±Ø³ÙØ®',                             trainer:'',                  supervisor:'Ø¹ÙØ§Ù',           mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', venue:'Ø§ÙØ¬ÙØ¹ÙØ©' },
+           { p:'umtaq',   topic:'',                                       trainer:'',                  supervisor:'',               mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', venue:'ÙØ¯Ø§Ø±Ø³ Ø§ÙØ²ÙØ±Ø§Ø¡' },
+           { p:'anaqawi', topic:'',                                       trainer:'',                  supervisor:'',               mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', venue:'ÙØ¯Ø§Ø±Ø³ Ø§ÙØ²ÙØ±Ø§Ø¡' }],
+      29: [{ p:'shadn',   topic:'Ø¯ÙØ±Ø© Ø±Ø³ÙØ®',                             trainer:'',                  supervisor:'ÙÙÙ',            mode:'Ø­Ø¶ÙØ±Ù ÙØ³Ø§Ø¡', venue:'Ø§ÙØ¬ÙØ¹ÙØ©' },
+           { p:'tawzeef', topic:'Ø§ÙØªØ¯Ø±ÙØ¨ Ø§ÙÙÙØ¯Ø§ÙÙ (ÙÙØ¯ÙØ©-Ø­Ø¬ ÙØ¹ÙØ±Ø©)',    trainer:'',                  supervisor:'ÙØ§Ø¯ÙØ©',          mode:'-',          venue:'-' }],
+    }, eid: {}
   },
-  { // 7 — August 2026
-    name: 'أغسطس', nameShort: 'أغسطـس', year: 2026, jsMonth: 7,
-    hijriInfo: 'صفر – ربيع الأول ١٤٤٨هـ',
+  { // 7 â August 2026
+    name: 'Ø£ØºØ³Ø·Ø³', nameShort: 'Ø£ØºØ³Ø·ÙØ³', year: 2026, jsMonth: 7,
+    hijriInfo: 'ØµÙØ± â Ø±Ø¨ÙØ¹ Ø§ÙØ£ÙÙ Ù¡Ù¤Ù¤Ù¨ÙÙ',
     startDay: 6,
     numDays: 31,
     theme: 'aug',
-    hijri: {1:'١٨|صفر',2:'١٩',3:'٢٠',4:'٢١',5:'٢٢',6:'٢٣',7:'٢٤',8:'٢٥',9:'٢٦',10:'٢٧',11:'٢٨',12:'٢٩',13:'٣٠',14:'١|ربيع الأول',15:'٢',16:'٣',17:'٤',18:'٥',19:'٦',20:'٧',21:'٨',22:'٩',23:'١٠',24:'١١',25:'١٢',26:'١٣',27:'١٤',28:'١٥',29:'١٦',30:'١٧',31:'١٨'},
+    hijri: {1:'Ù¡Ù¨|ØµÙØ±',2:'Ù¡Ù©',3:'Ù¢Ù ',4:'Ù¢Ù¡',5:'Ù¢Ù¢',6:'Ù¢Ù£',7:'Ù¢Ù¤',8:'Ù¢Ù¥',9:'Ù¢Ù¦',10:'Ù¢Ù§',11:'Ù¢Ù¨',12:'Ù¢Ù©',13:'Ù£Ù ',14:'Ù¡|Ø±Ø¨ÙØ¹ Ø§ÙØ£ÙÙ',15:'Ù¢',16:'Ù£',17:'Ù¤',18:'Ù¥',19:'Ù¦',20:'Ù§',21:'Ù¨',22:'Ù©',23:'Ù¡Ù ',24:'Ù¡Ù¡',25:'Ù¡Ù¢',26:'Ù¡Ù£',27:'Ù¡Ù¤',28:'Ù¡Ù¥',29:'Ù¡Ù¦',30:'Ù¡Ù§',31:'Ù¡Ù¨'},
     data: {}, eid: {}
   },
-  { // 8 — September 2026
-    name: 'سبتمبر', nameShort: 'سبتمبـر', year: 2026, jsMonth: 8,
-    hijriInfo: 'ربيع الأول – ربيع الآخر ١٤٤٨هـ',
+  { // 8 â September 2026
+    name: 'Ø³Ø¨ØªÙØ¨Ø±', nameShort: 'Ø³Ø¨ØªÙØ¨ÙØ±', year: 2026, jsMonth: 8,
+    hijriInfo: 'Ø±Ø¨ÙØ¹ Ø§ÙØ£ÙÙ â Ø±Ø¨ÙØ¹ Ø§ÙØ¢Ø®Ø± Ù¡Ù¤Ù¤Ù¨ÙÙ',
     startDay: 2,
     numDays: 30,
     theme: 'sep',
-    hijri: {1:'١٩|ربيع الأول',2:'٢٠',3:'٢١',4:'٢٢',5:'٢٣',6:'٢٤',7:'٢٥',8:'٢٦',9:'٢٧',10:'٢٨',11:'٢٩',12:'١|ربيع الآخر',13:'٢',14:'٣',15:'٤',16:'٥',17:'٦',18:'٧',19:'٨',20:'٩',21:'١٠',22:'١١',23:'١٢',24:'١٣',25:'١٤',26:'١٥',27:'١٦',28:'١٧',29:'١٨',30:'١٩'},
+    hijri: {1:'Ù¡Ù©|Ø±Ø¨ÙØ¹ Ø§ÙØ£ÙÙ',2:'Ù¢Ù ',3:'Ù¢Ù¡',4:'Ù¢Ù¢',5:'Ù¢Ù£',6:'Ù¢Ù¤',7:'Ù¢Ù¥',8:'Ù¢Ù¦',5:'Ù¢Ù§',10:'Ù¢Ù¨',11:'Ù¢Ù©',12:'Ù¡|Ø±Ø¨ÙØ¹ Ø§ÙØ¢Ø®Ø±',13:'Ù¢',14:'Ù£',15:'Ù¤',16:'Ù¥',17:'Ù¦',18:'Ù§',19:'Ù¨',20:'Ù©',21:'Ù¡Ù ',22:'Ù¡Ù¡',23:'Ù¡Ù¢',24:'Ù¡Ù£',25:'Ù¡Ù¤',26:'Ù¡Ù¥',27:'Ù¡Ù¦',28:'Ù¡Ù§',29:'Ù¡Ù¨',30:'Ù¡Ù©'},
     data: {}, eid: {}
   },
-  { // 9 — October 2026
-    name: 'أكتوبر', nameShort: 'أكتوبـر', year: 2026, jsMonth: 9,
-    hijriInfo: 'ربيع الآخر – جمادى الأولى ١٤٤٨هـ',
+  { // 9 â October 2026
+    name: 'Ø£ÙØªÙØ¨Ø±', nameShort: 'Ø£ÙØªÙØ¨ÙØ±', year: 2026, jsMonth: 9,
+    hijriInfo: 'Ø±Ø¨ÙØ¹ Ø§ÙØ¢Ø®Ø± â Ø¬ÙØ§Ø¯Ù Ø§ÙØ£ÙÙÙ Ù¡Ù¤Ù¤Ù¨ÙÙ',
     startDay: 4,
     numDays: 31,
     theme: 'oct',
-    hijri: {1:'٢٠|ربيع الآخر',2:'٢١',3:'٢٢',4:'٢٣',5:'٢٤',6:'٢٥',7:'٢٦',8:'٢٧',9:'٢٨',10:'٢٩',11:'٣٠',12:'١|جمادى الأولى',13:'٢',14:'٣',15:'٤',16:'٥',17:'٦',18:'٧',19:'٨',20:'٩',21:'١٠',22:'١١',23:'١٢',24:'١٣',25:'١٤',26:'١٥',27:'١٦',28:'١٧',29:'١٨',30:'١٩',31:'٢٠'},
+    hijri: {1:'Ù¢Ù |Ø±Ø¨ÙØ¹ Ø§ÙØ¢Ø®Ø±',2:'Ù¢Ù¡',3:'Ù¢Ù¢',4:'Ù¢Ù£',5:'Ù¢Ù¤',6:'Ù¢Ù¥',7:'Ù¢Ù¦',8:'Ù¢Ù§',9:'Ù¢Ù¨',10:'Ù¢Ù©',11:'Ù£Ù ',12:'Ù¡|Ø¬ÙØ§Ø¯Ù Ø§ÙØ£ÙÙÙ',13:'Ù¢',14:'Ù£',15:'Ù¤',16:'Ù¥',17:'Ù¦',18:'Ù§',19:'Ù¨',20:'Ù©',21:'Ù¡Ù ',22:'Ù¡Ù¡',23:'Ù¡Ù¢',24:'Ù¡Ù£',25:'Ù¡Ù¤',26:'Ù¡Ù¥',27:'Ù¡Ù¦',28:'Ù¡Ù§',29:'Ù¡Ù¨',30:'Ù¡Ù©',31:'Ù¢Ù '},
     data: {}, eid: {}
   },
-  { // 10 — November 2026
-    name: 'نوفمبر', nameShort: 'نوفمبـر', year: 2026, jsMonth: 10,
-    hijriInfo: 'جمادى الأولى – جمادى الآخرة ١٤٤٨هـ',
+  { // 10 â November 2026
+    name: 'ÙÙÙÙØ¨Ø±', nameShort: 'ÙÙÙÙØ¨ÙØ±', year: 2026, jsMonth: 10,
+    hijriInfo: 'Ø¬ÙØ§Ø¯Ù Ø§ÙØ£ÙÙÙ â Ø¬ÙØ§Ø¯Ù Ø§ÙØ¢Ø®Ø±Ø© Ù¡Ù¤Ù¤Ù¨ÙÙ',
     startDay: 0,
     numDays: 30,
     theme: 'nov',
-    hijri: {1:'٢١|جمادى الأولى',2:'٢٢',3:'٢٣',4:'٢٤',5:'٢٥',6:'٢٦',7:'٢٧',8:'٢٨',9:'٢٩',10:'١|جمادى الآخرة',11:'٢',12:'٣',13:'٤',14:'٥',15:'٦',16:'٧',17:'٨',18:'٩',19:'١٠',20:'١١',21:'١٢',22:'١٣',23:'١٤',24:'١٥',25:'١٦',26:'١٧',27:'١٨',28:'١٩',29:'٢٠',30:'٢١'},
+    hijri: {1:'Ù¢Ù¡|Ø¬ÙØ§Ø¯Ù Ø§ÙØ£ÙÙÙ',2:'Ù¢Ù¢',3:'Ù¢Ù£',4:'Ù¢Ù¤',5:'Ù¢Ù¥',6:'Ù¢Ù¦',7:'Ù¢Ù§',8:'Ù¢Ù¨',9:'Ù¢Ù©',10:'Ù¡|Ø¬ÙØ§Ø¯Ù Ø§ÙØ¢Ø®Ø±Ø©',11:'Ù¢',12:'Ù£',13:'Ù¤',14:'Ù¥',15:'Ù¦',16:'Ù§',17:'Ù¨',18:'Ù©',19:'Ù¡Ù ',20:'Ù¡Ù¡',21:'Ù¡Ù¢',22:'Ù¡Ù£',23:'Ù¡Ù¤',24:'Ù¡Ù¥',25:'Ù¡Ù¦',26:'Ù¡Ù§',27:'Ù¡Ù¨',28:'Ù¡Ù©',29:'Ù¢Ù ',30:'Ù¢Ù¡'},
     data: {}, eid: {}
   },
-  { // 11 — December 2026
-    name: 'ديسمبر', nameShort: 'ديسمبـر', year: 2026, jsMonth: 11,
-    hijriInfo: 'جمادى الآخرة – رجب ١٤٤٨هـ',
+  { // 11 â December 2026
+    name: 'Ø¯ÙØ³ÙØ¨Ø±', nameShort: 'Ø¯ÙØ³ÙØ¨ÙØ±', year: 2026, jsMonth: 11,
+    hijriInfo: 'Ø¬ÙØ§Ø¯Ù Ø§ÙØ¢Ø®Ø±Ø© â Ø±Ø¬Ø¨ Ù¡Ù¤Ù¤Ù¨ÙÙ',
     startDay: 2,
     numDays: 31,
     theme: 'dec',
-    hijri: {1:'٢٢|جمادى الآخرة',2:'٢٣',3:'٢٤',4:'٢٥',5:'٢٦',6:'٢٧',7:'٢٨',8:'٢٩',9:'٣٠',10:'١|رجب',11:'٢',12:'٣',13:'٤',14:'٥',15:'٦',16:'٧',17:'٨',18:'٩',19:'١٠',20:'١١',21:'١٢',22:'١٣',23:'١٤',24:'١٥',25:'١٦',26:'١٧',27:'١٨',28:'١٩',29:'٢٠',30:'٢١',31:'٢٢'},
+    hijri: {1:'Ù¢Ù¢|Ø¬ÙØ§Ø¯Ù Ø§ÙØ¢Ø®Ø±Ø©',2:'Ù¢Ù£',3:'Ù¢Ù¤',4:'Ù¢Ù¥',5:'Ù¢Ù¦',6:'Ù¢Ù§',7:'Ù¢Ù¨',8:'Ù¢Ù©',9:'Ù£Ù ',10:'Ù¡|Ø±Ø¬Ø¨',11:'Ù¢',12:'Ù£',13:'Ù¤',14:'Ù¥',15:'Ù¦',16:'Ù§',17:'Ù¨',18:'Ù©',19:'Ù¡Ù ',20:'Ù¡Ù¡',21:'Ù¡Ù¢',22:'Ù¡Ù£',23:'Ù¡Ù¤',24:'Ù¡Ù¥',25:'Ù¡Ù¦',26:'Ù¡Ù§',27:'Ù¡Ù¨',28:'Ù¡Ù©',29:'Ù¢Ù ',30:'Ù¢Ù¡',31:'Ù¢Ù¢'},
     data: {}, eid: {}
   }
 ];
@@ -538,8 +597,8 @@ function renderMonth(idx){
   displayedMonthIndex = idx;
   document.body.className = m.theme ? ('theme-' + m.theme) : '';
   document.getElementById('month-name').textContent = m.nameShort;
-  document.getElementById('year-info').textContent = `${m.name} ${m.year}م  ·  ${m.hijriInfo}`;
-  document.title = `رزنامة تمكين · ${m.name} ${m.year}`;
+  document.getElementById('year-info').textContent = `${m.name} ${m.year}Ù  Â·  ${m.hijriInfo}`;
+  document.title = `Ø±Ø²ÙØ§ÙØ© ØªÙÙÙÙ Â· ${m.name} ${m.year}`;
   document.getElementById('back-btn').classList.toggle('show', idx !== CURRENT_MONTH_INDEX);
   const grid = document.getElementById('grid');
   grid.innerHTML = '';
@@ -591,7 +650,7 @@ function renderMonth(idx){
       if(events.length > 3){
         const more = document.createElement('span');
         more.style.cssText='font-size:10px;color:rgba(80,60,120,0.7);margin-top:1px;cursor:pointer;font-weight:600;';
-        more.textContent=`+${events.length-3} أخرى`;
+        more.textContent=`+${events.length-3} Ø£Ø®Ø±Ù`;
         more.addEventListener('click', ()=> openModal(idx, day, events));
         badges.appendChild(more);
       }
@@ -606,27 +665,7 @@ function renderMonth(idx){
     d.className='day empty'; grid.appendChild(d);
   }
   document.getElementById('empty-note').style.display = (!hasEvents && !hasEid) ? 'block' : 'none';
-  renderLegend(m);
   window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
-function renderLegend(m){
-  const legend = document.getElementById('legend');
-  legend.innerHTML = '';
-  const seen = new Set();
-  Object.values(m.data).forEach(dayEvents => {
-    dayEvents.forEach(ev => seen.add(ev.p));
-  });
-  if(seen.size === 0){ legend.style.display='none'; return; }
-  legend.style.display='grid';
-  seen.forEach(key => {
-    const pr = PROGRAMS[key];
-    if(!pr) return;
-    const item = document.createElement('div');
-    item.className = 'leg-item';
-    item.innerHTML = `<div class="leg-dot" style="background:${pr.bg}"></div>${pr.name}`;
-    legend.appendChild(item);
-  });
 }
 
 function buildArchive(){
@@ -639,12 +678,12 @@ function buildArchive(){
   const futureIndices = [];
   for(let i=CURRENT_MONTH_INDEX+1; i<MONTHS.length; i++) futureIndices.push(i);
   if(pastIndices.length === 0){
-    pastList.innerHTML = '<div class="archive-empty">لا توجد شهور سابقة</div>';
+    pastList.innerHTML = '<div class="archive-empty">ÙØ§ ØªÙØ¬Ø¯ Ø´ÙÙØ± Ø³Ø§Ø¨ÙØ©</div>';
   } else {
     pastIndices.forEach(i => pastList.appendChild(makeChip(i)));
   }
   if(futureIndices.length === 0){
-    futureList.innerHTML = '<div class="archive-empty">لا توجد شهور قادمة</div>';
+    futureList.innerHTML = '<div class="archive-empty">ÙØ§ ØªÙØ¬Ø¯ Ø´ÙÙØ± ÙØ§Ø¯ÙØ©</div>';
   } else {
     futureIndices.forEach(i => futureList.appendChild(makeChip(i)));
   }
@@ -666,7 +705,7 @@ function openModal(monthIdx, day, events){
   const d = new Date(m.year, m.jsMonth, day);
   const hijStr = m.hijri[day] ? m.hijri[day].split('|')[0] : '';
   document.getElementById('modal-date').textContent =
-    `${ARABIC_DAYS[d.getDay()]} · ${day} ${m.name} ${m.year}${hijStr ? ' · ' + hijStr + ' هـ' : ''}`;
+    `${ARABIC_DAYS[d.getDay()]} Â· ${day} ${m.name} ${m.year}${hijStr ? ' Â· ' + hijStr + ' ÙÙ' : ''}`;
   let html='';
   events.forEach(ev=>{
     const pr=PROGRAMS[ev.p];
@@ -675,9 +714,9 @@ function openModal(monthIdx, day, events){
       <div class="modal-info">
         <div class="prog">${pr.name}</div>
         ${ev.topic?`<div class="topic">${ev.topic}</div>`:''}
-        ${ev.trainer?`<div class="trainer">👤 ${ev.trainer}</div>`:''}
-        ${ev.supervisor && ev.supervisor!=='-'?`<div class="trainer">🔑 المسؤول: ${ev.supervisor}</div>`:''}
-        ${ev.mode && ev.mode!=='-'?`<span class="mode">${ev.mode}${ev.venue && ev.venue!=='-'?' · '+ev.venue:''}</span>`:''}
+        ${ev.trainer?`<div class="trainer">ð¤ ${ev.trainer}</div>`:''}
+        ${ev.supervisor && ev.supervisor!=='-'?`<div class="trainer">ð Ø§ÙÙØ³Ø¤ÙÙ: ${ev.supervisor}</div>`:''}
+        ${ev.mode && ev.mode!=='-'?`<span class="mode">${ev.mode}${ev.venue && ev.venue!=='-'?' Â· '+ev.venue:''}</span>`:''}
       </div>
     </div>`;
   });
