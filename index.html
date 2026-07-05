@@ -225,13 +225,13 @@ body.theme-dec { background: #f6ccd6; }
   </div>
   <div class="cal-card">
     <div class="dow-row">
+      <div class="dow-cell">السبت</div>
       <div class="dow-cell">الأحد</div>
       <div class="dow-cell">الاثنين</div>
       <div class="dow-cell">الثلاثاء</div>
       <div class="dow-cell">الأربعاء</div>
       <div class="dow-cell">الخميس</div>
       <div class="dow-cell">الجمعة</div>
-      <div class="dow-cell">السبت</div>
     </div>
     <div class="cal-grid" id="grid"></div>
     <div class="empty-month-note" id="empty-note" style="display:none;">
@@ -276,10 +276,10 @@ body.theme-dec { background: #f6ccd6; }
 const PROGRAMS = {
   tawzeef:  { name:'حاضنة التوظيف 4', bg:'#b6e4e8', fg:'#1f4e55' },
   inaya:    { name:'عناية 2',          bg:'#f5c5d1', fg:'#6d2b42' },
-  qanadeel: { name:'قنديل 2',         bg:'#e4b1d1', fg:'#5a1f44' },
+  qanadeel: { name:'قناديل 2',         bg:'#e4b1d1', fg:'#5a1f44' },
   tahseeli: { name:'التحصيلي',         bg:'#c0e2c7', fg:'#254f33' },
-  ai:       { name:'مهارةا AI',         bg:'#d4c9ee', fg:'#3e2d78' },
-  tamkeen:  { name:'قييادة وتمكين 30 أم', bg:'#dadde3', fg:'#2d3448' },
+  ai:       { name:'مهارات AI',         bg:'#d4c9ee', fg:'#3e2d78' },
+  tamkeen:  { name:'قيادة وتمكين 30 أم', bg:'#dadde3', fg:'#2d3448' },
   fikr:     { name:'هندسة التفكير',    bg:'#f5dda3', fg:'#4a3516' },
   qurnas:   { name:'أكاديمية قرناس',  bg:'#f5ceaa', fg:'#5a311a' },
   masaha:   { name:'مساحة أم',         bg:'#fbd0e8', fg:'#6b2050' },
@@ -291,10 +291,10 @@ const PROGRAMS = {
 const ARABIC_DAYS = ['الأحد','الاثنين','الثلاثاء','الأربعاء','الخميس','الجمعة','السبت'];
 
 const MONTHS = [
-  { // 0 - January 2026
-    name: 'ينايـر', nameShort: 'ينايـر', year: 2026, jsMonth: 0,
+  { // 0 — January 2026
+    name: 'يناير', nameShort: 'ينايـر', year: 2026, jsMonth: 0,
     hijriInfo: 'رجب–شعبان ١٤٤٧هـ',
-    startDay: 4,
+    startDay: 5,
     numDays: 31,
     theme: 'jan',
     hijri: {1:'١١|رجب',2:'١٢',3:'١٣',4:'١٤',5:'١٥',6:'١٦',7:'١٧',8:'١٨',9:'١٩',10:'٢٠',11:'٢١',12:'٢٢',13:'٢٣',14:'٢٤',15:'٢٥',16:'٢٦',17:'٢٧',18:'٢٨',19:'٢٩',20:'١|شعبان',21:'٢',22:'٣',23:'٤',24:'٥',25:'٦',26:'٧',27:'٨',28:'٩',29:'١٠',30:'١١',31:'١٢'},
@@ -318,16 +318,16 @@ const MONTHS = [
            { p:'ai',       topic:'لقاء تعريفي',                 trainer:'',                 mode:'عن بعد',     supervisor:'لين',        venue:'-' }],
       27: [{ p:'inaya',    topic:'مجال القيادة',                trainer:'ارين الشمراني',   mode:'حضوري مساء', supervisor:'لين-حلا',   venue:'مدرسة البشرى' },
            { p:'qanadeel', topic:'قنديل الصبر',                  trainer:'طيبة عبدالكريم', mode:'حضوري مساء', supervisor:'شهد',        venue:'مدرسة البشرى' }],
-      28: [{ p:'inaya',    topic:'المجال الاجتناعي',            trainer:'ارين الشمراني',   mode:'حضوري مساء', supervisor:'عفاف',       venue:'مدرسة البشرى' },
+      28: [{ p:'inaya',    topic:'المجال الاجتماعي',            trainer:'ارين الشمراني',   mode:'حضوري مساء', supervisor:'عفاف',       venue:'مدرسة البشرى' },
            { p:'qanadeel', topic:'قنديل الصبر',                  trainer:'طيبة عبدالكريم', mode:'حضوري مساء', supervisor:'منار',       venue:'مدرسة البشرى' }],
       29: [{ p:'tawzeef',  topic:'اللغة الإنجليزية',            trainer:'عمر الخالدي',     mode:'عن بعد',     supervisor:'شهد',        venue:'-' }],
     },
     eid: {}
   },
-  { // 1 - February 2026
-    name: 'فبرةي', nameShort: 'فبريـر', year: 2026, jsMonth: 1,
+  { // 1 — February 2026
+    name: 'فبراير', nameShort: 'فبرايـر', year: 2026, jsMonth: 1,
     hijriInfo: 'شعبان–رمضان ١٤٤٧هـ',
-    startDay: 0,
+    startDay: 1,
     numDays: 28,
     theme: 'feb',
     hijri: {1:'١٣|شعبان',2:'١٤',3:'١٥',4:'١٦',5:'١٧',6:'١٨',7:'١٩',8:'٢٠',9:'٢١',10:'٢٢',11:'٢٣',12:'٢٤',13:'٢٥',14:'٢٦',15:'٢٧',16:'٢٨',17:'٢٩',18:'١|رمضان',19:'٢',20:'٣',21:'٤',22:'٥',23:'٦',24:'٧',25:'٨',26:'٩',27:'١٠',28:'١١'},
@@ -335,7 +335,7 @@ const MONTHS = [
       1:  [{ p:'qurnas',   topic:'روح الفريق',          trainer:'ماهر العتيبي',    mode:'حضوري مساء', supervisor:'منار',       venue:'الجمعية' }],
       2:  [{ p:'tawzeef',  topic:'التدريب الافتراضي',    trainer:'',                mode:'حضوري مساء', supervisor:'شهد-فادية', venue:'خارجي' },
            { p:'qurnas',   topic:'روح الفريق',           trainer:'ماهر العتيبي',    mode:'حضوري مساء', supervisor:'لين',        venue:'الجمعية' }],
-      3:  [{ p:'inaya',    topic:'',                     trainer:'سميا باسلامة',   mode:'حضوري مساء', supervisor:'لين',        venue:'مدرسة البشرى' },
+      3:  [{ p:'inaya',    topic:'',                     trainer:'سميه باسلامة',   mode:'حضوري مساء', supervisor:'لين',        venue:'مدرسة البشرى' },
            { p:'qanadeel', topic:'',                     trainer:'ابتسام الشبيلي', mode:'حضوري مساء', supervisor:'عفاف',       venue:'مدرسة البشرى' },
            { p:'ai',       topic:'',                     trainer:'',                mode:'عن بعد',     supervisor:'لين',        venue:'-' }],
       4:  [{ p:'ai',       topic:'',                     trainer:'',                mode:'عن بعد',     supervisor:'لين',        venue:'-' },
@@ -358,34 +358,37 @@ const MONTHS = [
     },
     eid: {}
   },
-  { // 2 - March 2026
+  { // 2 — March 2026
     name: 'مارس', nameShort: 'مـارس', year: 2026, jsMonth: 2,
-    hijrlInfo: 'رمضان₴شو الميء 2026',
-    startDay: 0,
+    hijriInfo: 'رمضان–شوال ١٤٤٧هـ',
+    startDay: 1,
     numDays: 31,
     theme: 'mar',
     hijri: {1:'١٢|رمضان',2:'١٣',3:'١٤',4:'١٥',5:'١٦',6:'١٧',7:'١٨',8:'١٩',9:'٢٠',10:'٢١',11:'٢٢',12:'٢٣',13:'٢٤',14:'٢٥',15:'٢٦',16:'٢٧',17:'٢٨',18:'٢٩',19:'٣٠',20:'١|شوال',21:'٢',22:'٣',23:'٤',24:'٥',25:'٦',26:'٧',27:'٨',28:'٩',29:'١٠',30:'١١',31:'١٢'},
     data: {},
     eid: { 19:'عيد الفطر 🌙', 20:'عيد الفطر 🌙', 21:'عيد الفطر 🌙' }
   },
-  { // 3 - April 2026
+  { // 3 — April 2026
     name: 'أبريل', nameShort: 'أبريـل', year: 2026, jsMonth: 3,
-    hijrlInfo: '١٤٤٧ₓ١٤٤٨هـ',
-    startDay: 3,
+    hijriInfo: '١٤٤٧–١٤٤٨هـ',
+    startDay: 4,
     numDays: 30,
     theme: null,
-    hijri: {1:'١٣',2:'١٤',3:'١٥',4:'١٦',5:'١٧',O:'١٨',7:'١٩',8:'٢٠',9:'٢١',10:'٢٢',11:'٢٣',12:'٢٤',13:'٢٥',14:'٢٦',15:'٢٧',16:'٢٨',17:'٢٩',18:'١|ذو القعبا',19:'٢',20:'٣',21:'٤',22:'٥',23:'٦',24:'٧',25:'٨',26:'٩',27:'١٠',28:'١١',29:'١٢',30:'١٣'},
+    hijri: {1:'١٣',2:'١٤',3:'١٥',4:'١٦',5:'١٧',6:'١٨',7:'١٩',8:'٢٠',9:'٢١',10:'٢٢',11:'٢٣',12:'٢٤',13:'٢٥',14:'٢٦',15:'٢٧',16:'٢٨',17:'٢٩',18:'١|ذو القعدة',19:'٢',20:'٣',21:'٤',22:'٥',23:'٦',24:'٧',25:'٨',26:'٩',27:'١٠',28:'١١',29:'١٢',30:'١٣'},
     data: {
-      1:  [{ p:'tawzeef',  topic:'العادات السبع',                       trainer:'م. صالح الشلوي',    mode:'حضوري مساء', supervisor:'شهد',            venue:'الجمعية' },
+      1:  [{ p:'tawzeef',  topic:'العادات السبع',                        trainer:'م. صالح الشلوي',    mode:'حضوري مساء', supervisor:'شهد',            venue:'الجمعية' },
            { p:'tahseeli', topic:'رياضيات - أحياء',                      trainer:'',                   mode:'حضوري مساء', supervisor:'أحمد الزهراني', venue:'خارجي' }],
       2:  [{ p:'tahseeli', topic:'فيزياء - كيمياء',                      trainer:'',                   mode:'حضوري مساء', supervisor:'حلا',            venue:'خارجي' }],
       5:  [{ p:'ai',       topic:'اللقاء التعريفي',                      trainer:'م. صالح الشلوي',    mode:'حضوري مساء', supervisor:'لين',            venue:'الجمعية' }],
       6:  [{ p:'fikr',     topic:'الاستعداد والتجهيز',                   trainer:'',                   mode:'-',          supervisor:'لين',            venue:'-' },
            { p:'ai',       topic:'اللقاء التعريفي',                      trainer:'م. صالح الشلوي',    mode:'حضوري مساء', supervisor:'حلا',            venue:'الجمعية' }],
       7:  [{ p:'ai',       topic:'',                                      trainer:'أ.وجدان العنزي',    mode:'عن بعد',     supervisor:'وجدان',          venue:'-' },
-           { p:'inaya',    topic:'المجال النفسي+معايدة',                 trainer:'سماح السلمي',       mode:'حضوري مساء', supervisor:'لين',            venue:'مدرسة البشرى' },
+           { p:'inaya',    topic:'المجال النفسي+معايدة',                 trainer:'سماح السلمي',        mode:'حضوري مساء', supervisor:'لين',            venue:'مدرسة البشرى' },
            { p:'qanadeel', topic:'قنديل الايمان+معايدة',                 trainer:'فردوس بالعمش',       mode:'حضوري مساء', supervisor:'منار',           venue:'مدرسة البشرى' },
            { p:'tahseeli', topic:'',                                      trainer:'',                   mode:'حضوري مساء', supervisor:'حلا',            venue:'خارجي' },
+           { p:'tawzeef',  topic:'مهارة الإلقاء',                       trainer:'أ. أرين الشمراني',   mode:'حضوري مساء', supervisor:'شهد',            venue:'الجمعية' }],
+      8:  [{ p:'qanadeel', topic:'قنديل الايمان',                        trainer:'فردوس بالعمش',       mode:'حضوري مساء', supervisor:'حلا',            venue:'مدرسة البشرى' },
+           { p:'inaya',    topic:'المجال النفسي',                        trainer:'سماح السلمي',        mode:'حضوري مساء', supervisor:'منار',           venue:'مدرسة البشرى' },
            { p:'tawzeef',  topic:'مهارة الإلقاء',                       trainer:'أ. أرين الشمراني',   mode:'حضوري مساء', supervisor:'فادية',          venue:'الجمعية' },
            { p:'tahseeli', topic:'',                                      trainer:'',                   mode:'حضوري مساء', supervisor:'أحمد الزهراني', venue:'خارجي' },
            { p:'ai',       topic:'هندسة التلقين',                        trainer:'أ. وجدان العنزي',   mode:'عن بعد',     supervisor:'لين',            venue:'-' }],
@@ -430,16 +433,16 @@ const MONTHS = [
     },
     eid: {}
   },
-  { // 4 - May 2026
+  { // 4 — May 2026 ← مُحدَّث من Google Sheet
     name: 'مايو', nameShort: 'مايـو', year: 2026, jsMonth: 4,
     hijriInfo: 'ذو القعدة–ذو الحجة ١٤٤٧هـ',
-    startDay: 5,
+    startDay: 6,
     numDays: 31,
     theme: 'may',
     hijri: {
       1:'١٤',2:'١٥',3:'١٦',4:'١٧',5:'١٨',6:'١٩',7:'٢٠',8:'٢١',9:'٢٢',10:'٢٣',
       11:'٢٤',12:'٢٥',13:'٢٦',14:'٢٧',15:'٢٨',16:'٢٩',17:'١|ذو الحجة',18:'٢',19:'٣',20:'٤',
-      21:'٥',22:'٦',23:'٧',24:'٨',25:'٩',26:'١٠',27:'١١',24:'١٢',29:'١٣',30:'١٤',31:'١٥'
+      21:'٥',22:'٦',23:'٧',24:'٨',25:'٩',26:'١٠',27:'١١',28:'١٢',29:'١٣',30:'١٤',31:'١٥'
     },
     data: {
       2:  [{ p:'qurnas',   topic:'إعلان',                                        trainer:'',                   mode:'-',          supervisor:'منار', venue:'-' },
@@ -459,22 +462,21 @@ const MONTHS = [
     },
     eid: { 26:'يوم عرفة ⛰️', 27:'عيد الأضحى 🕌' }
   },
-  { // 5 - June 2026
+  { // 5 — June 2026
     name: 'يونيو', nameShort: 'يونيـو', year: 2026, jsMonth: 5,
-    hijriInfo: 'ذو الحج ١٤٤٧– محرم ١٤٤٨هـ',
-    startDay: 1,
+    hijriInfo: 'ذو الحجة ١٤٤٧ – محرم ١٤٤٨هـ',
+    startDay: 2,
     numDays: 30,
     theme: 'jun',
-    hijri: {1:'١٦|ذو الحجة',2:'١٧',3:'١٨',4:'١٩',5:'٢٠',6:'٢١',7:'٢٢',:'٢٣',
-:'٢٤',10:'٢٥',11:'٢٦',12:'٢٧',13:'٢٩',14:'٢٩',15:'١٠|مرم',16:'٢',17:'٣',18:'٤',19:'٥',20:'٦',21:'٧',22:'٨',23:'٩',24:'١٠',25:'١١',26:'١٢',27:'١٣',28:'١٤',29:'١٥',29:'١٤',30:'١٥'},
+    hijri: {1:'١٦|ذو الحجة',2:'١٧',3:'١٨',4:'١٩',5:'٢٠',6:'٢١',7:'٢٢',8:'٢٣',9:'٢٤',10:'٢٥',11:'٢٦',12:'٢٧',13:'٢٨',14:'٢٩',15:'٣٠',16:'١|محرم',17:'٢',18:'٣',19:'٤',20:'٥',21:'٦',22:'٧',23:'٨',24:'٩',25:'١٠',26:'١١',27:'١٢',28:'١٣',29:'١٤',30:'١٥'},
     data: {
-      7:  [{ p:'tawzeef',   topic:'اللغة الإنجليزية',                          trainer:'م. عمر الخالدي',    mode:'عن بعد',     supervisor:'شهد', venue:'-' }],
-      8:  [{ p:'tawzeef',   topic:'اللغة الإنجليزية',                         trainer:'م. عمر الخالدي',    mode:'عن بعد',     supervisor:'شهد', venue:'-' }],
-      9:  [{ p:'an&28',      topic:'المجال الاقتصادي',                        trainer:'أرين الشمراني',     mode:'حضوري مساء', supervisor:'-',   venue:'مدرسة البشرى' },
+      7:  [{ p:'tawzeef',   topic:'اللغة الإنجليزية',                        trainer:'م. عمر الخالدي',    mode:'عن بعد',     supervisor:'شهد', venue:'-' }],
+      8:  [{ p:'tawzeef',   topic:'اللغة الإنجليزية',                        trainer:'م. عمر الخالدي',    mode:'عن بعد',     supervisor:'شهد', venue:'-' }],
+      9:  [{ p:'inaya',     topic:'المجال الاقتصادي',                        trainer:'أرين الشمراني',     mode:'حضوري مساء', supervisor:'-',   venue:'مدرسة البشرى' },
            { p:'qanadeel',  topic:'قنديل التربية',                           trainer:'نجلاء أبو زيد',     mode:'حضوري مساء', supervisor:'-',   venue:'مدرسة البشرى' },
            { p:'tawzeef',   topic:'إدارة المشاريع',                          trainer:'م. صالح الشلوي',    mode:'حضوري مساء', supervisor:'-',   venue:'الجمعية' }],
-      10: [{ p:'an&28',      topic:'المجال الاقتصادي',                         trainer:'أرين الشمراني',     mode:'حضوري مساء', supervisor:'-',   venue:'مدرسة البشرى' },
-           { p:'qanadeel',  topic:'قنديل الت*h�بية',                           trainer:'نجلاء أبو زيد',     mode:'حضوري مساء', supervisor:'-',   venue:'مدرسة البشرى' },
+      10: [{ p:'inaya',     topic:'المجال الاقتصادي',                        trainer:'أرين الشمراني',     mode:'حضوري مساء', supervisor:'-',   venue:'مدرسة البشرى' },
+           { p:'qanadeel',  topic:'قنديل التربية',                           trainer:'نجلاء أبو زيد',     mode:'حضوري مساء', supervisor:'-',   venue:'مدرسة البشرى' },
            { p:'tawzeef',   topic:'إدارة المشاريع',                          trainer:'م. صالح الشلوي',    mode:'حضوري مساء', supervisor:'-',   venue:'الجمعية' }],
       14: [{ p:'tawzeef',   topic:'اللغة الإنجليزية',                        trainer:'م. عمر الخالدي',    mode:'عن بعد',     supervisor:'شهد', venue:'-' }],
       15: [{ p:'tawzeef',   topic:'اللغة الإنجليزية',                        trainer:'م. عمر الخالدي',    mode:'عن بعد',     supervisor:'شهد', venue:'-' }],
@@ -491,57 +493,62 @@ const MONTHS = [
       30: [{ p:'tawzeef',   topic:'',                                         trainer:'',                   mode:'عن بعد',     supervisor:'-',   venue:'-' }],
     }, eid: {}
   },
-  { // 6 - July 2026
+  { // 6 — July 2026
     name: 'يوليو', nameShort: 'يوليـو', year: 2026, jsMonth: 6,
-    hijriInfo: 'مرحمم–صفر ١٤٤٨هـ',
-    startDay: 3,
+    hijriInfo: 'محرم–صفر ١٤٤٨هـ',
+    startDay: 4,
     numDays: 31,
     theme: 'jul',
     hijri: {1:'١٦|محرم',2:'١٧',3:'١٨',4:'١٩',5:'٢٠',6:'٢١',7:'٢٢',8:'٢٣',9:'٢٤',10:'٢٥',11:'٢٦',12:'٢٧',13:'٢٨',14:'٢٩',15:'١|صفر',16:'٢',17:'٣',18:'٤',19:'٥',20:'٦',21:'٧',22:'٨',23:'٩',24:'١٠',25:'١١',26:'١٢',27:'١٣',28:'١٤',29:'١٥',30:'١٦',31:'١٧'},
     data: {
-      1:  [{ p:'masaha',  topic:'مساحة أم',                              trainer:'د.الاء نصيف',       supervisor:'منار-حلا-سارة', mode:'حضوري مساء', venue:'مدرسة البشرى' }],
-      4:  [{ p:'qurnas',  topic:'حفل التدشين',                           trainer:'-',                 supervisor:'لين',            mode:'حضوري مساء', venue:'الجمعية' }],
-      5:  [{ p:'qurnas',  topic:'دورة القرناس',                          trainer:'ماهر العتيبي',      supervisor:'حلا-جوري',       mode:'حضوري مساء', venue:'الجمعية' }],
-      6:  [{ p:'qurnas',  topic:'',                                       trainer:'',                  supervisor:'عفاف-جوري',      mode:'حضوري مساء', venue:'الجمعية' },
-           { p:'tawzeef', topic:'كتابة المحتوى وإدارة مواقع التواصل',   trainer:'أ. سارة الجعيد',    supervisor:'شهد',            mode:'عن بعد',     venue:'-' }],
-      7:  [{ p:'tawzeef', topic:'التسويق الشخصي',                        trainer:'د. ايمن السعيدي',   supervisor:'سارة-جوري',      mode:'حضوري مساء', venue:'الجمعية' }],
-      8:  [{ p:'inaya',   topic:'الحفل الختامي',                         trainer:'-',                 supervisor:'لين-سارة',       mode:'حضوري مساء', venue:'خارجي' }],
-      11: [{ p:'sayfi',   topic:'',                                       trainer:'',                  supervisor:'',               mode:'حضوري مساء', venue:'مدارس الزهراء' }],
-      12: [{ p:'sayfi',   topic:'',                                       trainer:'',                  supervisor:'',               mode:'حضوري مساء', venue:'مدارس الزهراء' },
-           { p:'qurnas',  topic:'دورة وقفة الحق',                        trainer:'عبدالعزيز اليحيى', supervisor:'',               mode:'حضوري مساء', venue:'الجمعية' }],
-      13: [{ p:'qurnas',  topic:'',                                       trainer:'',                  supervisor:'لين',            mode:'حضوري مساء', venue:'الجمعية' },
-           { p:'umtaq',   topic:'',                                       trainer:'',                  supervisor:'',               mode:'حضوري مساء', venue:'مدارس الزهراء' },
-           { p:'anaqawi', topic:'حفل التدشين',                           trainer:'',                  supervisor:'',               mode:'حضوري مساء', venue:'مدارس الزهراء' }],
-      14: [{ p:'umtaq',   topic:'',                                       trainer:'',                  supervisor:'حلا',            mode:'حضوري مساء', venue:'مدارس الزهراء' },
-           { p:'anaqawi', topic:'',                                       trainer:'',                  supervisor:'',               mode:'حضوري مساء', venue:'مدارس الزهراء' },
-           { p:'tawzeef', topic:'إدارة المشاريع',                        trainer:'م. صالح الشلوي',   supervisor:'فادية',          mode:'حضوري مساء', venue:'الجمعية' }],
-      15: [{ p:'tawzeef', topic:'إدارة المشاريع',                        trainer:'م. صالح الشلوي',   supervisor:'حلا',            mode:'حضوري مساء', venue:'الجمعية' }],
-      18: [{ p:'sayfi',   topic:'',                                       trainer:'',                  supervisor:'',               mode:'حضوري مساء', venue:'مدارس الزهراء' },
-           { p:'qurnas',  topic:'دورة انا مسؤول',                        trainer:'علي الخرمي',        supervisor:'منار',           mode:'حضوري مساء', venue:'الجمعية' },
-           { p:'umtaq',   topic:'',                                       trainer:'',                  supervisor:'',               mode:'حضوري مساء', venue:'مدارس الزهراء' },
-           { p:'anaqawi', topic:'',                                       trainer:'',                  supervisor:'',               mode:'حضوري مساء', venue:'مدارس الزهراء' },
-           { p:'tawzeef', topic:'خدمة العملاء',                          trainer:'أ. محمد العطية',   supervisor:'شهد',            mode:'عن بعد',     venue:'-' }],
-      21: [{ p:'shadn',   topic:'دورة ركيزة',                            trainer:'',                  supervisor:'لين',            mode:'حضوري مساء', venue:'الجمعية' },
-           { p:'umtaq',   topic:'',                                       trainer:'',                  supervisor:'',               mode:'حضوري مساء', venue:'مدارس الزهراء' },
-           { p:'anaqawi', topic:'',                                       trainer:'',                  supervisor:'',               mode:'حضوري مساء', venue:'مدارس الزهراء' },
-           { p:'tawzeef', topic:'إعداد التقارير',                        trainer:'م. صالح الشلوي',   supervisor:'',               mode:'عن بعد',     venue:'-' }],
-      22: [{ p:'shadn',   topic:'دورة ركيزة',                            trainer:'',                  supervisor:'لين',            mode:'حضوري مساء', venue:'الجمعية' },
-           { p:'tawzeef', topic:'التدريب الميداني (فندقة-حج وعمرة)',    trainer:'',                  supervisor:'فادية',          mode:'-',          venue:'-' }],
-      25: [{ p:'sayfi',   topic:'',                                       trainer:'',                  supervisor:'',               mode:'حضوري مساء', venue:'مدارس الزهراء' },
-           { p:'qurnas',  topic:'دورة صوتي انا',                         trainer:'ماهر المصطفى',     supervisor:'حلا',            mode:'حضوري مساء', venue:'الجمعية' },
-           { p:'umtaq',   topic:'',                                       trainer:'',                  supervisor:'',               mode:'حضوري مساء', venue:'مدارس الزهراء' },
-           { p:'anaqawi', topic:'',                                       trainer:'',                  supervisor:'',               mode:'حضوري مساء', venue:'مدارس الزهراء' }],
-      28: [{ p:'shadn',   topic:'دورة رسوخ',                             trainer:'',                  supervisor:'عفاف',           mode:'حضوري مساء', venue:'الجمعية' },
-           { p:'umtaq',   topic:'',                                       trainer:'',                  supervisor:'',               mode:'حضوري مساء', venue:'مدارس الزهراء' },
-           { p:'anaqawi', topic:'',                                       trainer:'',                  supervisor:'',               mode:'حضوري مساء', venue:'مدارس الزهراء' }],
-      29: [{ p:'shadn',   topic:'دورة رسوخ',                             trainer:'',                  supervisor:'لين',            mode:'حضوري مساء', venue:'الجمعية' },
-           { p:'tawzeef', topic:'التدريب الميداني (فندقة-حج وعمرة)',    trainer:'',                  supervisor:'فادية',          mode:'-',          venue:'-' }],
+      1:  [{ p:'masaha',  topic:'مساحة أم',            trainer:'د.الاء نصيف',       supervisor:'منار-حلا-سارة', mode:'حضوري مساء', venue:'مدرسة البشرى' }],
+      4:  [{ p:'qurnas',  topic:'',                     trainer:'-',                 supervisor:'لين',           mode:'حضوري مساء', venue:'الجمعية' }],
+      5:  [{ p:'qurnas',  topic:'دورة القرناس',         trainer:'ماهر العتيبي',      supervisor:'عفاف-جوري',     mode:'حضوري مساء', venue:'الجمعية' }],
+      6:  [{ p:'qurnas',  topic:'',                     trainer:'',                  supervisor:'حلا-جوري',      mode:'حضوري مساء', venue:'الجمعية' },
+           { p:'tawzeef', topic:'كتابة المحتوى وإدارة مواقع التواصل', trainer:'أ. سارة الجعيد', supervisor:'شهد', mode:'عن بعد', venue:'-' }],
+      7:  [{ p:'tawzeef', topic:'التسويق الشخصي',       trainer:'د. ايمن السعيدي',   supervisor:'سارة-جوري',     mode:'حضوري مساء', venue:'الجمعية' }],
+      8:  [{ p:'inaya',   topic:'الحفل الختامي',        trainer:'-',                 supervisor:'لين-سارة',      mode:'حضوري مساء', venue:'خارجي' },
+           { p:'qanadeel', topic:'',                    trainer:'',                  supervisor:'حلا-جوري',      mode:'',           venue:'خارجي' }],
+      11: [{ p:'ai',      topic:'إعداد التقارير الاحترافية', trainer:'وجدان العنزي', supervisor:'جوري',          mode:'حضوري مساء', venue:'الجمعية' }],
+      12: [{ p:'sayfi',   topic:'',                     trainer:'',                  supervisor:'لين-جوري',      mode:'حضوري مساء', venue:'مدارس الزهراء' },
+           { p:'qurnas',  topic:'دورة وقفة الحق',       trainer:'عبدالعزيز اليحيى', supervisor:'منار-أسامة',    mode:'حضوري مساء', venue:'الجمعية' }],
+      13: [{ p:'qurnas',  topic:'',                     trainer:'',                  supervisor:'عفاف-أسامة',    mode:'حضوري مساء', venue:'الجمعية' },
+           { p:'umtaq',   topic:'',                     trainer:'',                  supervisor:'لين -جوري',     mode:'حضوري مساء', venue:'مدارس الزهراء' },
+           { p:'anaqawi', topic:'',                     trainer:'',                  supervisor:'',              mode:'حضوري مساء', venue:'مدارس الزهراء' }],
+      14: [{ p:'umtaq',   topic:'',                     trainer:'',                  supervisor:'منار-جوري',     mode:'حضوري مساء', venue:'مدارس الزهراء' },
+           { p:'anaqawi', topic:'',                     trainer:'',                  supervisor:'',              mode:'حضوري مساء', venue:'مدارس الزهراء' },
+           { p:'tawzeef', topic:'إدارة المشاريع',       trainer:'م. صالح الشلوي',   supervisor:'فادية',         mode:'حضوري مساء', venue:'الجمعية' }],
+      15: [{ p:'tawzeef', topic:'إدارة المشاريع',       trainer:'م. صالح الشلوي',   supervisor:'جوري',          mode:'حضوري مساء', venue:'الجمعية' }],
+      18: [{ p:'sayfi',   topic:'',                     trainer:'',                  supervisor:'منار-جوري',     mode:'حضوري مساء', venue:'مدارس الزهراء' },
+           { p:'sayfi',   topic:'',                     trainer:'',                  supervisor:'لين-جوري',      mode:'حضوري مساء', venue:'مدارس الزهراء' },
+           { p:'qurnas',  topic:'دورة انا مسؤول',       trainer:'علي الخرمي',        supervisor:'عفاف-أسامة',    mode:'حضوري مساء', venue:'الجمعية' },
+           { p:'qurnas',  topic:'دورة انا مسؤول',       trainer:'',                  supervisor:'منار-أسامة',    mode:'حضوري مساء', venue:'الجمعية' },
+           { p:'umtaq',   topic:'',                     trainer:'',                  supervisor:'',              mode:'حضوري مساء', venue:'مدارس الزهراء' },
+           { p:'anaqawi', topic:'',                     trainer:'',                  supervisor:'',              mode:'حضوري مساء', venue:'مدارس الزهراء' },
+           { p:'tawzeef', topic:'خدمة العملاء',         trainer:'أ. محمد العطية',   supervisor:'شهد',           mode:'عن بعد',     venue:'-' }],
+      21: [{ p:'shadn',   topic:'دورة ركيزة',           trainer:'',                  supervisor:'لين',           mode:'حضوري مساء', venue:'الجمعية' },
+           { p:'umtaq',   topic:'',                     trainer:'',                  supervisor:'',              mode:'حضوري مساء', venue:'مدارس الزهراء' },
+           { p:'anaqawi', topic:'',                     trainer:'',                  supervisor:'',              mode:'حضوري مساء', venue:'مدارس الزهراء' },
+           { p:'tawzeef', topic:'إعداد التقارير',       trainer:'م. صالح الشلوي',   supervisor:'',              mode:'حضوري مساء', venue:'الجمعية' }],
+      22: [{ p:'shadn',   topic:'دورة ركيزة',           trainer:'',                  supervisor:'لين',           mode:'حضوري مساء', venue:'الجمعية' },
+           { p:'tawzeef', topic:'التدريب الميداني (فندقة-حج وعمرة)', trainer:'',     supervisor:'فادية',         mode:'-',          venue:'-' }],
+      25: [{ p:'sayfi',   topic:'',                     trainer:'',                  supervisor:'',              mode:'حضوري مساء', venue:'مدارس الزهراء' },
+           { p:'sayfi',   topic:'',                     trainer:'',                  supervisor:'',              mode:'حضوري مساء', venue:'مدارس الزهراء' },
+           { p:'qurnas',  topic:'دورة صوتي انا',        trainer:'ماهر المصطفى',     supervisor:'حلا',           mode:'حضوري مساء', venue:'الجمعية' },
+           { p:'qurnas',  topic:'',                     trainer:'',                  supervisor:'لين',           mode:'حضوري مساء', venue:'الجمعية' },
+           { p:'umtaq',   topic:'',                     trainer:'',                  supervisor:'',              mode:'حضوري مساء', venue:'مدارس الزهراء' },
+           { p:'anaqawi', topic:'',                     trainer:'',                  supervisor:'',              mode:'حضوري مساء', venue:'مدارس الزهراء' }],
+      28: [{ p:'shadn',   topic:'دورة رسوخ',            trainer:'',                  supervisor:'عفاف',          mode:'حضوري مساء', venue:'الجمعية' },
+           { p:'umtaq',   topic:'',                     trainer:'',                  supervisor:'',              mode:'حضوري مساء', venue:'مدارس الزهراء' },
+           { p:'anaqawi', topic:'',                     trainer:'',                  supervisor:'',              mode:'حضوري مساء', venue:'مدارس الزهراء' }],
+      29: [{ p:'shadn',   topic:'دورة رسوخ',            trainer:'',                  supervisor:'لين',           mode:'حضوري مساء', venue:'الجمعية' },
+           { p:'tawzeef', topic:'التدريب الميداني (فندقة-حج وعمرة)', trainer:'',     supervisor:'فادية',         mode:'-',          venue:'-' }],
     }, eid: {}
   },
   { // 7 — August 2026
     name: 'أغسطس', nameShort: 'أغسطـس', year: 2026, jsMonth: 7,
     hijriInfo: 'صفر – ربيع الأول ١٤٤٨هـ',
-    startDay: 6,
+    startDay: 0,
     numDays: 31,
     theme: 'aug',
     hijri: {1:'١٨|صفر',2:'١٩',3:'٢٠',4:'٢١',5:'٢٢',6:'٢٣',7:'٢٤',8:'٢٥',9:'٢٦',10:'٢٧',11:'٢٨',12:'٢٩',13:'٣٠',14:'١|ربيع الأول',15:'٢',16:'٣',17:'٤',18:'٥',19:'٦',20:'٧',21:'٨',22:'٩',23:'١٠',24:'١١',25:'١٢',26:'١٣',27:'١٤',28:'١٥',29:'١٦',30:'١٧',31:'١٨'},
@@ -550,7 +557,7 @@ const MONTHS = [
   { // 8 — September 2026
     name: 'سبتمبر', nameShort: 'سبتمبـر', year: 2026, jsMonth: 8,
     hijriInfo: 'ربيع الأول – ربيع الآخر ١٤٤٨هـ',
-    startDay: 2,
+    startDay: 3,
     numDays: 30,
     theme: 'sep',
     hijri: {1:'١٩|ربيع الأول',2:'٢٠',3:'٢١',4:'٢٢',5:'٢٣',6:'٢٤',7:'٢٥',8:'٢٦',9:'٢٧',10:'٢٨',11:'٢٩',12:'١|ربيع الآخر',13:'٢',14:'٣',15:'٤',16:'٥',17:'٦',18:'٧',19:'٨',20:'٩',21:'١٠',22:'١١',23:'١٢',24:'١٣',25:'١٤',26:'١٥',27:'١٦',28:'١٧',29:'١٨',30:'١٩'},
@@ -559,7 +566,7 @@ const MONTHS = [
   { // 9 — October 2026
     name: 'أكتوبر', nameShort: 'أكتوبـر', year: 2026, jsMonth: 9,
     hijriInfo: 'ربيع الآخر – جمادى الأولى ١٤٤٨هـ',
-    startDay: 4,
+    startDay: 5,
     numDays: 31,
     theme: 'oct',
     hijri: {1:'٢٠|ربيع الآخر',2:'٢١',3:'٢٢',4:'٢٣',5:'٢٤',6:'٢٥',7:'٢٦',8:'٢٧',9:'٢٨',10:'٢٩',11:'٣٠',12:'١|جمادى الأولى',13:'٢',14:'٣',15:'٤',16:'٥',17:'٦',18:'٧',19:'٨',20:'٩',21:'١٠',22:'١١',23:'١٢',24:'١٣',25:'١٤',26:'١٥',27:'١٦',28:'١٧',29:'١٨',30:'١٩',31:'٢٠'},
@@ -568,7 +575,7 @@ const MONTHS = [
   { // 10 — November 2026
     name: 'نوفمبر', nameShort: 'نوفمبـر', year: 2026, jsMonth: 10,
     hijriInfo: 'جمادى الأولى – جمادى الآخرة ١٤٤٨هـ',
-    startDay: 0,
+    startDay: 1,
     numDays: 30,
     theme: 'nov',
     hijri: {1:'٢١|جمادى الأولى',2:'٢٢',3:'٢٣',4:'٢٤',5:'٢٥',6:'٢٦',7:'٢٧',8:'٢٨',9:'٢٩',10:'١|جمادى الآخرة',11:'٢',12:'٣',13:'٤',14:'٥',15:'٦',16:'٧',17:'٨',18:'٩',19:'١٠',20:'١١',21:'١٢',22:'١٣',23:'١٤',24:'١٥',25:'١٦',26:'١٧',27:'١٨',28:'١٩',29:'٢٠',30:'٢١'},
@@ -577,7 +584,7 @@ const MONTHS = [
   { // 11 — December 2026
     name: 'ديسمبر', nameShort: 'ديسمبـر', year: 2026, jsMonth: 11,
     hijriInfo: 'جمادى الآخرة – رجب ١٤٤٨هـ',
-    startDay: 2,
+    startDay: 3,
     numDays: 31,
     theme: 'dec',
     hijri: {1:'٢٢|جمادى الآخرة',2:'٢٣',3:'٢٤',4:'٢٥',5:'٢٦',6:'٢٧',7:'٢٨',8:'٢٩',9:'٣٠',10:'١|رجب',11:'٢',12:'٣',13:'٤',14:'٥',15:'٦',16:'٧',17:'٨',18:'٩',19:'١٠',20:'١١',21:'١٢',22:'١٣',23:'١٤',24:'١٥',25:'١٦',26:'١٧',27:'١٨',28:'١٩',29:'٢٠',30:'٢١',31:'٢٢'},
@@ -703,7 +710,7 @@ function openModal(monthIdx, day, events){
   const d = new Date(m.year, m.jsMonth, day);
   const hijStr = m.hijri[day] ? m.hijri[day].split('|')[0] : '';
   document.getElementById('modal-date').textContent =
-    `${ARA@�C_DAYS[d.getDay()]} · ${day} ${m.name} ${m.year}${hijStr ? ' · ' + hijStr + ' هـ' : ''}`;
+    `${ARABIC_DAYS[d.getDay()]} · ${day} ${m.name} ${m.year}${hijStr ? ' · ' + hijStr + ' هـ' : ''}`;
   let html='';
   events.forEach(ev=>{
     const pr=PROGRAMS[ev.p];
