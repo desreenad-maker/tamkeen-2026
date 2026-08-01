@@ -238,19 +238,22 @@ body.theme-dec { background: #f6ccd6; }
       البيانات التفصيلية لهذا الشهر لم تُضف بعد.
     </div>
     <div class="legend">
-      <div class="leg-item"><div class="leg-dot" style="background:#b6e4e8"></div>حاضنة التوظيف 4</div>
+      <div class="leg-item"><div class="leg-dot" style="background:#b6e4e8"></div>حاضنة التوظيف 5</div>
       <div class="leg-item"><div class="leg-dot" style="background:#f5c5d1"></div>عناية 2</div>
       <div class="leg-item"><div class="leg-dot" style="background:#e4b1d1"></div>قناديل 2</div>
       <div class="leg-item"><div class="leg-dot" style="background:#c0e2c7"></div>التحصيلي</div>
       <div class="leg-item"><div class="leg-dot" style="background:#d4c9ee"></div>مهارات AI</div>
       <div class="leg-item"><div class="leg-dot" style="background:#dadde3"></div>قيادة وتمكين 30 أم</div>
       <div class="leg-item"><div class="leg-dot" style="background:#f5dda3"></div>هندسة التفكير</div>
-      <div class="leg-item"><div class="leg-dot" style="background:#f5ceaa"></div>أكاديمية قرناس</div>
+      <div class="leg-item"><div class="leg-dot" style="background:#f5ceaa"></div>أكاديمية قرناس 3</div>
       <div class="leg-item"><div class="leg-dot" style="background:#fbd0e8"></div>مساحة أم</div>
       <div class="leg-item"><div class="leg-dot" style="background:#b8e8d4"></div>البرنامج الصيفي</div>
       <div class="leg-item"><div class="leg-dot" style="background:#c7d4f5"></div>أم تقنية</div>
       <div class="leg-item"><div class="leg-dot" style="background:#fdd9b5"></div>أنا قوي</div>
       <div class="leg-item"><div class="leg-dot" style="background:#d4c5b0"></div>أكاديمية شدن</div>
+      <div class="leg-item"><div class="leg-dot" style="background:#ffe066"></div>يوم الطفل العالمي</div>
+      <div class="leg-item"><div class="leg-dot" style="background:#dcc6f0"></div>العودة للدراسة</div>
+      <div class="leg-item"><div class="leg-dot" style="background:#f2c9b3"></div>أم ملهمة</div>
     </div>
   </div>
   <div class="archive-section">
@@ -274,19 +277,22 @@ body.theme-dec { background: #f6ccd6; }
 </div>
 <script>
 const PROGRAMS = {
-  tawzeef:  { name:'حاضنة التوظيف 4', bg:'#b6e4e8', fg:'#1f4e55' },
+  tawzeef:  { name:'حاضنة التوظيف 5', bg:'#b6e4e8', fg:'#1f4e55' },
   inaya:    { name:'عناية 2',          bg:'#f5c5d1', fg:'#6d2b42' },
   qanadeel: { name:'قناديل 2',         bg:'#e4b1d1', fg:'#5a1f44' },
   tahseeli: { name:'التحصيلي',         bg:'#c0e2c7', fg:'#254f33' },
   ai:       { name:'مهارات AI',         bg:'#d4c9ee', fg:'#3e2d78' },
   tamkeen:  { name:'قيادة وتمكين 30 أم', bg:'#dadde3', fg:'#2d3448' },
   fikr:     { name:'هندسة التفكير',    bg:'#f5dda3', fg:'#4a3516' },
-  qurnas:   { name:'أكاديمية قرناس',  bg:'#f5ceaa', fg:'#5a311a' },
+  qurnas:   { name:'أكاديمية قرناس 3', bg:'#f5ceaa', fg:'#5a311a' },
   masaha:   { name:'مساحة أم',         bg:'#fbd0e8', fg:'#6b2050' },
   sayfi:    { name:'البرنامج الصيفي', bg:'#b8e8d4', fg:'#1a5c3a' },
   umtaq:    { name:'أم تقنية',         bg:'#c7d4f5', fg:'#2a3d78' },
   anaqawi:  { name:'أنا قوي',          bg:'#fdd9b5', fg:'#6b3510' },
   shadn:    { name:'أكاديمية شدن',    bg:'#d4c5b0', fg:'#4a3520' },
+  tifl:     { name:'يوم الطفل العالمي', bg:'#ffe066', fg:'#5c4300' },
+  awda:     { name:'العودة للدراسة',   bg:'#dcc6f0', fg:'#4a1f6b' },
+  mulhima:  { name:'أم ملهمة',         bg:'#f2c9b3', fg:'#6b3018' },
 };
 const ARABIC_DAYS = ['الأحد','الاثنين','الثلاثاء','الأربعاء','الخميس','الجمعة','السبت'];
 
@@ -550,7 +556,35 @@ const MONTHS = [
     numDays: 31,
     theme: 'aug',
     hijri: {1:'١٨|صفر',2:'١٩',3:'٢٠',4:'٢١',5:'٢٢',6:'٢٣',7:'٢٤',8:'٢٥',9:'٢٦',10:'٢٧',11:'٢٨',12:'٢٩',13:'٣٠',14:'١|ربيع الأول',15:'٢',16:'٣',17:'٤',18:'٥',19:'٦',20:'٧',21:'٨',22:'٩',23:'١٠',24:'١١',25:'١٢',26:'١٣',27:'١٤',28:'١٥',29:'١٦',30:'١٧',31:'١٨'},
-    data: {}, eid: {}
+    data: {
+      1:  [{ p:'sayfi',   topic:'اعادة التدوير-تطريز-ديكوباج وكولاج', trainer:'',                 mode:'حضوري مساء', supervisor:'حلا-جوري',      venue:'مدارس الزهراء' }],
+      2:  [{ p:'sayfi',   topic:'اعادة التدوير-تطريز-ديكوباج وكولاج', trainer:'',                 mode:'حضوري مساء', supervisor:'عفاف-جوري',     venue:'مدارس الزهراء' },
+           { p:'qurnas',  topic:'ديوان الكرم',                        trainer:'نايف النفيعي',     mode:'حضوري مساء', supervisor:'أسامة',          venue:'الجمعية' }],
+      3:  [{ p:'qurnas',  topic:'ديوان الكرم',                        trainer:'نايف النفيعي',     mode:'حضوري مساء', supervisor:'أسامة',          venue:'الجمعية' },
+           { p:'tawzeef', topic:'اعلان',                              trainer:'',                 mode:'-',          supervisor:'شهد',            venue:'-' },
+           { p:'umtaq',   topic:'مهارات كانفا',                       trainer:'أ. بسمة عبدالله',  mode:'حضوري مساء', supervisor:'جوري',           venue:'مدارس الزهراء' },
+           { p:'anaqawi', topic:'أنا طفل قوي وواثق',                  trainer:'',                 mode:'-',          supervisor:'-',              venue:'-' }],
+      4:  [{ p:'umtaq',   topic:'مهارات كانفا',                       trainer:'أ. بسمة عبدالله',  mode:'حضوري مساء', supervisor:'جوري',           venue:'مدارس الزهراء' },
+           { p:'anaqawi', topic:'أنا طفل قوي وواثق',                  trainer:'',                 mode:'-',          supervisor:'-',              venue:'-' }],
+      8:  [{ p:'qurnas',  topic:'اهل وعشيرة',                         trainer:'عبدالعزيز اليحيى', mode:'حضوري مساء', supervisor:'جوري-أسامة',     venue:'الجمعية' }],
+      9:  [{ p:'qurnas',  topic:'روح الفريق - الوطن',                 trainer:'عبدالعزيز اليحيى', mode:'حضوري مساء', supervisor:'منار-أسامة',     venue:'الجمعية' },
+           { p:'sayfi',   topic:'حفل ختامي',                          trainer:'',                 mode:'حضوري مساء', supervisor:'لين-جوري-حلا',  venue:'مدارس الزهراء' }],
+      10: [{ p:'umtaq',   topic:'مهارات المنصات الرقمية',             trainer:'أ. هند الطويرقي',  mode:'حضوري مساء', supervisor:'لين-جوري',       venue:'مدارس الزهراء' },
+           { p:'anaqawi', topic:'مهارات الطمأنينة والتكيف',           trainer:'',                 mode:'-',          supervisor:'-',              venue:'-' }],
+      11: [{ p:'umtaq',   topic:'مهارات المنصات الافتراضية',          trainer:'أ. هند الطويرقي',  mode:'-',          supervisor:'منار-جوري',       venue:'-' },
+           { p:'anaqawi', topic:'مهارات الطمأنينة والتكيف',           trainer:'',                 mode:'-',          supervisor:'-',              venue:'-' }],
+      12: [{ p:'anaqawi', topic:'غيرمؤكد',                            trainer:'',                 mode:'حضوري مساء', supervisor:'حلا-جوري',       venue:'خارجي' },
+           { p:'tawzeef', topic:'المقابلة والترشيح',                  trainer:'',                 mode:'حضوري مساء', supervisor:'شهد-فادية',      venue:'الجمعية' }],
+      16: [{ p:'qurnas',  topic:'اثري في الدار',                      trainer:'',                 mode:'حضوري مساء', supervisor:'جوري-أسامة',     venue:'الجمعية' }],
+      17: [{ p:'anaqawi', topic:'الحفل الختامي',                      trainer:'',                 mode:'حضوري مساء', supervisor:'لين-جوري',       venue:'خارجي' }],
+      18: [{ p:'umtaq',   topic:'الحفل الختامي',                      trainer:'',                 mode:'حضوري مساء', supervisor:'حلا-جوري',       venue:'الجمعية' }],
+      19: [{ p:'mulhima', topic:'',                                    trainer:'',                 mode:'حضوري مساء', supervisor:'حلا-منار',       venue:'الجمعية' }],
+      20: [{ p:'tifl',    topic:'بوست',                                trainer:'',                 mode:'-',          supervisor:'لين',            venue:'-' }],
+      23: [{ p:'qurnas',  topic:'خطيب الدار',                         trainer:'ماهر المصطفى',     mode:'حضوري مساء', supervisor:'جوري-أسامة',     venue:'الجمعية' }],
+      24: [{ p:'qurnas',  topic:'خطيب الدار',                         trainer:'ماهر المصطفى',     mode:'حضوري مساء', supervisor:'منار-أسامة',     venue:'الجمعية' }],
+      26: [{ p:'shadn',   topic:'إعلان',                              trainer:'',                 mode:'-',          supervisor:'لين',            venue:'-' }],
+      30: [{ p:'awda',    topic:'بوست',                               trainer:'',                 mode:'-',          supervisor:'-',              venue:'-' }],
+    }, eid: {}
   },
   { // 8 — September 2026
     name: 'سبتمبر', nameShort: 'سبتمبـر', year: 2026, jsMonth: 8,
