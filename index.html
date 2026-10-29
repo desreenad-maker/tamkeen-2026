@@ -263,9 +263,11 @@ body.theme-dec { background: #f6ccd6; }
 const PROGRAMS = {
   tawzeef:  { name:'حاضنة التوظيف 4', bg:'#b6e4e8', fg:'#1f4e55' },
   tawzeef5: { name:'حاضنة التوظيف 5', bg:'#b6e4e8', fg:'#1f4e55' },
+  tawzeef6: { name:'حاضنة التوظيف 6', bg:'#b6e4e8', fg:'#1f4e55' },
   inaya:    { name:'عناية 2',          bg:'#f5c5d1', fg:'#6d2b42' },
   qanadeel: { name:'قناديل 2',         bg:'#e4b1d1', fg:'#5a1f44' },
   tahseeli: { name:'التحصيلي',         bg:'#c0e2c7', fg:'#254f33' },
+  qiflna:   { name:'قفلنا القدرات',    bg:'#c0e2c7', fg:'#254f33' },
   ai:       { name:'مهارات AI',         bg:'#d4c9ee', fg:'#3e2d78' },
   tamkeen:  { name:'قيادة وتمكين 30 أم', bg:'#dadde3', fg:'#2d3448' },
   fikr:     { name:'هندسة التفكير',    bg:'#f5dda3', fg:'#4a3516' },
@@ -281,6 +283,8 @@ const PROGRAMS = {
   cooperative: { name:'التدريب التعاوني', bg:'#c9b4f0', fg:'#3b226f' },
   national: { name:'اليوم الوطني السعودي', bg:'#1f8f4d', fg:'#ffffff' },
   mulhima:  { name:'أم ملهمة', bg:'#dadde3', fg:'#2d3448' },
+  bayt:     { name:'بيت مُمكن', bg:'#e8c7de', fg:'#5b2e52' },
+  volunteer:{ name:'التطوع الاحترافي', bg:'#c9dfb0', fg:'#345122' },
 };
 const ARABIC_DAYS = ['الأحد','الاثنين','الثلاثاء','الأربعاء','الخميس','الجمعة','السبت'];
 
@@ -582,27 +586,26 @@ const MONTHS = [
     theme: 'sep',
     hijri: {1:'١٩|ربيع الأول',2:'٢٠',3:'٢١',4:'٢٢',5:'٢٣',6:'٢٤',7:'٢٥',8:'٢٦',9:'٢٧',10:'٢٨',11:'٢٩',12:'١|ربيع الآخر',13:'٢',14:'٣',15:'٤',16:'٥',17:'٦',18:'٧',19:'٨',20:'٩',21:'١٠',22:'١١',23:'١٢',24:'١٣',25:'١٤',26:'١٥',27:'١٦',28:'١٧',29:'١٨',30:'١٩'},
     data: {
+      1:  [{ p:'tawzeef5',    topic:'مقابلات',                   action:'الاستعداد والتجهيز', trainer:'',                mode:'حضوري مساء', supervisor:'شهد',      venue:'الجمعية' }],
       2:  [{ p:'taheel',      topic:'',                         action:'إعلان',            trainer:'',                mode:'-',          supervisor:'منار',     venue:'-' },
            { p:'cooperative', topic:'العادات السبع',            action:'التنفيذ',           trainer:'م.صالح الشلوي',   mode:'حضوري مساء', supervisor:'وجدان',    venue:'الجمعية' }],
       6:  [{ p:'tawzeef5',    topic:'رسائل القبول النهائي',     action:'التنفيذ',           trainer:'',                mode:'عن بعد',     supervisor:'شهد',      venue:'-' }],
       8:  [{ p:'shadn',       topic:'ركيزة',                    action:'التنفيذ, حفل التدشين', trainer:'أرين الشمراني', mode:'حضوري مساء', supervisor:'',          venue:'الجمعية' }],
       9:  [{ p:'shadn',       topic:'',                         action:'التنفيذ',           trainer:'',                mode:'',           supervisor:'',          venue:'' }],
       12: [{ p:'ai',          topic:'اللقاء التعريفي',          action:'التنفيذ',           trainer:'م.صالح الشلوي',   mode:'حضوري مساء', supervisor:'',          venue:'الجمعية' }],
-      14: [{ p:'tawzeef5',    topic:'اللقاء التعريفي',          action:'التنفيذ',           trainer:'',                mode:'حضوري مساء', supervisor:'شهد-فادية', venue:'الجمعية' }],
-      15: [{ p:'shadn',       topic:'الصحبة',                   action:'التنفيذ',           trainer:'مشاعل السريحي',   mode:'حضوري مساء', supervisor:'',          venue:'الجمعية' },
-           { p:'shadn',       topic:'الصحبة+يوم الوطن',         action:'التنفيذ',           trainer:'',                mode:'-',          supervisor:'لين',      venue:'-' }],
-      20: [{ p:'tawzeef5',    topic:'العادات السبع',            action:'التنفيذ',           trainer:'',                mode:'-',          supervisor:'',          venue:'-' },
-           { p:'tawzeef5',    topic:'',                         action:'',                  trainer:'',                mode:'-',          supervisor:'',          venue:'-' },
-           { p:'ai',          topic:'',                         action:'التنفيذ',           trainer:'',                mode:'عن بعد',     supervisor:'لين',      venue:'-' }],
-      22: [{ p:'mulhima',     topic:'',                         action:'التنفيذ',           trainer:'',                mode:'حضوري مساء', supervisor:'',          venue:'الجمعية' },
-           { p:'national',    topic:'احتفال خارجي',             action:'التنفيذ',           trainer:'',                mode:'حضوري مساء', supervisor:'لين',      venue:'خارجي' }],
+      14: [{ p:'tawzeef5',    topic:'',                         action:'',                  trainer:'',                mode:'',           supervisor:'',          venue:'' }],
+      15: [{ p:'shadn',       topic:'الصحبة',                   action:'التنفيذ',           trainer:'مشاعل السريحي',   mode:'حضوري مساء', supervisor:'حلا',       venue:'الجمعية' }],
+      16: [{ p:'shadn',       topic:'الصحبة+يوم الوطن',         action:'التنفيذ',           trainer:'',                mode:'',           supervisor:'',          venue:'' }],
+      20: [{ p:'tawzeef5',    topic:'العادات السبع',            action:'التنفيذ',           trainer:'م. صالح الشلوي',  mode:'حضوري مساء', supervisor:'',          venue:'الجمعية' }],
+      21: [{ p:'tawzeef5',    topic:'هندسة التلقين',            action:'التنفيذ',           trainer:'',                mode:'',           supervisor:'',          venue:'' }],
+      22: [{ p:'mulhima',     topic:'',                         action:'التنفيذ',           trainer:'',                mode:'حضوري مساء', supervisor:'منار-حلا',  venue:'الجمعية' },
+           { p:'national',    topic:'احتفال خارجي',             action:'التنفيذ',           trainer:'',                mode:'حضوري مساء', supervisor:'',          venue:'خارجي' }],
       23: [{ p:'national',    topic:'إجازة بمناسبة اليوم الوطني', action:'إجازة',           trainer:'',                mode:'',           supervisor:'درة',      venue:'' }],
-      27: [{ p:'cooperative', topic:'العادات السبع',            action:'التنفيذ',           trainer:'م. صالح الشلوي',  mode:'حضوري مساء', supervisor:'منار',     venue:'الجمعية' }],
-      28: [{ p:'tawzeef5',    topic:'الأخلاقيات المهنية',       action:'التنفيذ',           trainer:'م. صالح الشلوي',  mode:'حضوري مساء', supervisor:'حلا',      venue:'الجمعية' },
-           { p:'shadn',       topic:'',                         action:'',                  trainer:'',                mode:'-',          supervisor:'',          venue:'-' },
-           { p:'ai',          topic:'',                         action:'التنفيذ',           trainer:'',                mode:'-',          supervisor:'',          venue:'-' }],
-      30: [{ p:'ai',          topic:'',                         action:'التنفيذ',           trainer:'',                mode:'-',          supervisor:'',          venue:'-' },
-           { p:'shadn',       topic:'حفاوة',                    action:'التنفيذ',           trainer:'',                mode:'-',          supervisor:'',          venue:'-' }],
+      27: [{ p:'tawzeef5',    topic:'العادات السبع',            action:'التنفيذ',           trainer:'م. صالح الشلوي',  mode:'حضوري مساء', supervisor:'منار',      venue:'الجمعية' }],
+      28: [{ p:'tawzeef5',    topic:'الأخلاقيات المهنية',       action:'التنفيذ',           trainer:'م. صالح الشلوي',  mode:'حضوري مساء', supervisor:'حلا',      venue:'الجمعية' }],
+      29: [{ p:'shadn',       topic:'حفاوة',                    action:'التنفيذ',           trainer:'أرين الشمراني',   mode:'حضوري مساء', supervisor:'لين',      venue:'الجمعية' }],
+      30: [{ p:'ai',          topic:'كتابة السكربت وتقسيم المشاهد', action:'التنفيذ',        trainer:'أسماء العتيبي',   mode:'عن بعد',     supervisor:'',          venue:'' },
+           { p:'shadn',       topic:'حفاوة',                    action:'التنفيذ',           trainer:'أرين الشمراني',   mode:'حضوري مساء', supervisor:'',          venue:'' }],
     }, eid: {}
   },
   { // 9 — October 2026
@@ -612,7 +615,34 @@ const MONTHS = [
     numDays: 31,
     theme: 'oct',
     hijri: {1:'٢٠|ربيع الآخر',2:'٢١',3:'٢٢',4:'٢٣',5:'٢٤',6:'٢٥',7:'٢٦',8:'٢٧',9:'٢٨',10:'٢٩',11:'٣٠',12:'١|جمادى الأولى',13:'٢',14:'٣',15:'٤',16:'٥',17:'٦',18:'٧',19:'٨',20:'٩',21:'١٠',22:'١١',23:'١٢',24:'١٣',25:'١٤',26:'١٥',27:'١٦',28:'١٧',29:'١٨',30:'١٩',31:'٢٠'},
-    data: {}, eid: {}
+    data: {
+      4:  [{ p:'tawzeef5', topic:'متابعة المهام والتعلم الذاتي',       action:'التنفيذ', trainer:'',               mode:'تعلم ذاتي',   supervisor:'شهد',       venue:'' }],
+      5:  [{ p:'tawzeef5', topic:'',                                  action:'التنفيذ', trainer:'',               mode:'تعلم ذاتي',   supervisor:'',          venue:'' }],
+      6:  [{ p:'shadn',    topic:'رِقّة',                              action:'التنفيذ', trainer:'صالون شانت',      mode:'حضوري مساء', supervisor:'لين',       venue:'الجمعية' }],
+      7:  [{ p:'shadn',    topic:'سنعة',                               action:'التنفيذ', trainer:'فاطمة القاسمي',   mode:'حضوري مساء', supervisor:'',          venue:'الجمعية' }],
+      8:  [{ p:'ai',       topic:'التصميم الاعلاني وكتابة الصور',      action:'التنفيذ', trainer:'اسماء العتيبي', mode:'عن بعد',     supervisor:'',          venue:'' }],
+      10: [{ p:'ai',       topic:'صناعة الفيديو',                      action:'التنفيذ', trainer:'',               mode:'',           supervisor:'',          venue:'' }],
+      11: [{ p:'tawzeef5', topic:'كيف تبني حضورك المهني؟',             action:'التنفيذ', trainer:'دعاء التخيفي',    mode:'حضوري مساء', supervisor:'حلا',       venue:'الجمعية' }],
+      12: [{ p:'tawzeef5', topic:'أساسيات التسويق بالمحتوى',           action:'التنفيذ', trainer:'',               mode:'حضوري مساء', supervisor:'منار',      venue:'الجمعية' },
+           { p:'bayt',     topic:'',                                  action:'التنفيذ', trainer:'نجلاء أبو زيد',   mode:'عن بعد',     supervisor:'لين',       venue:'' }],
+      13: [{ p:'shadn',    topic:'رسوخ',                               action:'التنفيذ', trainer:'أرين الشمراني',  mode:'حضوري مساء', supervisor:'حلا', venue:'الجمعية' }],
+      14: [{ p:'shadn',    topic:'رسوخ',                               action:'التنفيذ', trainer:'أرين الشمراني',  mode:'حضوري مساء', supervisor:'لين', venue:'الجمعية' }],
+      15: [{ p:'ai',       topic:'انتاج التعليق الصوتي',               action:'التنفيذ', trainer:'اسماء العتيبي', mode:'عن بعد',     supervisor:'شهد', venue:'' }],
+      17: [{ p:'ai',       topic:'صناعة البودكاست',                    action:'التنفيذ', trainer:'',               mode:'عن بعد',     supervisor:'', venue:'' }],
+      18: [{ p:'tawzeef5', topic:'إتقان أساسيات Excel',                action:'التنفيذ', trainer:'قناة العسال',      mode:'تعلم ذاتي',   supervisor:'شهد', venue:'' }],
+      19: [{ p:'volunteer',topic:'اللقاء التعريفي',                    action:'التنفيذ', trainer:'وجدان',           mode:'حضوري مساء', supervisor:'اشفاق - شهد', venue:'الجمعية' },
+           { p:'bayt',     topic:'',                                  action:'التنفيذ', trainer:'نجلاء ابو زيد',   mode:'عن بعد',     supervisor:'لين',       venue:'' }],
+      20: [{ p:'shadn',    topic:'صوت وأثر',                           action:'التنفيذ', trainer:'أرين الشمراني',  mode:'حضوري مساء', supervisor:'منار', venue:'الجمعية' }],
+      21: [{ p:'shadn',    topic:'صوت وأثر',                           action:'التنفيذ', trainer:'أرين الشمراني',  mode:'حضوري مساء', supervisor:'لين', venue:'الجمعية' }],
+      22: [{ p:'ai',       topic:'المونتاج واخراج الاعلان',            action:'التنفيذ', trainer:'اسماء العتيبي', mode:'عن بعد',     supervisor:'', venue:'' }],
+      24: [{ p:'ai',       topic:'ورشة تطوير المشاريع وتجهيز ملف الاعمال', action:'التنفيذ', trainer:'', mode:'عن بعد', supervisor:'', venue:'' }],
+      25: [{ p:'tawzeef5', topic:'التسويق والعلاقات العامة',           action:'التنفيذ', trainer:'أويس كشميري',     mode:'حضوري مساء', supervisor:'لين', venue:'الجمعية' }],
+      26: [{ p:'tawzeef5', topic:'التسويق والعلاقات العامة',           action:'التنفيذ', trainer:'أويس كشميري',     mode:'حضوري مساء', supervisor:'حلا', venue:'الجمعية' },
+           { p:'bayt',     topic:'',                                  action:'التنفيذ', trainer:'',               mode:'عن بعد',     supervisor:'لين', venue:'' }],
+      27: [{ p:'mulhima',  topic:'',                                  action:'التنفيذ', trainer:'',               mode:'حضوري مساء', supervisor:'منار', venue:'الجمعية' }],
+      28: [{ p:'shadn',    topic:'',                                  action:'الحفل الختامي', trainer:'',          mode:'حضوري مساء', supervisor:'لين', venue:'الجمعية' }],
+      29: [{ p:'ai',       topic:'عرض المشاريع ومناقشتها',             action:'التنفيذ', trainer:'اسماء العتيبي', mode:'عن بعد',     supervisor:'شهد', venue:'' }],
+    }, eid: {}
   },
   { // 10 — November 2026
     name: 'نوفمبر', nameShort: 'نوفمبـر', year: 2026, jsMonth: 10,
@@ -621,7 +651,44 @@ const MONTHS = [
     numDays: 30,
     theme: 'nov',
     hijri: {1:'٢١|جمادى الأولى',2:'٢٢',3:'٢٣',4:'٢٤',5:'٢٥',6:'٢٦',7:'٢٧',8:'٢٨',9:'٢٩',10:'١|جمادى الآخرة',11:'٢',12:'٣',13:'٤',14:'٥',15:'٦',16:'٧',17:'٨',18:'٩',19:'١٠',20:'١١',21:'١٢',22:'١٣',23:'١٤',24:'١٥',25:'١٦',26:'١٧',27:'١٨',28:'١٩',29:'٢٠',30:'٢١'},
-    data: {}, eid: {}
+    data: {
+      2:  [{ p:'tawzeef5', topic:'مهارات التواصل', action:'التنفيذ', trainer:'م. صالح الشلوي', mode:'حضوري مساء', supervisor:'منار', venue:'الجمعية' },
+           { p:'bayt', topic:'الدقائق الأولى', action:'التنفيذ', trainer:'نور الشريف', mode:'عن بعد', supervisor:'لين', venue:'' }],
+      3:  [{ p:'ai', topic:'', action:'التنفيذ', trainer:'', mode:'عن بعد', supervisor:'', venue:'' }],
+      4:  [{ p:'shadn', topic:'', action:'الحفل الختامي', trainer:'', mode:'حضوري مساء', supervisor:'', venue:'خارجي' },
+           { p:'ai', topic:'', action:'التنفيذ', trainer:'', mode:'عن بعد', supervisor:'شهد', venue:'' },
+           { p:'tawzeef6', topic:'', action:'الاستعداد والتجهيز', trainer:'', mode:'', supervisor:'منار', venue:'' }],
+      8:  [{ p:'tawzeef5', topic:'ادارة المشاريع', action:'التنفيذ', trainer:'م. صالح الشلوي', mode:'حضوري مساء', supervisor:'حلا', venue:'الجمعية' }],
+      9:  [{ p:'tawzeef5', topic:'ادارة المشاريع', action:'التنفيذ', trainer:'م. صالح الشلوي', mode:'حضوري مساء', supervisor:'لين', venue:'الجمعية' },
+           { p:'bayt', topic:'', action:'التنفيذ', trainer:'', mode:'عن بعد', supervisor:'', venue:'' }],
+      10: [{ p:'qiflna', topic:'', action:'إعلان', trainer:'', mode:'', supervisor:'', venue:'' },
+           { p:'tawzeef6', topic:'بناء الهوية المهنية', action:'التنفيذ, حفل التدشين', trainer:'', mode:'حضوري مساء', supervisor:'منار', venue:'الجمعية' },
+           { p:'ai', topic:'', action:'التنفيذ', trainer:'', mode:'عن بعد', supervisor:'لين', venue:'' }],
+      11: [{ p:'qiflna', topic:'', action:'الاستعداد والتجهيز', trainer:'', mode:'', supervisor:'', venue:'' },
+           { p:'tawzeef6', topic:'السيرة الذاتية المبكرة', action:'التنفيذ', trainer:'', mode:'حضوري مساء', supervisor:'منار', venue:'الجمعية' },
+           { p:'ai', topic:'', action:'التنفيذ', trainer:'', mode:'عن بعد', supervisor:'لين', venue:'' }],
+      15: [{ p:'tawzeef5', topic:'مهارات الإلقاء', action:'التنفيذ', trainer:'أرين الشمراني', mode:'حضوري مساء', supervisor:'لين', venue:'الجمعية' }],
+      16: [{ p:'tawzeef5', topic:'', action:'التنفيذ', trainer:'', mode:'حضوري مساء', supervisor:'حلا', venue:'الجمعية' },
+           { p:'bayt', topic:'', action:'التنفيذ', trainer:'', mode:'', supervisor:'لين', venue:'' }],
+      17: [{ p:'tawzeef5', topic:'مهارات الإلقاء', action:'التنفيذ', trainer:'', mode:'حضوري مساء', supervisor:'فادية', venue:'الجمعية' },
+           { p:'tawzeef6', topic:'الذكاء العاطفي والتواصل المهني', action:'التنفيذ', trainer:'', mode:'عن بعد', supervisor:'منار', venue:'' }],
+      18: [{ p:'ai', topic:'', action:'التنفيذ', trainer:'', mode:'عن بعد', supervisor:'لين', venue:'' },
+           { p:'tawzeef6', topic:'الذكاء العاطفي والتواصل المهني', action:'التنفيذ', trainer:'', mode:'عن بعد', supervisor:'منار', venue:'' },
+           { p:'qiflna', topic:'', action:'التنفيذ, حفل التدشين', trainer:'', mode:'حضوري مساء', supervisor:'لين', venue:'الجمعية' }],
+      22: [{ p:'tifl', topic:'', action:'تفعيل يوم عالمي', trainer:'', mode:'حضوري مساء', supervisor:'لين', venue:'الجمعية' }],
+      23: [{ p:'tawzeef5', topic:'الاستعداد للمقابلات الوظيفية', action:'التنفيذ', trainer:'زياد النجدي', mode:'حضوري مساء', supervisor:'فادية', venue:'الجمعية' },
+           { p:'bayt', topic:'', action:'التنفيذ', trainer:'', mode:'عن بعد', supervisor:'لين', venue:'' }],
+      24: [{ p:'qiflna', topic:'', action:'التنفيذ', trainer:'', mode:'عن بعد', supervisor:'', venue:'' },
+           { p:'tawzeef5', topic:'بناء التقارير الاحترافية', action:'التنفيذ', trainer:'وجدان العنزي', mode:'حضوري مساء', supervisor:'حلا', venue:'الجمعية' },
+           { p:'tawzeef6', topic:'', action:'التنفيذ', trainer:'', mode:'', supervisor:'منار', venue:'' }],
+      25: [{ p:'ai', topic:'', action:'التنفيذ', trainer:'وجدان العنزي', mode:'حضوري مساء', supervisor:'لين', venue:'الجمعية' },
+           { p:'qiflna', topic:'', action:'التنفيذ', trainer:'', mode:'عن بعد', supervisor:'لين', venue:'' },
+           { p:'tawzeef6', topic:'', action:'التنفيذ', trainer:'', mode:'حضوري مساء', supervisor:'منار', venue:'الجمعية' }],
+      29: [{ p:'tawzeef5', topic:'المقابلات الوظيفية', action:'التنفيذ', trainer:'زياد النجدي', mode:'حضوري مساء', supervisor:'فادية', venue:'الجمعية' }],
+      30: [{ p:'tawzeef5', topic:'بدء الترشيح للتدريب الميداني', action:'التنفيذ', trainer:'جهات عمل', mode:'عن بعد', supervisor:'', venue:'' },
+           { p:'mulhima', topic:'', action:'التنفيذ', trainer:'', mode:'حضوري مساء', supervisor:'منار', venue:'الجمعية' },
+           { p:'bayt', topic:'', action:'التنفيذ', trainer:'', mode:'عن بعد', supervisor:'لين', venue:'' }],
+    }, eid: {}
   },
   { // 11 — December 2026
     name: 'ديسمبر', nameShort: 'ديسمبـر', year: 2026, jsMonth: 11,
@@ -788,6 +855,7 @@ function openModal(monthIdx, day, events){
       <div class="modal-info">
         <div class="prog">${pr.name}</div>
         ${ev.topic?`<div class="topic">${ev.topic}</div>`:''}
+        ${ev.action?`<div class="trainer">الإجراء: ${ev.action}</div>`:''}
         ${ev.trainer && ev.trainer!=='-'?`<div class="trainer">👤 ${ev.trainer}</div>`:''}
         ${ev.supervisor && ev.supervisor!=='-'?`<div class="trainer">🔑 المسؤول: ${ev.supervisor}</div>`:''}
         ${ev.mode && ev.mode!=='-'?`<span class="mode">${ev.mode}${ev.venue && ev.venue!=='-'?' · '+ev.venue:''}</span>`:''}
@@ -809,7 +877,7 @@ function goToCurrentMonth(){
 
 const SHEET_ID = '1VuBWtzN7tl-kalbRoDAgUK10TEx1DDw_VTT4HP2uIn4';
 const SHEET_MONTHS = {
-  8: { gid: '850342778' }
+  8: { gid: '850342778', name: 'سبتمبر' }
 };
 
 function cleanText(value){
@@ -818,6 +886,7 @@ function cleanText(value){
 
 function normalizeArabic(value){
   return cleanText(value)
+    .replace(/[\u064B-\u065F\u0670]/g, '')
     .replace(/[إأآا]/g, 'ا')
     .replace(/ى/g, 'ي')
     .replace(/ة/g, 'ه')
@@ -844,6 +913,8 @@ function programKey(programName){
   if(key.includes('التدريبالتعاوني')) return 'cooperative';
   if(key.includes('اليومالوطني')) return 'national';
   if(key.includes('امملهمه')) return 'mulhima';
+  if(key.includes('بيتممكن')) return 'bayt';
+  if(key.includes('التطوعالاحترافي')) return 'volunteer';
   return '';
 }
 
@@ -852,31 +923,53 @@ function getCell(row, index){
   return cleanText(cell?.f || cell?.v || '');
 }
 
-function getDayFromDateCell(row){
+function getDayFromDateCell(row, monthIdx){
   const cell = row.c?.[2];
   const raw = cleanText(cell?.v || '');
   const formatted = cleanText(cell?.f || '');
-  const dateMatch = raw.match(/Date\(2026,8,(\d+)\)/);
+  const monthName = SHEET_MONTHS[monthIdx]?.name || MONTHS[monthIdx]?.name || '';
+  const dateMatch = raw.match(new RegExp(`Date\\(2026,${monthIdx},(\\d+)\\)`));
   if(dateMatch) return Number(dateMatch[1]);
-  const textMatch = formatted.match(/(\d{1,2})\s*-\s*سبتمبر/);
+  const textMatch = formatted.match(new RegExp(`(\\d{1,2})\\s*-\\s*${monthName}`));
   return textMatch ? Number(textMatch[1]) : null;
 }
 
-function eventFromSheetRow(row, fallbackDay){
-  let day = getDayFromDateCell(row) || fallbackDay;
+function eventFromSheetRow(row, fallbackDay, monthIdx){
+  const explicitDay = getDayFromDateCell(row, monthIdx);
+  let day = explicitDay || fallbackDay;
   const programName = getCell(row, 0);
   const action = getCell(row, 4);
   const course = getCell(row, 3);
+  const trainer = getCell(row, 5);
+  const mode = getCell(row, 6);
+  const venue = getCell(row, 7);
+  const supervisor = getCell(row, 8);
+  const hasUsefulDetails = [course, action, trainer, mode, venue, supervisor].some(value => {
+    const text = cleanText(value);
+    return text && text !== '-';
+  });
 
-  if(day === 23 && normalizeArabic(action) === 'بوست'){
+  if(monthIdx === 8 && normalizeArabic(action) === 'بوست' && normalizeArabic(supervisor).includes('دره')){
     return {
       day: 23,
-      event: { p:'national', topic:'إجازة بمناسبة اليوم الوطني', trainer:'', mode:'', supervisor:'', venue:'' }
+      event: { p:'national', topic:'إجازة بمناسبة اليوم الوطني', action:'إجازة', trainer:'', mode:'', supervisor:'درة', venue:'' },
+      blocksCarry: !explicitDay
     };
   }
 
   let p = programKey(programName);
-  if(!p && normalizeArabic(course).includes('العاداتالسبع')) p = 'cooperative';
+  const normalizedCourse = normalizeArabic(course);
+  const normalizedAction = normalizeArabic(action);
+  const normalizedSupervisor = normalizeArabic(supervisor);
+  let keepProgramOnlyRow = false;
+  if(monthIdx === 8 && !explicitDay && p === 'tawzeef5' && normalizedCourse.includes('مقابلات') && normalizedAction.includes('الاستعدادوالتجهيز')) day = 1;
+  if(monthIdx === 8 && !explicitDay && p === 'tawzeef5' && !hasUsefulDetails) {
+    day = 14;
+    keepProgramOnlyRow = true;
+  }
+  if(monthIdx === 8 && !explicitDay && p === 'tawzeef5' && normalizedCourse.includes('العاداتالسبع') && normalizedSupervisor.includes('منار')) day = 27;
+  if(monthIdx === 8 && !p && explicitDay === 28 && normalizedCourse.includes('الاخلاقياتالمهنيه')) p = 'tawzeef5';
+  if(!explicitDay && !hasUsefulDetails && !keepProgramOnlyRow) return null;
   if(!day || !p) return null;
 
   return {
@@ -885,24 +978,30 @@ function eventFromSheetRow(row, fallbackDay){
       p,
       topic: course,
       action,
-      trainer: getCell(row, 5),
-      mode: getCell(row, 6),
-      supervisor: getCell(row, 8),
-      venue: getCell(row, 7)
-    }
+      trainer,
+      mode,
+      supervisor,
+      venue
+    },
+    blocksCarry: false
   };
 }
 
-function buildMonthDataFromSheet(table){
+function buildMonthDataFromSheet(table, monthIdx){
   const data = {};
   let currentDay = null;
+  let blockCarry = false;
   (table.rows || []).forEach(row => {
-    const rowDay = getDayFromDateCell(row);
-    if(rowDay) currentDay = rowDay;
-    const parsed = eventFromSheetRow(row, currentDay);
+    const rowDay = getDayFromDateCell(row, monthIdx);
+    if(rowDay) {
+      currentDay = rowDay;
+      blockCarry = false;
+    }
+    const parsed = eventFromSheetRow(row, blockCarry ? null : currentDay, monthIdx);
     if(!parsed) return;
     data[parsed.day] = data[parsed.day] || [];
     data[parsed.day].push(parsed.event);
+    if(parsed.blocksCarry) blockCarry = true;
   });
   return data;
 }
@@ -911,7 +1010,7 @@ function loadSheetMonth(monthIdx){
   const config = SHEET_MONTHS[monthIdx];
   if(!config) return Promise.resolve(false);
   const callbackName = `tamkeenSheet_${monthIdx}_${Date.now()}`;
-  const url = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json;responseHandler:${callbackName}&gid=${config.gid}`;
+  const url = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json;responseHandler:${callbackName}&gid=${config.gid}&headers=0`;
 
   return new Promise(resolve => {
     const script = document.createElement('script');
@@ -930,7 +1029,7 @@ function loadSheetMonth(monthIdx){
       try {
         if(response?.status === 'ok' && response.table){
           const month = MONTHS[monthIdx];
-          month.data = buildMonthDataFromSheet(response.table);
+          month.data = buildMonthDataFromSheet(response.table, monthIdx);
           month.eid = {};
           if(displayedMonthIndex === monthIdx) renderMonth(monthIdx);
           buildArchive();
