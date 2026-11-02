@@ -135,6 +135,7 @@ function programKey(programName){
   if(key.includes('تاهيلالامهاتلسوقالعمل')) return 'taheel';
   if(key.includes('التدريبالتعاوني')) return 'cooperative';
   if(key.includes('اليومالوطني')) return 'national';
+  if(key.includes('الاحتفالبيومالطفلالعالمي')) return 'tiflCelebration';
   if(key.includes('اليومالعالميللطفل') || key.includes('يومالطفلالعالمي')) return 'tifl';
   if(key.includes('امملهمه')) return 'mulhima';
   if(key.includes('بيتممكن')) return 'bayt';
