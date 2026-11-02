@@ -171,6 +171,7 @@ body.theme-dec { background: #f6ccd6; }
 .day-hij small { display: block; font-size: 10px; color: rgba(95,75,135,0.45); }
 .badges { display: flex; flex-direction: column; gap: 3px; flex: 1; }
 .badge { border-radius: 6px; padding: 3px 6px; font-size: clamp(9px, 1.3vw, 12px); font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor: pointer; transition: opacity 0.15s, transform 0.12s; display: block; line-height: 1.5; }
+.badge.wrap-badge { white-space: normal; overflow: visible; text-overflow: clip; line-height: 1.3; min-height: 34px; display: flex; align-items: center; justify-content: center; text-align: center; }
 .badge:hover { opacity: 0.85; transform: scale(0.97); }
 .badge.national-badge { background: #1f8f4d !important; color: #fff !important; text-align: center; white-space: normal; }
 .eid-badge { border-radius: 6px; padding: 3px 6px; font-size: clamp(8px, 1.2vw, 11px); font-weight: 700; background: rgba(255,200,0,0.85); color: #5A3000; display: block; line-height: 1.5; text-align: center; }
@@ -758,6 +759,7 @@ function renderMonth(idx){
         const b = document.createElement('span');
         b.className='badge';
         if(ev.p === 'national') b.classList.add('national-badge');
+        if(ev.p === 'tiflCelebration') b.classList.add('wrap-badge');
         b.style.background = pr.bg;
         b.style.color = pr.fg;
         b.textContent = badgeText(ev);
